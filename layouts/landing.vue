@@ -1,9 +1,15 @@
 <template>
   <v-app>
+    <!-- footer -->
+    <Navbar />
+
     <!-- Main -->
     <v-main>
       <nuxt class="custom-nuxt-wrapper"></nuxt>
     </v-main>
+
+    <!-- footer -->
+    <Footer />
 
     <!-- Snackbar -->
     <SnackBar></SnackBar>
@@ -18,8 +24,9 @@ import { mapState } from 'vuex'
 export default {
 
   components: {
-    NavBar: () => import('@@/components/layouts/NavBar'),
-    SnackBar: () => import('@@/components/layouts/Snackbar'),
+    Navbar: () => import('@@/components/webportal/Navbar'),
+    Footer: () => import('@@/components/webportal/Footer'),
+    SnackBar: () => import('@@/components/layouts/Snackbar.vue'),
     SavingSnackBar: () => import('@@/components/layouts/SavingSnackbar')
   },
 
@@ -52,5 +59,45 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
+
+.avenir-black{
+  font-family: Avenir-black !important;
+}
+
+.avenir-book{
+  font-family: Avenir-book !important;
+}
+
+.avenir-roman{
+  font-family: Avenir-roman !important;
+}
+
+.kollektif{
+  font-family: Kollektif !important;
+}
+
+.kollektif-italic,
+.font-italic,
+.kollektif.font-italic,
+.font-italic .kollektif,
+.kollektif .font-italic{
+    font-family: Kollektif-italic !important;
+    font-style: normal !important;
+}
+
+.kollektif.font-bold,
+.kollektif-bold{
+  font-family: Kollektif-bold !important;
+  font-style: normal !important;
+}
+
+.soul-seashell {
+  font-family: soul-seashell !important;
+}
+
+.soul-seashell-swash {
+  font-family: soul-seashell-swash !important;
+}
+
 </style>

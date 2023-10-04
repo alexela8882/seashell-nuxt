@@ -2,22 +2,7 @@ import { getField, updateField } from 'vuex-map-fields'
 import Vue from 'vue'
 import Vuetify from 'vuetify'
 
-import albums from './modules/albums'
 import users from './modules/users'
-import companies from './modules/companies'
-import attributes from './modules/companies/attributes'
-import segments from './modules/companies/attributes/segments'
-import employees from './modules/companies/employees'
-import mainDrivers from './modules/engagements/drivers/main'
-import drivers from './modules/engagements/drivers'
-import subdrivers from './modules/engagements/drivers/sub'
-import surveys from './modules/surveys'
-import surveyReplies from './modules/surveys/replies'
-import surveyNotes from './modules/surveys/notes'
-import surveySchedules from './modules/surveys/schedules'
-import surveySettings from './modules/surveys/settings'
-import analytics from './modules/analytics'
-import comments from './modules/comments'
 import roles from './modules/roles'
 
 export const state = () => ({
@@ -94,22 +79,7 @@ export const actions = {
 }
 
 export const modules = {
-  albums: albums,
   users: users,
-  companies: companies,
-  attributes: attributes,
-  segments: segments,
-  employees: employees,
-  mainDrivers: mainDrivers,
-  drivers: drivers,
-  subdrivers: subdrivers,
-  surveys: surveys,
-  surveyReplies: surveyReplies,
-  surveySchedules: surveySchedules,
-  surveySettings: surveySettings,
-  analytics: analytics,
-  surveyNotes: surveyNotes,
-  comments: comments,
   roles: roles
 }
 

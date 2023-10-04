@@ -1,3 +1,85 @@
+@font-face {
+  font-family: Eurostile;
+  src: url("../fonts/Eurostile/Eurostile.otf");
+}
+
+@font-face {
+  font-family: Frutiger;
+  src: url("../fonts/Frutiger/FrutigerLTStd-Roman.otf");
+}
+
+@font-face {
+  font-family: "Avenir-black";
+  src: url("../fonts/Avenir/AvenirLTStd-Black.otf");
+}
+
+@font-face {
+  font-family: "Avenir-book";
+  font-style: normal;
+  font-display: auto;
+  src: url("../fonts/Avenir/AvenirLTStd-Book.otf");
+}
+
+@font-face {
+  font-family: "Avenir-roman";
+  font-style: normal;
+  font-display: auto;
+  src: url("../fonts/Avenir/AvenirLTStd-Roman.otf");
+}
+
+@font-face {
+  font-family: "Kollektif";
+  font-style: normal;
+  font-display: auto;
+  src: url("../fonts/Kollektif/Kollektif.ttf");
+}
+
+@font-face {
+  font-family: "Kollektif-bold";
+  font-style: normal;
+  font-display: auto;
+  src: url("../fonts/Kollektif/Kollektif-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Kollektif-bolditalic";
+  font-style: normal;
+  font-display: auto;
+  src: url("../fonts/Kollektif/Kollektif-BoldItalic.ttf");
+}
+
+@font-face {
+  font-family: "Kollektif-italic";
+  font-style: normal;
+  font-display: auto;
+  src: url("../fonts/Kollektif/Kollektif-Italic.ttf");
+}
+
+@font-face {
+  font-family: "soul-seashell";
+  font-style: normal;
+  font-display: auto;
+  src: url("../fonts/soul-seashell/Soul Seashell.ttf");
+}
+
+@font-face {
+  font-family: "soul-seashell-swash";
+  font-style: normal;
+  font-display: auto;
+  src: url("../fonts/soul-seashell/Soul Seashell Swash.ttf");
+}
+
+/* .v-application .text-h1,
+.v-application .text-h2,
+.v-application .text-h3,
+.v-application .text-h4 {
+  font-family: 'Eurostile' !important;
+}
+
+.v-application {
+  font-family: 'Frutiger' !important;
+} */
+
 .see-through {
   background: transparent !important;
 }
@@ -51,23 +133,116 @@
   background-attachment: fixed;
 }
 
-@font-face {
-  font-family: Eurostile;
-  src: url("../fonts/Eurostile/Eurostile.otf");
+.stroke-transparent-white {
+  color: transparent;
+  -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+  -webkit-text-stroke-color: white;
 }
 
-@font-face {
-  font-family: Frutiger;
-  src: url("../fonts/Frutiger/FrutigerLTStd-Roman.otf");
+.stroke-transparent-eblue {
+  color: transparent;
+  -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+  -webkit-text-stroke-color: #08527b;
 }
 
-.v-application .text-h1,
-.v-application .text-h2,
-.v-application .text-h3,
-.v-application .text-h4 {
-  font-family: 'Eurostile' !important;
+.stroke-1 {
+  -webkit-text-stroke-width: 1px;
 }
 
-.v-application {
-  font-family: 'Frutiger' !important;
+.faded-bg-fix {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+}
+
+.faded-bg-white-left {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  background-image: linear-gradient(to right, transparent 50%, white 100%);
+}
+
+.faded-bg-white-right {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  background-image: linear-gradient(to left, transparent 50%, white 100%);
+}
+
+.transparent-bg-black {
+  padding:20px;
+  width:710px;
+  position:relative;
+  background: rgb(0, 0, 0); /* Fallback for older browsers without RGBA-support */
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.transparent-bg-black-dark {
+  padding:20px;
+  width:710px;
+  position:relative;
+  background: rgb(0, 0, 0); /* Fallback for older browsers without RGBA-support */
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.transparent-bg-black-darker {
+  padding:20px;
+  width:710px;
+  position:relative;
+  background: rgb(0, 0, 0); /* Fallback for older browsers without RGBA-support */
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.transparent-bg-white {
+  padding:20px;
+  width:710px;
+  position:relative;
+  background: rgb(255, 255, 255); /* Fallback for older browsers without RGBA-support */
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.bottom-rounded-sm {
+  border-bottom-left-radius: 30px !important;
+  border-bottom-right-radius: 30px !important;
+}
+
+.bottom-rounded-md {
+  border-bottom-left-radius: 60px !important;
+  border-bottom-right-radius: 60px !important;
+}
+
+.bottom-rounded-lg {
+  border-bottom-left-radius: 90px !important;
+  border-bottom-right-radius: 90px !important;
+}
+
+.bottom-left-rounded-lg {
+  border-bottom-left-radius: 90px !important;
+}
+
+.bottom-right-rounded-lg {
+  border-bottom-right-radius: 90px !important;
+}
+
+.shadow-xl {
+  box-shadow: rgb(0, 0, 0) 0px 10px 30px -10px;
+}
+
+.border {
+  border: 2px solid red;
 }

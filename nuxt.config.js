@@ -160,12 +160,16 @@ export default {
           warning: colors.amber.base,
           error: colors.deepOrange.accent4,
           success: colors.green.accent3,
-          customAccent: '#2B2424'
+          customAccent: '#2B2424',
+          electric_blue: '#08527b',
+          alabaster: '#f1f0eb'
         },
         light: {
           primary: '#00467f',
           secondary: '#4d4d4f',
-          customAccent: '#2B2424'
+          customAccent: '#2B2424',
+          electric_blue: '#08527b',
+          alabaster: '#f1f0eb'
         }
       }
     }
