@@ -2,14 +2,14 @@
 
 export default {
   auth: false,
-  layout: 'landing',
+  layout: 'landing'
 }
 
 </script>
 
 <template>
   <div>
-    Landing page
+    Species index
   </div>
 </template>
 

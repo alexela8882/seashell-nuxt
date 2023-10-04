@@ -17,22 +17,6 @@
             <v-img @click="$router.push('/')" width="90" height="50" :src="bgImage" contain></v-img>
           </v-list-item-content>
         </v-list-item>
-
-        <!-- <v-divider></v-divider>
-
-        <v-list-item two-line :class="miniVariant && 'px-2'">
-          <v-list-item-avatar
-            size="36"
-            color="secondary"
-          ><span class="font-weight-bold white--text mx-auto">{{ upperSubstring() }}</span>
-          </v-list-item-avatar>
-          <v-list-item-content>
-            <v-list-item-title class="title">
-              {{ this.$auth.user.name }}
-            </v-list-item-title>
-            <v-list-item-subtitle>{{ this.$auth.user.employee.company.name }}</v-list-item-subtitle>
-          </v-list-item-content>
-        </v-list-item> -->
       </v-list>
 
       <v-list dense flat>
@@ -118,27 +102,6 @@
         </v-list-group>
 
         <div class="divider div-transparent my-2"></div>
-
-        <v-list-group prepend-icon="domain" :color="linksTheme">
-          <template v-slot:activator>
-            <v-list-item-title>Company</v-list-item-title>
-          </template>
-
-          <v-list-item
-            v-for="(company, i) in companies"
-            :key="i"
-            nuxt-link
-            :to="company[2]"
-            :color="linksTheme"
-          >
-            <v-list-item-action>
-              <v-icon>{{ company[1] }}</v-icon>
-            </v-list-item-action>
-            <v-list-item-content>
-              <v-list-item-title v-text="company[0]" />
-            </v-list-item-content>
-          </v-list-item>
-        </v-list-group>
       </v-list>
 
       <div class="divider div-transparent my-2"></div>
@@ -235,9 +198,6 @@
                     <v-list-item-title class="title">
                       {{ this.$auth.user.name }}
                     </v-list-item-title>
-                    <v-list-item-subtitle>
-                      {{ this.$auth.user.employee.company.name }}
-                    </v-list-item-subtitle>
                     <v-list-item-subtitle class="my-2">
                       <nuxt-link to="/users/profile" class="text-decoration-none">Manage your account</nuxt-link>
                     </v-list-item-subtitle>
@@ -382,10 +342,11 @@ export default {
 
     upperSubstring () {
       const name = this.$auth.user.name
-      const split = name.split(' ')
-      const firstName = split[0].substring(0, 1).toUpperCase()
-      const lastName = split[1].substring(0, 1).toUpperCase()
-      return `${firstName}${lastName}`
+      // const split = name.split(' ')
+      // const firstName = split[0].substring(0, 1).toUpperCase()
+      // const lastName = split[1].substring(0, 1).toUpperCase()
+      // return `${firstName}${lastName}`
+      return name
     },
   }
 }

@@ -13,7 +13,7 @@ export default {
   target: 'server',
   // target: 'static',
   // router: {
-  //   base: '/nuxt-passport/'
+  //   middleware: ['auth']
   // },
   server: {
     port: 3000, // default: 3000
@@ -114,7 +114,7 @@ export default {
       login: '/login',
       logout: '/',
       callback: '/login',
-      home: '/'
+      home: '/dashboard'
     },
     strategies: {
       local: false,

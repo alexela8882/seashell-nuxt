@@ -1,15 +1,10 @@
 <script>
 
-export default {
-  auth: false,
-  layout: 'landing',
-}
-
 </script>
 
 <template>
   <div>
-    Landing page
+    admin page
   </div>
 </template>
 

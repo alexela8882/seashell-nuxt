@@ -6,6 +6,8 @@
 
 <script>
 export default {
+  auth: false,
+  layout: 'landing',
   head: {
     title: 'About'
   }

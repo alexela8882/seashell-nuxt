@@ -78,7 +78,7 @@ import axios from 'axios'
 import { mapState } from 'vuex'
 
 export default {
-  middleware: ['notAuthenticated'],
+  auth: 'guest',
 
   layout: 'guest',
 
