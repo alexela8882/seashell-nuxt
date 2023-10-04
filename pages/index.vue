@@ -169,7 +169,7 @@
     <v-row
       v-if="1 == 0"
       style="position: relative; z-index: 50 !important; margin-top: -100px;"
-      class="px-md-16 px-5 py-5 bg-black w-100 mx-0">
+      class="px-md-16 px-5 py-5 black w-100 mx-0">
       <span class="white--text" style="padding-top: 100px;">
         <h1 class="avenir-black text-md-h3 text-sm-h4 text-h5 font-weight-black">
           All About BINTAN
@@ -280,7 +280,7 @@
           cols="12"
           md="5"
           style="padding-top: 220px;"
-          class="bg-white bottom-right-rounded-lg">
+          class="white bottom-right-rounded-lg">
           <div class="d-flex align-center justify-center" style="width: 100%; height: 100%;">
             <div>
               <v-img class="mt-16" :width="`${!$vuetify.breakpoint.xl ? '400' : '500'}`" cover src="/img/shells/gastropod.png"></v-img>
