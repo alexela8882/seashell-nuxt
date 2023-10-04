@@ -4,7 +4,7 @@ import axios from 'axios'
 export default {
   data () {
     return {
-      currentUrl: null,
+      backendUrl: 'http://seashell.es',
       seashellImage: { value: null, error: null },
       navbarBg: null,
       containerClass: null,
@@ -88,7 +88,7 @@ export default {
         this.aiDialogLoading = true
         this.seashellImage.error = null
 
-        const tokenUrl = `${this.currentUrl}/oauth/token`
+        const tokenUrl = `${this.backendUrl}/oauth/token`
         const { data, status } = await axios({
           method: 'post',
           url: tokenUrl,
@@ -114,7 +114,7 @@ export default {
 
     async getShell (payload, formData) {
       formData.forEach(el => console.log(el))
-      const uploadUrl = `${this.currentUrl}/api/upload`
+      const uploadUrl = `${this.backendUrl}/api/upload`
       let data = null
       let status = null
       await axios({
@@ -174,10 +174,6 @@ export default {
 
   mounted () {
     this.getNavBarBg()
-
-    // get current url
-    this.currentUrl = window.location.protocol + '//' + window.location.host
-    console.log(this.currentUrl)
   }
 }
 </script>
@@ -259,14 +255,13 @@ export default {
     <v-row justify="center">
       <v-dialog
         v-model="aiDialog"
+        scrollable
         persistent
         width="500">
         <v-card>
-          <v-card-title class="text-h5 grey lighten-2">
-            Identify Seashells
-          </v-card-title>
-
-          <v-card-text class="pt-8 mb-n8">
+          <v-card-title>Identify seashell</v-card-title>
+          <v-divider></v-divider>
+          <v-card-text class="mt-7">
             <div>
               <v-file-input
                 :disabled="aiDialogLoading"
@@ -281,17 +276,8 @@ export default {
               <span v-if="seashellImage.error">{{ seashellImage.error }}</span>
             </div>
           </v-card-text>
-
           <v-divider></v-divider>
-
           <v-card-actions>
-            <v-btn
-              :loading="aiDialogLoading"
-              color="primary"
-              text
-              @click="uploadImage">
-              Upload
-            </v-btn>
             <v-spacer></v-spacer>
             <v-btn
               :disabled="aiDialogLoading"
@@ -300,12 +286,90 @@ export default {
               @click="aiDialog = false">
               Close
             </v-btn>
+            <v-btn
+              :loading="aiDialogLoading"
+              color="primary"
+              text
+              @click="uploadImage">
+              Upload
+            </v-btn>
           </v-card-actions>
         </v-card>
       </v-dialog>
 
       <v-dialog
         v-model="displayProbabilityDialog"
+        scrollable
+        persistent
+        :width="`${$vuetify.breakpoint.xs || $vuetify.breakpoint.sm ? '100%' : '40%'}`">
+        <v-card>
+          <v-card-title>Results</v-card-title>
+          <v-divider></v-divider>
+          <v-card-text class="pt-8">
+            <div
+              v-for="(data, d) in probabilityData.data" :key="d"
+              v-if="probabilityData && probabilityData.data.length > 0">
+              <v-row class="mb-16">
+                <v-col cols="12" md="6">
+                  <v-card
+                    elevation="2">
+                    <img
+                      :src="probabilityData.IMG_URL"
+                      class="ai-img" />
+                  </v-card>
+                </v-col>
+                <v-col cols="12" md="6">
+                  <div style="height: 100%;" class="d-flex flex-column">
+                    <div class="mb-auto mt-0">
+                      <span class="text-h5">Probability</span>
+                    </div>
+                    <div>
+                      <span class="text-h1">
+                        {{ data.probability }} %
+                      </span>
+                    </div>
+                    <div class="mt-auto mb-0">
+                      <a
+                        @click="clickInfo(data.id)"
+                        href="javascript: void(0);"
+                        class="electric_blue--text text-uppercase">
+                        Click here for more information
+                      </a>
+                    </div>
+                  </div>
+                </v-col>
+                <v-col cols="12">
+                  <div class="text-h5 font-weight-bold">
+                    <span>{{ data.common_name }}</span>
+                    <span>({{ data.author }})</span>
+                  </div>
+                </v-col>
+              </v-row>
+            </div>
+            <div v-else>
+              No records found.
+            </div>
+          </v-card-text>
+          <v-divider></v-divider>
+          <v-card-actions>
+            <v-spacer></v-spacer>
+            <v-btn
+              color="secondary"
+              text
+              @click="displayProbabilityDialog = false">
+              Close
+            </v-btn>
+            <v-btn
+              color="primary"
+              text
+              @click="identifyAnotherShell()">
+              Identify another shell
+            </v-btn>
+          </v-card-actions>
+        </v-card>
+      </v-dialog>
+
+      <v-dialog
         scrollable
         persistent
         :width="`${$vuetify.breakpoint.xs || $vuetify.breakpoint.sm ? '100%' : '40%'}`">
