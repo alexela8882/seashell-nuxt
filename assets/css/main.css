@@ -1,0 +1,73 @@
+.see-through {
+  background: transparent !important;
+}
+.custom-bg-white {
+  background: #fff !important;
+}
+
+.custom-main {
+  /* The image used */
+  background-image: url("/COLOR DOT SURVEY SITE_BG-01-min.png");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.custom-main-dark {
+  /* The image used */
+  background-image: url("/background2_dark mode.png");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.custom-nuxt-wrapper {
+  min-width: 98% !important;
+}
+
+.custom-main-guest {
+  /* The image used */
+  background-image: url("/COLOR DOT SURVEY SITE_LOGIN.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+@font-face {
+  font-family: Eurostile;
+  src: url("../fonts/Eurostile/Eurostile.otf");
+}
+
+@font-face {
+  font-family: Frutiger;
+  src: url("../fonts/Frutiger/FrutigerLTStd-Roman.otf");
+}
+
+.v-application .text-h1,
+.v-application .text-h2,
+.v-application .text-h3,
+.v-application .text-h4 {
+  font-family: 'Eurostile' !important;
+}
+
+.v-application {
+  font-family: 'Frutiger' !important;
+}
