@@ -28,7 +28,7 @@ export default {
   ** See https://nuxtjs.org/api/configuration-head
   */
   head: {
-    titleTemplate: '%s - ' + 'Esco Global',
+    titleTemplate: '%s - ' + 'Bintan Seashells',
     title: process.env.npm_package_name || '',
     meta: [
       { charset: 'utf-8' },
@@ -106,7 +106,7 @@ export default {
   ** See https://axios.nuxtjs.org/options
   */
   axios: {
-    baseURL: 'http://localhost:91'
+    baseURL: 'http://seashell.es'
   },
   auth: {
     watchLoggedIn: true,
@@ -122,12 +122,12 @@ export default {
         _scheme: 'local',
         endpoints: {
           login: {
-            url: '/api/login',
+            url: '/api/nuxt2/login',
             method: 'post',
             propertyName: 'access_token'
           },
           logout: {
-            url: '/api/logout',
+            url: '/api/nuxt2/logout',
             method: 'post'
           },
           user: {
@@ -193,9 +193,9 @@ export default {
       dev: false
     },
     manifest: {
-      name: 'MultiColorDot',
+      name: 'Bintan Seashells',
       lang: 'en',
-      short_name: 'MultiColorDot',
+      short_name: 'Bintan Seashells',
       useWebmanifestExtension: false
     }
   },

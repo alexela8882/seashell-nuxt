@@ -83,7 +83,7 @@ export default {
   layout: 'guest',
 
   head: {
-    title: 'MultiColorDot'
+    title: 'Login'
   },
 
   computed: {

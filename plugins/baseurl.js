@@ -1,5 +1,5 @@
 export default ({}, inject) => {
-  const url = 'http://localhost:91/api/'
+  const url = 'http://seashell.es/api/'
   const uri = uri => {
     return `${url}${uri}`
   }
