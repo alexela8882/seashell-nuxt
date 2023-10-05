@@ -57,7 +57,7 @@ export default {
       flat
       tile
       class="text-center px-md-16"
-      :class="`${$route.name == 'index' ? 'pt-16 bg-white electric_blue--text' : 'pt-6 electric_blue white--text'}`"
+      :class="`${$route.name == 'index' ? 'pt-16 bg-white electric_blue--text' : 'electric_blue white--text'}`"
     >
       <v-card-text>
         <v-btn

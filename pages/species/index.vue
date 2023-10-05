@@ -3,6 +3,10 @@
 import { mapState, mapGetters } from 'vuex'
 
 export default {
+  head: {
+    title: 'Species'
+  },
+
   auth: false,
   layout: 'landing',
 

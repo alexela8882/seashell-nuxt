@@ -3,6 +3,7 @@ import actions from './actions'
 const state = () => ({
   pagedSpecies: [],
   species: [],
+  specie: {},
   class: [],
   family: [],
   genus: [],
@@ -11,6 +12,7 @@ const state = () => ({
 const getters = {
   getPagedSpecies (state) { return state.pagedSpecies },
   getSpecies (state) { return state.species },
+  getSpecie (state) { return state.specie },
   getClass (state) { return state.class },
   getFamily (state) { return state.family },
   getGenus (state) { return state.genus },
@@ -18,6 +20,7 @@ const getters = {
 
 const mutations = {
   GET_PAGED_SPECIES (state, payload) { state.pagedSpecies = payload },
+  GET_SPECIE (state, payload) { state.specie = payload },
   GET_SPECIES (state, payload) { state.species = payload },
   GET_CLASS (state, payload) { state.class = payload },
   GET_FAMILY (state, payload) { state.family = payload },

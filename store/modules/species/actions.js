@@ -1,6 +1,18 @@
 // import axios from 'axios'
 
 const actions = {
+  async fetchSpecie ({ commit }, payload) {
+    commit('SET_LOADING', true, { root: true })
+    try {
+      let response = await this.$axios.post(this.$baseurl('web/view'), payload)
+      commit('GET_SPECIE', response.data)
+    } catch (e) {
+      commit('SET_LOADING', false, { root: true })
+    } finally {
+      commit('SET_LOADING', false, { root: true })
+    }
+  },
+
   async fetchSpecies ({ commit }) {
     commit('SET_LOADING', true, { root: true })
     try {

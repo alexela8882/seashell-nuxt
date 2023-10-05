@@ -316,7 +316,7 @@
     </div>
 
     <div
-      class="shadow-xl"
+      class="shadow-xl mb-6"
       :class="($vuetify.breakpoint.xs || $vuetify.breakpoint.sm) ? 'bottom-rounded-sm' : 'bottom-rounded-lg'"
       style="position: relative; z-index: 46 !important;">
       <v-row no-gutters style="margin-top: -200px;">
@@ -450,6 +450,10 @@
 import axios from "axios";
 
 export default {
+  head: {
+    title: 'Welcome'
+  },
+
   auth: false,
   layout: 'landing',
 
