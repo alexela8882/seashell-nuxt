@@ -306,45 +306,45 @@ export default {
           <v-card-title>Results</v-card-title>
           <v-divider></v-divider>
           <v-card-text class="pt-8">
-            <div
-              v-for="(data, d) in probabilityData.data" :key="d"
-              v-if="probabilityData && probabilityData.data.length > 0">
-              <v-row class="mb-16">
-                <v-col cols="12" md="6">
-                  <v-card
-                    elevation="2">
-                    <img
-                      :src="probabilityData.IMG_URL"
-                      class="ai-img" />
-                  </v-card>
-                </v-col>
-                <v-col cols="12" md="6">
-                  <div style="height: 100%;" class="d-flex flex-column">
-                    <div class="mb-auto mt-0">
-                      <span class="text-h5">Probability</span>
+            <div v-if="probabilityData && probabilityData.data.length > 0">
+              <div v-for="(data, d) in probabilityData.data" :key="d">
+                <v-row class="mb-16">
+                  <v-col cols="12" md="6">
+                    <v-card
+                      elevation="2">
+                      <img
+                        :src="probabilityData.IMG_URL"
+                        class="ai-img" />
+                    </v-card>
+                  </v-col>
+                  <v-col cols="12" md="6">
+                    <div style="height: 100%;" class="d-flex flex-column">
+                      <div class="mb-auto mt-0">
+                        <span class="text-h5">Probability</span>
+                      </div>
+                      <div>
+                        <span class="text-h1">
+                          {{ data.probability }} %
+                        </span>
+                      </div>
+                      <div class="mt-auto mb-0">
+                        <a
+                          @click="clickInfo(data.id)"
+                          href="javascript: void(0);"
+                          class="electric_blue--text text-uppercase">
+                          Click here for more information
+                        </a>
+                      </div>
                     </div>
-                    <div>
-                      <span class="text-h1">
-                        {{ data.probability }} %
-                      </span>
+                  </v-col>
+                  <v-col cols="12">
+                    <div class="text-h5 font-weight-bold">
+                      <span>{{ data.common_name }}</span>
+                      <span>({{ data.author }})</span>
                     </div>
-                    <div class="mt-auto mb-0">
-                      <a
-                        @click="clickInfo(data.id)"
-                        href="javascript: void(0);"
-                        class="electric_blue--text text-uppercase">
-                        Click here for more information
-                      </a>
-                    </div>
-                  </div>
-                </v-col>
-                <v-col cols="12">
-                  <div class="text-h5 font-weight-bold">
-                    <span>{{ data.common_name }}</span>
-                    <span>({{ data.author }})</span>
-                  </div>
-                </v-col>
-              </v-row>
+                  </v-col>
+                </v-row>
+              </div>
             </div>
             <div v-else>
               No records found.
@@ -379,45 +379,46 @@ export default {
           </v-card-title>
 
           <v-card-text class="pt-8 mb-n8">
-            <div
-              v-for="(data, d) in probabilityData.data" :key="d"
-              v-if="probabilityData && probabilityData.data.length > 0">
-              <v-row class="mb-16">
-                <v-col cols="12" md="6">
-                  <v-card
-                    elevation="2">
-                    <img
-                      :src="probabilityData.IMG_URL"
-                      class="ai-img" />
-                  </v-card>
-                </v-col>
-                <v-col cols="12" md="6">
-                  <div style="height: 100%;" class="d-flex flex-column">
-                    <div class="mb-auto mt-0">
-                      <span class="text-h5">Probability</span>
+            <div v-if="probabilityData && probabilityData.data.length > 0">
+              <div
+                v-for="(data, d) in probabilityData.data" :key="d">
+                <v-row class="mb-16">
+                  <v-col cols="12" md="6">
+                    <v-card
+                      elevation="2">
+                      <img
+                        :src="probabilityData.IMG_URL"
+                        class="ai-img" />
+                    </v-card>
+                  </v-col>
+                  <v-col cols="12" md="6">
+                    <div style="height: 100%;" class="d-flex flex-column">
+                      <div class="mb-auto mt-0">
+                        <span class="text-h5">Probability</span>
+                      </div>
+                      <div>
+                        <span class="text-h1">
+                          {{ data.probability }} %
+                        </span>
+                      </div>
+                      <div class="mt-auto mb-0">
+                        <a
+                          @click="clickInfo(data.id)"
+                          href="javascript: void(0);"
+                          class="electric_blue--text text-uppercase">
+                          Click here for more information
+                        </a>
+                      </div>
                     </div>
-                    <div>
-                      <span class="text-h1">
-                        {{ data.probability }} %
-                      </span>
+                  </v-col>
+                  <v-col cols="12">
+                    <div class="text-h5 font-weight-bold">
+                      <span>{{ data.common_name }}</span>
+                      <span>({{ data.author }})</span>
                     </div>
-                    <div class="mt-auto mb-0">
-                      <a
-                        @click="clickInfo(data.id)"
-                        href="javascript: void(0);"
-                        class="electric_blue--text text-uppercase">
-                        Click here for more information
-                      </a>
-                    </div>
-                  </div>
-                </v-col>
-                <v-col cols="12">
-                  <div class="text-h5 font-weight-bold">
-                    <span>{{ data.common_name }}</span>
-                    <span>({{ data.author }})</span>
-                  </div>
-                </v-col>
-              </v-row>
+                  </v-col>
+                </v-row>
+              </div>
             </div>
             <div v-else>
               No records found.

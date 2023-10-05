@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <!-- footer -->
-    <Navbar />
+    <Navbar></Navbar>
 
     <!-- Main -->
     <v-main>
@@ -9,7 +9,7 @@
     </v-main>
 
     <!-- footer -->
-    <Footer />
+    <Footer></Footer>
 
     <!-- Snackbar -->
     <SnackBar></SnackBar>

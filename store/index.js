@@ -4,6 +4,7 @@ import Vuetify from 'vuetify'
 
 import users from './modules/users'
 import roles from './modules/roles'
+import species from './modules/species'
 
 export const state = () => ({
   loading: false,
@@ -80,7 +81,8 @@ export const actions = {
 
 export const modules = {
   users: users,
-  roles: roles
+  roles: roles,
+  species: species
 }
 
 export const strict = false // important when mutating multiRowField store
