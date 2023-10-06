@@ -102,6 +102,7 @@ export default {
   },
 
   created () {
+    this.$router.push('/')
     this.$store.commit('SET_LOADING', true, { root: true })
 
     if (this.$auth.loggedIn) {
