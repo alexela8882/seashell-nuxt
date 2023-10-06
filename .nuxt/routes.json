@@ -2,78 +2,67 @@
   {
     "name": "about",
     "path": "/about",
-    "component": "/var/www/html/seashell-nuxt/pages/about.vue",
-    "chunkName": "pages/about",
-    "_name": "_6967d2cf"
+    "component": "C:\\\\Users\\\\Admin\\\\Desktop\\\\devs\\\\seashell-nuxt\\\\pages\\\\about.vue",
+    "chunkName": "pages/about"
   },
   {
     "name": "admin",
     "path": "/admin",
-    "component": "/var/www/html/seashell-nuxt/pages/admin/index.vue",
-    "chunkName": "pages/admin/index",
-    "_name": "_43be5754"
+    "component": "C:\\\\Users\\\\Admin\\\\Desktop\\\\devs\\\\seashell-nuxt\\\\pages\\\\admin\\\\index.vue",
+    "chunkName": "pages/admin/index"
   },
   {
     "name": "azure",
     "path": "/azure",
-    "component": "/var/www/html/seashell-nuxt/pages/azure.vue",
-    "chunkName": "pages/azure",
-    "_name": "_5df780d1"
+    "component": "C:\\\\Users\\\\Admin\\\\Desktop\\\\devs\\\\seashell-nuxt\\\\pages\\\\azure.vue",
+    "chunkName": "pages/azure"
   },
   {
     "name": "dashboard",
     "path": "/dashboard",
-    "component": "/var/www/html/seashell-nuxt/pages/dashboard/index.vue",
-    "chunkName": "pages/dashboard/index",
-    "_name": "_0956714e"
+    "component": "C:\\\\Users\\\\Admin\\\\Desktop\\\\devs\\\\seashell-nuxt\\\\pages\\\\dashboard\\\\index.vue",
+    "chunkName": "pages/dashboard/index"
   },
   {
     "name": "login",
     "path": "/login",
-    "component": "/var/www/html/seashell-nuxt/pages/login.vue",
-    "chunkName": "pages/login",
-    "_name": "_52c750ab"
+    "component": "C:\\\\Users\\\\Admin\\\\Desktop\\\\devs\\\\seashell-nuxt\\\\pages\\\\login.vue",
+    "chunkName": "pages/login"
   },
   {
     "name": "roles",
     "path": "/roles",
-    "component": "/var/www/html/seashell-nuxt/pages/roles/index.vue",
-    "chunkName": "pages/roles/index",
-    "_name": "_69f41d7c"
+    "component": "C:\\\\Users\\\\Admin\\\\Desktop\\\\devs\\\\seashell-nuxt\\\\pages\\\\roles\\\\index.vue",
+    "chunkName": "pages/roles/index"
   },
   {
     "name": "species",
     "path": "/species",
-    "component": "/var/www/html/seashell-nuxt/pages/species/index.vue",
-    "chunkName": "pages/species/index",
-    "_name": "_37bee2fe"
+    "component": "C:\\\\Users\\\\Admin\\\\Desktop\\\\devs\\\\seashell-nuxt\\\\pages\\\\species\\\\index.vue",
+    "chunkName": "pages/species/index"
   },
   {
     "name": "users",
     "path": "/users",
-    "component": "/var/www/html/seashell-nuxt/pages/users/index.vue",
-    "chunkName": "pages/users/index",
-    "_name": "_3e7f8ecd"
+    "component": "C:\\\\Users\\\\Admin\\\\Desktop\\\\devs\\\\seashell-nuxt\\\\pages\\\\users\\\\index.vue",
+    "chunkName": "pages/users/index"
   },
   {
     "name": "users-profile",
     "path": "/users/profile",
-    "component": "/var/www/html/seashell-nuxt/pages/users/profile/index.vue",
-    "chunkName": "pages/users/profile/index",
-    "_name": "_0410ea32"
+    "component": "C:\\\\Users\\\\Admin\\\\Desktop\\\\devs\\\\seashell-nuxt\\\\pages\\\\users\\\\profile\\\\index.vue",
+    "chunkName": "pages/users/profile/index"
   },
   {
     "name": "species-id",
     "path": "/species/:id",
-    "component": "/var/www/html/seashell-nuxt/pages/species/_id.vue",
-    "chunkName": "pages/species/_id",
-    "_name": "_5fd23d29"
+    "component": "C:\\\\Users\\\\Admin\\\\Desktop\\\\devs\\\\seashell-nuxt\\\\pages\\\\species\\\\_id.vue",
+    "chunkName": "pages/species/_id"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "/var/www/html/seashell-nuxt/pages/index.vue",
-    "chunkName": "pages/index",
-    "_name": "_edc0a4d8"
+    "component": "C:\\\\Users\\\\Admin\\\\Desktop\\\\devs\\\\seashell-nuxt\\\\pages\\\\index.vue",
+    "chunkName": "pages/index"
   }
 ]
