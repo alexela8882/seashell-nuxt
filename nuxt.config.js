@@ -106,7 +106,7 @@ export default {
   ** See https://axios.nuxtjs.org/options
   */
   axios: {
-    baseURL: 'https://admin.bintanseashells.com'
+    baseURL: 'http://localhost:8000'
   },
   auth: {
     watchLoggedIn: true,

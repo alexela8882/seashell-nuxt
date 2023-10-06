@@ -9,7 +9,7 @@ export default function ({ $axios }, inject) {
   })
 
   // Set baseURL to something different
-  api.setBaseURL('https://admin.bintanseashells.com/api')
+  api.setBaseURL('http://localhost:8000/api')
 
   // Inject to context as $api
   inject('api', api)
