@@ -5,7 +5,7 @@ export default {
   data () {
     return {
       scrollHeight: null,
-      backendUrl: 'http://seashell.es',
+      backendUrl: 'https://admin.bintanseashells.com',
       seashellImage: { value: null, error: null },
       navbarBg: null,
       containerClass: null,
