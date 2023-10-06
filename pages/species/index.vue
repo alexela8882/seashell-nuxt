@@ -172,6 +172,7 @@ export default {
             prepend-inner-icon="mdi-magnify"
             class="rounded-xl pa-0 ma-0 text-search"
             color="electric_blue"
+            dense
           ></v-text-field>
           <v-select
             @change="sideFilters({name: 'sort'})"
@@ -183,7 +184,7 @@ export default {
             outlined
             clearable
             class="rounded-xl select-filter"
-            bg-color="purple"
+            dense
           ></v-select>
           <v-select
             @change="sideFilters({name: 'shell_class'})"
@@ -195,6 +196,7 @@ export default {
             outlined
             clearable
             class="rounded-xl select-filter"
+            dense
           ></v-select>
           <v-select
             v-if="filters.shell_class"
@@ -207,6 +209,7 @@ export default {
             outlined
             clearable
             class="rounded-xl select-filter"
+            dense
           ></v-select>
           <v-select
             v-if="filters.shell_class"
@@ -219,6 +222,7 @@ export default {
             outlined
             clearable
             class="rounded-xl select-filter"
+            dense
             bg-color="purple"
           ></v-select>
         </div>
@@ -323,7 +327,7 @@ export default {
 }
 
 .select-filter .theme--light.v-label.v-label--active {
-  margin-top: 10px !important;
+  margin-top: 7px !important;
 }
 
 .select-filter .theme--light.v-icon,

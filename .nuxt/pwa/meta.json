@@ -33,7 +33,7 @@
     {
       "hid": "description",
       "name": "description",
-      "content": "```bash\r # install dependencies\r $ npm install"
+      "content": "## Build Setup"
     },
     {
       "hid": "og:type",
@@ -57,7 +57,7 @@
       "hid": "og:description",
       "name": "og:description",
       "property": "og:description",
-      "content": "```bash\r # install dependencies\r $ npm install"
+      "content": "## Build Setup"
     }
   ],
   "link": [
@@ -129,7 +129,7 @@
     },
     {
       "rel": "manifest",
-      "href": "/_nuxt/manifest.81738f99.json",
+      "href": "/_nuxt/manifest.184307e6.json",
       "hid": "manifest"
     }
   ],
