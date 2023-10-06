@@ -104,8 +104,8 @@ export default {
           url: tokenUrl,
           data: {
             grant_type: 'client_credentials',
-            client_id: 6,
-            client_secret: 'zGsHKmnrqK7nV7UyKiUVO1mOyXavCRxHyC5Gpz6J'
+            client_id: 11,
+            client_secret: 'L58lkHPfFbuRncysLPTt1kK5eUA9IVlpMUpwiwHO'
           },
           headers: { 'Content-Type': 'application/json' }
         })

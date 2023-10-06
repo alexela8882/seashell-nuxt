@@ -209,6 +209,36 @@
   "LazyAttributeSubEditForm": {
     "description": "Auto imported from components/asyncComponents/companies/attributes/forms/AttributeSubEditForm.vue"
   },
+  "EmployeeAccountForm": {
+    "description": "Auto imported from components/asyncComponents/companies/employees/forms/EmployeeAccountForm.vue"
+  },
+  "LazyEmployeeAccountForm": {
+    "description": "Auto imported from components/asyncComponents/companies/employees/forms/EmployeeAccountForm.vue"
+  },
+  "EmployeeAddForm": {
+    "description": "Auto imported from components/asyncComponents/companies/employees/forms/EmployeeAddForm.vue"
+  },
+  "LazyEmployeeAddForm": {
+    "description": "Auto imported from components/asyncComponents/companies/employees/forms/EmployeeAddForm.vue"
+  },
+  "EmployeeDeleteForm": {
+    "description": "Auto imported from components/asyncComponents/companies/employees/forms/EmployeeDeleteForm.vue"
+  },
+  "LazyEmployeeDeleteForm": {
+    "description": "Auto imported from components/asyncComponents/companies/employees/forms/EmployeeDeleteForm.vue"
+  },
+  "EmployeeEditForm": {
+    "description": "Auto imported from components/asyncComponents/companies/employees/forms/EmployeeEditForm.vue"
+  },
+  "LazyEmployeeEditForm": {
+    "description": "Auto imported from components/asyncComponents/companies/employees/forms/EmployeeEditForm.vue"
+  },
+  "EmployeeSegmentForm": {
+    "description": "Auto imported from components/asyncComponents/companies/employees/forms/EmployeeSegmentForm.vue"
+  },
+  "LazyEmployeeSegmentForm": {
+    "description": "Auto imported from components/asyncComponents/companies/employees/forms/EmployeeSegmentForm.vue"
+  },
   "AcknowledgementSendForm": {
     "description": "Auto imported from components/asyncComponents/engagements/drivers/forms/AcknowledgementSendForm.vue"
   },
@@ -256,36 +286,6 @@
   },
   "LazySubDriverSubConversationForm": {
     "description": "Auto imported from components/asyncComponents/engagements/drivers/forms/SubDriverSubConversationForm.vue"
-  },
-  "EmployeeAccountForm": {
-    "description": "Auto imported from components/asyncComponents/companies/employees/forms/EmployeeAccountForm.vue"
-  },
-  "LazyEmployeeAccountForm": {
-    "description": "Auto imported from components/asyncComponents/companies/employees/forms/EmployeeAccountForm.vue"
-  },
-  "EmployeeAddForm": {
-    "description": "Auto imported from components/asyncComponents/companies/employees/forms/EmployeeAddForm.vue"
-  },
-  "LazyEmployeeAddForm": {
-    "description": "Auto imported from components/asyncComponents/companies/employees/forms/EmployeeAddForm.vue"
-  },
-  "EmployeeDeleteForm": {
-    "description": "Auto imported from components/asyncComponents/companies/employees/forms/EmployeeDeleteForm.vue"
-  },
-  "LazyEmployeeDeleteForm": {
-    "description": "Auto imported from components/asyncComponents/companies/employees/forms/EmployeeDeleteForm.vue"
-  },
-  "EmployeeEditForm": {
-    "description": "Auto imported from components/asyncComponents/companies/employees/forms/EmployeeEditForm.vue"
-  },
-  "LazyEmployeeEditForm": {
-    "description": "Auto imported from components/asyncComponents/companies/employees/forms/EmployeeEditForm.vue"
-  },
-  "EmployeeSegmentForm": {
-    "description": "Auto imported from components/asyncComponents/companies/employees/forms/EmployeeSegmentForm.vue"
-  },
-  "LazyEmployeeSegmentForm": {
-    "description": "Auto imported from components/asyncComponents/companies/employees/forms/EmployeeSegmentForm.vue"
   },
   "SegmentDeleteForm": {
     "description": "Auto imported from components/asyncComponents/companies/attributes/segments/forms/SegmentDeleteForm.vue"
