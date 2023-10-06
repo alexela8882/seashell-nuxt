@@ -57,6 +57,8 @@ export default {
   mounted () {
     window.scrollTo(0, 0)
 
+    console.log(document.documentElement.scrollHeight)
+
     const url_string = window.location.href
     const url = new URL(url_string)
     const searchPage = url.searchParams.get("page")
@@ -158,18 +160,32 @@ export default {
   <div class="px-md-16 px-6 pb-16">
     <v-row>
       <v-col cols="12" md="3">
-        <div style="position: sticky; top: 20px;">
-          <div class="pb-3">Filters</div>
+        <div style="position: sticky; top: 90px;" class="grey lighten-4 rounded-xl pa-5 pb-0">
+          <div class="pb-3 pl-1 text-overline" style="font-size: 18px !important;">
+            <div class="avenir-black electric_blue--text">Filters</div>
+          </div>
           <v-text-field
             v-model="filters.keyword"
             v-on:keyup.enter="sideFilters({name: 'keyword'})"
             outlined
-            placeholder="Search"
+            label="Search"
             prepend-inner-icon="mdi-magnify"
-            class="rounded-lg pa-0 ma-0"
+            class="rounded-xl pa-0 ma-0 text-search"
             color="electric_blue"
             dense
           ></v-text-field>
+          <v-select
+            @change="sideFilters({name: 'sort'})"
+            v-model="filters.sort"
+            :items="sortNames"
+            item-text="name"
+            item-value="value"
+            label="Sort"
+            outlined
+            clearable
+            class="rounded-xl select-filter"
+            dense
+          ></v-select>
           <v-select
             @change="sideFilters({name: 'shell_class'})"
             v-model="filters.shell_class"
@@ -178,9 +194,9 @@ export default {
             item-value="classid"
             label="Class"
             outlined
-            dense
             clearable
-            class="rounded-lg"
+            class="rounded-xl select-filter"
+            dense
           ></v-select>
           <v-select
             v-if="filters.shell_class"
@@ -191,9 +207,9 @@ export default {
             item-value="familyid"
             label="Family"
             outlined
-            dense
             clearable
-            class="rounded-lg"
+            class="rounded-xl select-filter"
+            dense
           ></v-select>
           <v-select
             v-if="filters.shell_class"
@@ -204,22 +220,9 @@ export default {
             item-value="genusid"
             label="Genus"
             outlined
-            dense
             clearable
-            class="rounded-lg"
-            bg-color="purple"
-          ></v-select>
-          <v-select
-            @change="sideFilters({name: 'sort'})"
-            v-model="filters.sort"
-            :items="sortNames"
-            item-text="name"
-            item-value="value"
-            label="Sort"
-            outlined
+            class="rounded-xl select-filter"
             dense
-            clearable
-            class="rounded-lg"
             bg-color="purple"
           ></v-select>
         </div>
@@ -259,7 +262,7 @@ export default {
                     :elevation="hover ? 12 : 5"
                     width="100%"
                     :class="{ 'on-hover': hover }"
-                    class="rounded-xl electric_blue white--text pa-6 mb-6 mx-auto">
+                    class="rounded-xl electric_blue white--text pa-3 mb-6 mx-auto">
                     <div class="kollektif font-weight-bold">
                       <div class="text-h6 font-weight-bold text-truncate">{{ item.common_name && item.common_name }}</div>
                       <div class="text-body-1 font-italic text-truncate">{{ item.name && item.name }}</div>
@@ -293,6 +296,43 @@ export default {
   </div>
 </template>
 
-<style scoped>
+<style>
+
+/* .v-list-item--link::before { background-color: red; } */
+.text-search.v-text-field fieldset {
+  border: 2px solid #08527b !important;
+  color: #08527b;
+}
+
+.text-search.v-text-field i{
+  color: #08527b;
+}
+
+.text-search.v-text-field input::placeholder {
+  color: #08527b;
+  opacity: 1; /* Firefox */
+}
+
+.text-search.v-text-field input::-ms-input-placeholder { /* Edge 12 -18 */
+  color: #08527b;
+}
+
+.select-filter fieldset{
+  background-color: #08527b !important;
+  border: 2px solid #08527b !important;
+}
+
+.select-filter .v-select__selections .v-select__selection {
+  color: #fff !important;
+}
+
+.select-filter .theme--light.v-label.v-label--active {
+  margin-top: 7px !important;
+}
+
+.select-filter .theme--light.v-icon,
+.select-filter .theme--light.v-label {
+  color: #fff !important;
+}
 
 </style>

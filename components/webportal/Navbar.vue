@@ -4,7 +4,8 @@ import axios from 'axios'
 export default {
   data () {
     return {
-      backendUrl: 'http://seashell.es',
+      scrollHeight: null,
+      backendUrl: 'https://admin.bintanseashells.com',
       seashellImage: { value: null, error: null },
       navbarBg: null,
       containerClass: null,
@@ -68,6 +69,15 @@ export default {
   },
 
   methods: {
+    handleScroll (event) {
+      // Any code to be executed when the window is scrolled
+      this.scrollHeight = window.scrollY
+
+      if (this.scrollHeight <= 15) this.appbarClass = 'py-8'
+      else this.appbarClass = 'py-0'
+      console.log(window.scrollY)
+    },
+
     navigateLink (navlink) {
       if (navlink.modal) this[navlink.to] = true
       else this.$router.push(navlink.to)
@@ -94,8 +104,8 @@ export default {
           url: tokenUrl,
           data: {
             grant_type: 'client_credentials',
-            client_id: 6,
-            client_secret: 'zGsHKmnrqK7nV7UyKiUVO1mOyXavCRxHyC5Gpz6J'
+            client_id: 11,
+            client_secret: 'L58lkHPfFbuRncysLPTt1kK5eUA9IVlpMUpwiwHO'
           },
           headers: { 'Content-Type': 'application/json' }
         })
@@ -159,8 +169,8 @@ export default {
         this.navbarClass = `${fontSize} font-weight-black white--text`
         this.navbarTheme = false
       } else {
-        this.containerClass = "bottom-rounded-md shadow-xl electric_blue pt-16 pb-16 "
-        this.appbarClass = "py-8"
+        this.containerClass = "bottom-rounded-md shadow-xl electric_blue pt-16 pb-16"
+        this.appbarClass = `py-8`
         this.navbarBg = "electric_blue"
         this.navbarClass = "text-h4 white--text"
         this.navbarTheme = true
@@ -173,6 +183,7 @@ export default {
   },
 
   mounted () {
+    window.addEventListener('scroll', this.handleScroll)
     this.getNavBarBg()
   }
 }
@@ -182,13 +193,12 @@ export default {
   <div class="d-flex align-items-center" :class="containerClass" style="z-index: 54 !important;">
     <v-app-bar
       :dark="navbarTheme"
-      absolute
       clipped-left
       app
-      fixed
+      :absolute="$route.name === 'index'"
       :color="navbarBg"
-      elevation="0"
-      class="px-md-16 py-xl-8"
+      :elevation="scrollHeight <= 70 ? '0' : '10'"
+      class="app-bar px-md-16 py-xl-8"
       :class="appbarClass">
 
       <v-toolbar-title @click="$router.push('/')" style="cursor: pointer;">
@@ -467,5 +477,10 @@ export default {
   height: auto !important;
   width: 100% !important;
   object-fit: 'contain';
+}
+
+.app-bar {
+  transition: padding .5s;
+  z-index: 53 !important;
 }
 </style>
