@@ -14288,7 +14288,7 @@ const setupProgress = axios => {
   // runtimeConfig
   const runtimeConfig = ctx.$config && ctx.$config.axios || {}; // baseURL
 
-  const baseURL =  false ? undefined : runtimeConfig.baseURL || process.env._AXIOS_BASE_URL_ || 'http://seashell.es'; // Create fresh objects for all default header scopes
+  const baseURL =  false ? undefined : runtimeConfig.baseURL || process.env._AXIOS_BASE_URL_ || 'https://admin.bintanseashells.com'; // Create fresh objects for all default header scopes
   // Axios creates only one which is shared across SSR requests!
   // https://github.com/mzabriskie/axios/blob/master/lib/defaults.js
 
@@ -14432,13 +14432,13 @@ var external_moment_default = /*#__PURE__*/__webpack_require__.n(external_moment
     }
   }); // Set baseURL to something different
 
-  api.setBaseURL('http://seashell.es/api'); // Inject to context as $api
+  api.setBaseURL('https://admin.bintanseashells.com/api'); // Inject to context as $api
 
   inject('api', api);
 });
 // CONCATENATED MODULE: ./plugins/baseurl.js
 /* harmony default export */ var baseurl = (({}, inject) => {
-  const url = 'http://seashell.es/api/';
+  const url = 'https://admin.bintanseashells.com/api/';
 
   const uri = uri => {
     return `${url}${uri}`;

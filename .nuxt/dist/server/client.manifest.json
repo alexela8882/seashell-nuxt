@@ -8,7 +8,7 @@
     "18.bdd210d.js",
     "2.10e903a.js",
     "LICENSES",
-    "app.ba1f268.js",
+    "app.2f85514.js",
     "fonts/AvenirLTStd-Black.b1abb87.otf",
     "fonts/AvenirLTStd-Book.ecb0c2a.otf",
     "fonts/AvenirLTStd-Roman.b1d7c6e.otf",
@@ -42,7 +42,7 @@
   "initial": [
     "runtime.47673af.js",
     "vendors/commons.2b422a5.js",
-    "app.ba1f268.js"
+    "app.2f85514.js"
   ],
   "async": [
     "0.aae7437.js",
@@ -8384,7 +8384,7 @@
       "2.10e903a.js"
     ],
     "1a3ae26b": [
-      "app.ba1f268.js"
+      "app.2f85514.js"
     ],
     "2aff1868": [
       "pages/about.68d5e8c.js"
