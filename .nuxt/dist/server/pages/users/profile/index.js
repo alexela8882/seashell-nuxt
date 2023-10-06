@@ -1,7 +1,7 @@
 exports.ids = [13];
 exports.modules = {
 
-/***/ 267:
+/***/ 268:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -156,11 +156,11 @@ const baseMixins = Object(_util_mixins__WEBPACK_IMPORTED_MODULE_4__[/* default *
 
 /***/ }),
 
-/***/ 268:
+/***/ 269:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var _src_components_VWindow_VWindow_sass__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(269);
+/* harmony import */ var _src_components_VWindow_VWindow_sass__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(270);
 /* harmony import */ var _src_components_VWindow_VWindow_sass__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_src_components_VWindow_VWindow_sass__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _directives_touch__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(97);
 /* harmony import */ var _VBtn__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(69);
@@ -424,20 +424,20 @@ const baseMixins = Object(_util_mixins__WEBPACK_IMPORTED_MODULE_4__[/* default *
 
 /***/ }),
 
-/***/ 269:
+/***/ 270:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(270);
+var content = __webpack_require__(271);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 __webpack_require__(5).default("0d135400", content, true)
 
 /***/ }),
 
-/***/ 270:
+/***/ 271:
 /***/ (function(module, exports, __webpack_require__) {
 
 // Imports
@@ -451,20 +451,20 @@ module.exports = exports;
 
 /***/ }),
 
-/***/ 297:
+/***/ 302:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(298);
+var content = __webpack_require__(303);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 __webpack_require__(5).default("c176411c", content, true)
 
 /***/ }),
 
-/***/ 298:
+/***/ 303:
 /***/ (function(module, exports, __webpack_require__) {
 
 // Imports
@@ -478,20 +478,20 @@ module.exports = exports;
 
 /***/ }),
 
-/***/ 299:
+/***/ 304:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(300);
+var content = __webpack_require__(305);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 __webpack_require__(5).default("8f7a87bc", content, true)
 
 /***/ }),
 
-/***/ 300:
+/***/ 305:
 /***/ (function(module, exports, __webpack_require__) {
 
 // Imports
@@ -505,7 +505,7 @@ module.exports = exports;
 
 /***/ }),
 
-/***/ 327:
+/***/ 336:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -729,7 +729,7 @@ var VCol = __webpack_require__(246);
 var VContainer = __webpack_require__(241);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VGrid/VRow.js
-var VRow = __webpack_require__(247);
+var VRow = __webpack_require__(248);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/mixins/groupable/index.js
 var groupable = __webpack_require__(31);
@@ -820,7 +820,7 @@ Object(groupable["a" /* factory */])('tabsBar'), themeable["a" /* default */]);
     };
     data.on = { ...data.on,
       keydown: e => {
-        if (e.keyCode === helpers["x" /* keyCodes */].enter) this.click(e);
+        if (e.keyCode === helpers["y" /* keyCodes */].enter) this.click(e);
         this.$emit('keydown', e);
       }
     };
@@ -829,7 +829,7 @@ Object(groupable["a" /* factory */])('tabsBar'), themeable["a" /* default */]);
 
 }));
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VWindow/VWindowItem.js
-var VWindowItem = __webpack_require__(267);
+var VWindowItem = __webpack_require__(268);
 
 // CONCATENATED MODULE: ./node_modules/vuetify/lib/components/VTabs/VTabItem.js
 // Extensions
@@ -852,10 +852,10 @@ var VWindowItem = __webpack_require__(267);
   }
 }));
 // EXTERNAL MODULE: ./node_modules/vuetify/src/components/VTabs/VTabs.sass
-var VTabs = __webpack_require__(297);
+var VTabs = __webpack_require__(302);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/src/components/VSlideGroup/VSlideGroup.sass
-var VSlideGroup = __webpack_require__(299);
+var VSlideGroup = __webpack_require__(304);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VIcon/index.js
 var VIcon = __webpack_require__(19);
@@ -867,7 +867,7 @@ var transitions = __webpack_require__(29);
 var VItemGroup = __webpack_require__(52);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/mixins/mobile/index.js
-var mobile = __webpack_require__(73);
+var mobile = __webpack_require__(74);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/directives/resize/index.js
 var resize = __webpack_require__(53);
@@ -1334,7 +1334,7 @@ var ssr_bootable = __webpack_require__(26);
 
 }));
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VWindow/VWindow.js
-var VWindow = __webpack_require__(268);
+var VWindow = __webpack_require__(269);
 
 // CONCATENATED MODULE: ./node_modules/vuetify/lib/components/VTabs/VTabsItems.js
 // Extensions

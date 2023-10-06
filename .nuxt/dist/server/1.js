@@ -1,20 +1,20 @@
 exports.ids = [1];
 exports.modules = {
 
-/***/ 274:
+/***/ 277:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(275);
+var content = __webpack_require__(278);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 __webpack_require__(5).default("63c9496b", content, true)
 
 /***/ }),
 
-/***/ 275:
+/***/ 278:
 /***/ (function(module, exports, __webpack_require__) {
 
 // Imports
@@ -28,11 +28,11 @@ module.exports = exports;
 
 /***/ }),
 
-/***/ 311:
+/***/ 320:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var _src_components_VSnackbar_VSnackbar_sass__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(274);
+/* harmony import */ var _src_components_VSnackbar_VSnackbar_sass__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(277);
 /* harmony import */ var _src_components_VSnackbar_VSnackbar_sass__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_src_components_VSnackbar_VSnackbar_sass__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _VSheet_VSheet__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(16);
 /* harmony import */ var _mixins_colorable__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(7);
@@ -162,7 +162,7 @@ module.exports = exports;
     genActions() {
       return this.$createElement('div', {
         staticClass: 'v-snack__action '
-      }, [Object(_util_helpers__WEBPACK_IMPORTED_MODULE_7__[/* getSlot */ "r"])(this, 'action', {
+      }, [Object(_util_helpers__WEBPACK_IMPORTED_MODULE_7__[/* getSlot */ "s"])(this, 'action', {
         attrs: {
           class: 'v-snack__btn'
         }
@@ -179,7 +179,7 @@ module.exports = exports;
           role: 'status',
           'aria-live': 'polite'
         }
-      }, [Object(_util_helpers__WEBPACK_IMPORTED_MODULE_7__[/* getSlot */ "r"])(this)]);
+      }, [Object(_util_helpers__WEBPACK_IMPORTED_MODULE_7__[/* getSlot */ "s"])(this)]);
     },
 
     genWrapper() {
@@ -231,7 +231,7 @@ module.exports = exports;
 
 /***/ }),
 
-/***/ 336:
+/***/ 345:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -287,10 +287,10 @@ var installComponents = __webpack_require__(9);
 var installComponents_default = /*#__PURE__*/__webpack_require__.n(installComponents);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VIcon/VIcon.js
-var VIcon = __webpack_require__(79);
+var VIcon = __webpack_require__(80);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VSnackbar/VSnackbar.js
-var VSnackbar = __webpack_require__(311);
+var VSnackbar = __webpack_require__(320);
 
 // CONCATENATED MODULE: ./components/layouts/SavingSnackbar.vue
 

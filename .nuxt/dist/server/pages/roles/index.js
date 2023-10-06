@@ -1,7 +1,7 @@
 exports.ids = [9];
 exports.modules = {
 
-/***/ 111:
+/***/ 112:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -12,7 +12,7 @@ exports.modules = {
 
 /***/ }),
 
-/***/ 112:
+/***/ 113:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -23,7 +23,7 @@ exports.modules = {
 
 /***/ }),
 
-/***/ 113:
+/***/ 114:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -34,16 +34,16 @@ exports.modules = {
 
 /***/ }),
 
-/***/ 249:
+/***/ 250:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var _src_components_VCheckbox_VSimpleCheckbox_sass__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(259);
+/* harmony import */ var _src_components_VCheckbox_VSimpleCheckbox_sass__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(260);
 /* harmony import */ var _src_components_VCheckbox_VSimpleCheckbox_sass__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_src_components_VCheckbox_VSimpleCheckbox_sass__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _directives_ripple__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(23);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(1);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(vue__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _VIcon__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(79);
+/* harmony import */ var _VIcon__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(80);
 /* harmony import */ var _mixins_colorable__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(7);
 /* harmony import */ var _mixins_themeable__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(6);
 /* harmony import */ var _util_mergeData__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(12);
@@ -127,7 +127,7 @@ exports.modules = {
           e.stopPropagation();
 
           if (data.on && data.on.input && !props.disabled) {
-            Object(_util_helpers__WEBPACK_IMPORTED_MODULE_7__[/* wrapInArray */ "F"])(data.on.input).forEach(f => f(!props.value));
+            Object(_util_helpers__WEBPACK_IMPORTED_MODULE_7__[/* wrapInArray */ "H"])(data.on.input).forEach(f => f(!props.value));
           }
         }
       }
@@ -138,7 +138,7 @@ exports.modules = {
 
 /***/ }),
 
-/***/ 250:
+/***/ 251:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -147,25 +147,25 @@ exports.modules = {
 __webpack_require__.d(__webpack_exports__, "b", function() { return /* binding */ defaultMenuProps; });
 
 // EXTERNAL MODULE: ./node_modules/vuetify/src/components/VTextField/VTextField.sass
-var VTextField = __webpack_require__(114);
+var VTextField = __webpack_require__(115);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/src/components/VSelect/VSelect.sass
-var VSelect = __webpack_require__(257);
+var VSelect = __webpack_require__(258);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VChip/index.js
-var VChip = __webpack_require__(112);
+var VChip = __webpack_require__(113);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VMenu/index.js
-var VMenu = __webpack_require__(113);
+var VMenu = __webpack_require__(114);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VCheckbox/VSimpleCheckbox.js
-var VSimpleCheckbox = __webpack_require__(249);
+var VSimpleCheckbox = __webpack_require__(250);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VDivider/index.js
-var VDivider = __webpack_require__(111);
+var VDivider = __webpack_require__(112);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/src/components/VSubheader/VSubheader.sass
-var VSubheader = __webpack_require__(261);
+var VSubheader = __webpack_require__(262);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/mixins/themeable/index.js
 var themeable = __webpack_require__(6);
@@ -208,13 +208,13 @@ var mixins = __webpack_require__(2);
 var VListItem = __webpack_require__(45);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VList/VListItemAction.js
-var VListItemAction = __webpack_require__(82);
+var VListItemAction = __webpack_require__(83);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VList/index.js
 var VList = __webpack_require__(10);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VList/VList.js
-var VList_VList = __webpack_require__(80);
+var VList_VList = __webpack_require__(81);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/directives/ripple/index.js
 var ripple = __webpack_require__(23);
@@ -319,13 +319,13 @@ var helpers = __webpack_require__(0);
 
     genFilteredText(text) {
       text = text || '';
-      if (!this.searchInput || this.noFilter) return Object(helpers["k" /* escapeHTML */])(text);
+      if (!this.searchInput || this.noFilter) return Object(helpers["l" /* escapeHTML */])(text);
       const {
         start,
         middle,
         end
       } = this.getMaskedCharacters(text);
-      return `${Object(helpers["k" /* escapeHTML */])(start)}${this.genHighlight(middle)}${Object(helpers["k" /* escapeHTML */])(end)}`;
+      return `${Object(helpers["l" /* escapeHTML */])(start)}${this.genHighlight(middle)}${Object(helpers["l" /* escapeHTML */])(end)}`;
     },
 
     genHeader(props) {
@@ -335,7 +335,7 @@ var helpers = __webpack_require__(0);
     },
 
     genHighlight(text) {
-      return `<span class="v-list-item__mask">${Object(helpers["k" /* escapeHTML */])(text)}</span>`;
+      return `<span class="v-list-item__mask">${Object(helpers["l" /* escapeHTML */])(text)}</span>`;
     },
 
     getMaskedCharacters(text) {
@@ -425,15 +425,15 @@ var helpers = __webpack_require__(0);
     },
 
     getDisabled(item) {
-      return Boolean(Object(helpers["q" /* getPropertyFromItem */])(item, this.itemDisabled, false));
+      return Boolean(Object(helpers["r" /* getPropertyFromItem */])(item, this.itemDisabled, false));
     },
 
     getText(item) {
-      return String(Object(helpers["q" /* getPropertyFromItem */])(item, this.itemText, item));
+      return String(Object(helpers["r" /* getPropertyFromItem */])(item, this.itemText, item));
     },
 
     getValue(item) {
-      return Object(helpers["q" /* getPropertyFromItem */])(item, this.itemValue, this.getText(item));
+      return Object(helpers["r" /* getPropertyFromItem */])(item, this.itemValue, this.getText(item));
     }
 
   },
@@ -489,7 +489,7 @@ var external_vue_default = /*#__PURE__*/__webpack_require__.n(external_vue_);
   props: {
     valueComparator: {
       type: Function,
-      default: helpers["i" /* deepEqual */]
+      default: helpers["j" /* deepEqual */]
     }
   }
 }));
@@ -507,7 +507,7 @@ var external_vue_default = /*#__PURE__*/__webpack_require__.n(external_vue_);
   }
 }));
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/directives/click-outside/index.js
-var click_outside = __webpack_require__(34);
+var click_outside = __webpack_require__(32);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/util/mergeData.js
 var mergeData = __webpack_require__(12);
@@ -897,8 +897,8 @@ const baseMixins = Object(mixins["a" /* default */])(VTextField_VTextField["a" /
           readonly: true,
           type: 'text',
           'aria-readonly': String(this.isReadonly),
-          'aria-activedescendant': Object(helpers["o" /* getObjectValueByPath */])(this.$refs.menu, 'activeTile.id'),
-          autocomplete: Object(helpers["o" /* getObjectValueByPath */])(input.data, 'attrs.autocomplete', 'off')
+          'aria-activedescendant': Object(helpers["p" /* getObjectValueByPath */])(this.$refs.menu, 'activeTile.id'),
+          autocomplete: Object(helpers["p" /* getObjectValueByPath */])(input.data, 'attrs.autocomplete', 'off')
         },
         on: {
           keypress: this.onKeyPress
@@ -1025,15 +1025,15 @@ const baseMixins = Object(mixins["a" /* default */])(VTextField_VTextField["a" /
     },
 
     getDisabled(item) {
-      return Object(helpers["q" /* getPropertyFromItem */])(item, this.itemDisabled, false);
+      return Object(helpers["r" /* getPropertyFromItem */])(item, this.itemDisabled, false);
     },
 
     getText(item) {
-      return Object(helpers["q" /* getPropertyFromItem */])(item, this.itemText, item);
+      return Object(helpers["r" /* getPropertyFromItem */])(item, this.itemText, item);
     },
 
     getValue(item) {
-      return Object(helpers["q" /* getPropertyFromItem */])(item, this.itemValue, this.getText(item));
+      return Object(helpers["r" /* getPropertyFromItem */])(item, this.itemValue, this.getText(item));
     },
 
     onBlur(e) {
@@ -1104,16 +1104,16 @@ const baseMixins = Object(mixins["a" /* default */])(VTextField_VTextField["a" /
     },
 
     onKeyDown(e) {
-      if (this.isReadonly && e.keyCode !== helpers["x" /* keyCodes */].tab) return;
+      if (this.isReadonly && e.keyCode !== helpers["y" /* keyCodes */].tab) return;
       const keyCode = e.keyCode;
       const menu = this.$refs.menu; // If enter, space, open menu
 
-      if ([helpers["x" /* keyCodes */].enter, helpers["x" /* keyCodes */].space].includes(keyCode)) this.activateMenu();
+      if ([helpers["y" /* keyCodes */].enter, helpers["y" /* keyCodes */].space].includes(keyCode)) this.activateMenu();
       this.$emit('keydown', e);
       if (!menu) return; // If menu is active, allow default
       // listIndex change from menu
 
-      if (this.isMenuActive && keyCode !== helpers["x" /* keyCodes */].tab) {
+      if (this.isMenuActive && keyCode !== helpers["y" /* keyCodes */].tab) {
         this.$nextTick(() => {
           menu.changeListIndex(e);
           this.$emit('update:list-index', menu.listIndex);
@@ -1124,13 +1124,13 @@ const baseMixins = Object(mixins["a" /* default */])(VTextField_VTextField["a" /
       // available options
 
 
-      if (!this.isMenuActive && [helpers["x" /* keyCodes */].up, helpers["x" /* keyCodes */].down].includes(keyCode)) return this.onUpDown(e); // If escape deactivate the menu
+      if (!this.isMenuActive && [helpers["y" /* keyCodes */].up, helpers["y" /* keyCodes */].down].includes(keyCode)) return this.onUpDown(e); // If escape deactivate the menu
 
-      if (keyCode === helpers["x" /* keyCodes */].esc) return this.onEscDown(e); // If tab - select item or close menu
+      if (keyCode === helpers["y" /* keyCodes */].esc) return this.onEscDown(e); // If tab - select item or close menu
 
-      if (keyCode === helpers["x" /* keyCodes */].tab) return this.onTabDown(e); // If space preventDefault
+      if (keyCode === helpers["y" /* keyCodes */].tab) return this.onTabDown(e); // If space preventDefault
 
-      if (keyCode === helpers["x" /* keyCodes */].space) return this.onSpaceDown(e);
+      if (keyCode === helpers["y" /* keyCodes */].space) return this.onSpaceDown(e);
     },
 
     onMenuActiveChange(val) {
@@ -1214,7 +1214,7 @@ const baseMixins = Object(mixins["a" /* default */])(VTextField_VTextField["a" /
       menu.isBooted = true;
       window.requestAnimationFrame(() => {
         menu.getTiles();
-        helpers["x" /* keyCodes */].up === keyCode ? menu.prevTile() : menu.nextTile();
+        helpers["y" /* keyCodes */].up === keyCode ? menu.prevTile() : menu.nextTile();
         menu.activeTile && menu.activeTile.click();
       });
     },
@@ -1286,20 +1286,20 @@ const baseMixins = Object(mixins["a" /* default */])(VTextField_VTextField["a" /
 
 /***/ }),
 
-/***/ 257:
+/***/ 258:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(258);
+var content = __webpack_require__(259);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 __webpack_require__(5).default("3f1da7f4", content, true)
 
 /***/ }),
 
-/***/ 258:
+/***/ 259:
 /***/ (function(module, exports, __webpack_require__) {
 
 // Imports
@@ -1313,20 +1313,20 @@ module.exports = exports;
 
 /***/ }),
 
-/***/ 259:
+/***/ 260:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(260);
+var content = __webpack_require__(261);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 __webpack_require__(5).default("5c37caa6", content, true)
 
 /***/ }),
 
-/***/ 260:
+/***/ 261:
 /***/ (function(module, exports, __webpack_require__) {
 
 // Imports
@@ -1340,20 +1340,20 @@ module.exports = exports;
 
 /***/ }),
 
-/***/ 261:
+/***/ 262:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(262);
+var content = __webpack_require__(263);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 __webpack_require__(5).default("e8b41e5e", content, true)
 
 /***/ }),
 
-/***/ 262:
+/***/ 263:
 /***/ (function(module, exports, __webpack_require__) {
 
 // Imports
@@ -1361,60 +1361,6 @@ var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(4);
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
 exports.push([module.i, ".theme--light.v-subheader{color:rgba(0,0,0,.6)}.theme--dark.v-subheader{color:hsla(0,0%,100%,.7)}.v-subheader{align-items:center;display:flex;height:48px;font-size:.875rem;font-weight:400;padding:0 16px}.v-subheader--inset{margin-left:56px}", ""]);
-// Exports
-module.exports = exports;
-
-
-/***/ }),
-
-/***/ 282:
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(283);
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-__webpack_require__(5).default("50788f08", content, true)
-
-/***/ }),
-
-/***/ 283:
-/***/ (function(module, exports, __webpack_require__) {
-
-// Imports
-var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(4);
-exports = ___CSS_LOADER_API_IMPORT___(false);
-// Module
-exports.push([module.i, ".v-autocomplete.v-input>.v-input__control>.v-input__slot{cursor:text}.v-autocomplete input{align-self:center}.v-autocomplete.v-select.v-input--is-focused input{min-width:64px}.v-autocomplete:not(.v-input--is-focused).v-select--chips input{max-height:0;padding:0}.v-autocomplete--is-selecting-index input{opacity:0}.v-autocomplete.v-text-field--enclosed:not(.v-text-field--solo):not(.v-text-field--single-line):not(.v-text-field--outlined) .v-select__slot>input{margin-top:24px}.v-autocomplete.v-text-field--enclosed:not(.v-text-field--solo):not(.v-text-field--single-line):not(.v-text-field--outlined).v-input--dense .v-select__slot>input{margin-top:20px}.v-autocomplete:not(.v-input--is-disabled).v-select.v-text-field input{pointer-events:inherit}.v-autocomplete__content.v-menu__content,.v-autocomplete__content.v-menu__content .v-card{border-radius:0}", ""]);
-// Exports
-module.exports = exports;
-
-
-/***/ }),
-
-/***/ 284:
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(285);
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-__webpack_require__(5).default("1fdef030", content, true)
-
-/***/ }),
-
-/***/ 285:
-/***/ (function(module, exports, __webpack_require__) {
-
-// Imports
-var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(4);
-exports = ___CSS_LOADER_API_IMPORT___(false);
-// Module
-exports.push([module.i, ".theme--light.v-data-table tbody tr.v-data-table__selected{background:#f5f5f5}.theme--light.v-data-table .v-row-group__header,.theme--light.v-data-table .v-row-group__summary{background:#eee}.theme--light.v-data-table .v-data-footer{border-top:thin solid rgba(0,0,0,.12)}.theme--light.v-data-table .v-data-table__empty-wrapper{color:rgba(0,0,0,.38)}.theme--dark.v-data-table tbody tr.v-data-table__selected{background:#505050}.theme--dark.v-data-table .v-row-group__header,.theme--dark.v-data-table .v-row-group__summary{background:#616161}.theme--dark.v-data-table .v-data-footer{border-top:thin solid hsla(0,0%,100%,.12)}.theme--dark.v-data-table .v-data-table__empty-wrapper{color:hsla(0,0%,100%,.5)}.v-data-table{border-radius:4px}.v-data-table tbody tr.v-data-table__expanded{border-bottom:0}.v-data-table tbody tr.v-data-table__expanded__content{box-shadow:inset 0 4px 8px -5px rgba(50,50,50,.75),inset 0 -4px 8px -5px rgba(50,50,50,.75)}.v-data-table .v-data-table__mobile-table-row{display:inline;display:initial}.v-data-table .v-data-table__mobile-row{height:auto;min-height:48px}.v-data-table__empty-wrapper{text-align:center}.v-data-table__mobile-row{align-items:center;display:flex;justify-content:space-between}.v-data-table__mobile-row__header{font-weight:600}.v-application--is-ltr .v-data-table__mobile-row__cell{text-align:right}.v-application--is-rtl .v-data-table__mobile-row__cell{text-align:left}.v-row-group__header td,.v-row-group__summary td{height:35px}.v-data-table__expand-icon{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:pointer}.v-data-table__expand-icon--active{transform:rotate(-180deg)}", ""]);
 // Exports
 module.exports = exports;
 
@@ -1430,7 +1376,7 @@ module.exports = exports;
 var content = __webpack_require__(287);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
-__webpack_require__(5).default("79d48750", content, true)
+__webpack_require__(5).default("50788f08", content, true)
 
 /***/ }),
 
@@ -1441,7 +1387,7 @@ __webpack_require__(5).default("79d48750", content, true)
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(4);
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, ".v-data-footer{display:flex;flex-wrap:wrap;justify-content:flex-end;align-items:center;font-size:.75rem;padding:0 8px}.v-data-footer .v-btn{color:inherit}.v-application--is-ltr .v-data-footer__icons-before .v-btn:last-child{margin-right:7px}.v-application--is-rtl .v-data-footer__icons-before .v-btn:last-child{margin-left:7px}.v-application--is-ltr .v-data-footer__icons-after .v-btn:first-child{margin-left:7px}.v-application--is-rtl .v-data-footer__icons-after .v-btn:first-child{margin-right:7px}.v-data-footer__pagination{display:block;text-align:center}.v-application--is-ltr .v-data-footer__pagination{margin:0 32px 0 24px}.v-application--is-rtl .v-data-footer__pagination{margin:0 24px 0 32px}.v-data-footer__select{display:flex;align-items:center;flex:0 0 0;justify-content:flex-end;white-space:nowrap}.v-application--is-ltr .v-data-footer__select{margin-right:14px}.v-application--is-rtl .v-data-footer__select{margin-left:14px}.v-data-footer__select .v-select{flex:0 1 0;padding:0;position:static}.v-application--is-ltr .v-data-footer__select .v-select{margin:13px 0 13px 34px}.v-application--is-rtl .v-data-footer__select .v-select{margin:13px 34px 13px 0}.v-data-footer__select .v-select__selections{flex-wrap:nowrap}.v-data-footer__select .v-select__selections .v-select__selection--comma{font-size:.75rem}", ""]);
+exports.push([module.i, ".v-autocomplete.v-input>.v-input__control>.v-input__slot{cursor:text}.v-autocomplete input{align-self:center}.v-autocomplete.v-select.v-input--is-focused input{min-width:64px}.v-autocomplete:not(.v-input--is-focused).v-select--chips input{max-height:0;padding:0}.v-autocomplete--is-selecting-index input{opacity:0}.v-autocomplete.v-text-field--enclosed:not(.v-text-field--solo):not(.v-text-field--single-line):not(.v-text-field--outlined) .v-select__slot>input{margin-top:24px}.v-autocomplete.v-text-field--enclosed:not(.v-text-field--solo):not(.v-text-field--single-line):not(.v-text-field--outlined).v-input--dense .v-select__slot>input{margin-top:20px}.v-autocomplete:not(.v-input--is-disabled).v-select.v-text-field input{pointer-events:inherit}.v-autocomplete__content.v-menu__content,.v-autocomplete__content.v-menu__content .v-card{border-radius:0}", ""]);
 // Exports
 module.exports = exports;
 
@@ -1457,7 +1403,7 @@ module.exports = exports;
 var content = __webpack_require__(289);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
-__webpack_require__(5).default("10fb35c8", content, true)
+__webpack_require__(5).default("1fdef030", content, true)
 
 /***/ }),
 
@@ -1468,7 +1414,7 @@ __webpack_require__(5).default("10fb35c8", content, true)
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(4);
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, ".theme--light.v-data-table .v-data-table-header th.sortable .v-data-table-header__icon{color:rgba(0,0,0,.38)}.theme--light.v-data-table .v-data-table-header th.sortable.active,.theme--light.v-data-table .v-data-table-header th.sortable:hover{color:rgba(0,0,0,.87)}.theme--light.v-data-table .v-data-table-header th.sortable.active .v-data-table-header__icon{color:rgba(0,0,0,.87)}.theme--light.v-data-table .v-data-table-header__sort-badge{background-color:rgba(0,0,0,.12);color:rgba(0,0,0,.87)}.theme--dark.v-data-table .v-data-table-header th.sortable .v-data-table-header__icon{color:hsla(0,0%,100%,.5)}.theme--dark.v-data-table .v-data-table-header th.sortable.active,.theme--dark.v-data-table .v-data-table-header th.sortable:hover{color:#fff}.theme--dark.v-data-table .v-data-table-header th.sortable.active .v-data-table-header__icon{color:#fff}.theme--dark.v-data-table .v-data-table-header__sort-badge{background-color:hsla(0,0%,100%,.12);color:#fff}.v-data-table-header th.sortable{pointer-events:auto;cursor:pointer;outline:0}.v-data-table-header th.active .v-data-table-header__icon,.v-data-table-header th:hover .v-data-table-header__icon{transform:none;opacity:1}.v-data-table-header th.desc .v-data-table-header__icon{transform:rotate(-180deg)}.v-data-table-header__icon{display:inline-block;opacity:0;transition:.3s cubic-bezier(.25,.8,.5,1)}.v-data-table-header__sort-badge{display:inline-flex;justify-content:center;align-items:center;border:0;border-radius:50%;min-width:18px;min-height:18px;height:18px;width:18px}.v-data-table-header-mobile th{height:auto}.v-data-table-header-mobile__wrapper{display:flex}.v-data-table-header-mobile__wrapper .v-select{margin-bottom:8px}.v-data-table-header-mobile__wrapper .v-select .v-chip{height:24px}.v-data-table-header-mobile__wrapper .v-select .v-chip__close.desc .v-icon{transform:rotate(-180deg)}.v-data-table-header-mobile__select{min-width:56px;display:flex;align-items:center;justify-content:center}", ""]);
+exports.push([module.i, ".theme--light.v-data-table tbody tr.v-data-table__selected{background:#f5f5f5}.theme--light.v-data-table .v-row-group__header,.theme--light.v-data-table .v-row-group__summary{background:#eee}.theme--light.v-data-table .v-data-footer{border-top:thin solid rgba(0,0,0,.12)}.theme--light.v-data-table .v-data-table__empty-wrapper{color:rgba(0,0,0,.38)}.theme--dark.v-data-table tbody tr.v-data-table__selected{background:#505050}.theme--dark.v-data-table .v-row-group__header,.theme--dark.v-data-table .v-row-group__summary{background:#616161}.theme--dark.v-data-table .v-data-footer{border-top:thin solid hsla(0,0%,100%,.12)}.theme--dark.v-data-table .v-data-table__empty-wrapper{color:hsla(0,0%,100%,.5)}.v-data-table{border-radius:4px}.v-data-table tbody tr.v-data-table__expanded{border-bottom:0}.v-data-table tbody tr.v-data-table__expanded__content{box-shadow:inset 0 4px 8px -5px rgba(50,50,50,.75),inset 0 -4px 8px -5px rgba(50,50,50,.75)}.v-data-table .v-data-table__mobile-table-row{display:inline;display:initial}.v-data-table .v-data-table__mobile-row{height:auto;min-height:48px}.v-data-table__empty-wrapper{text-align:center}.v-data-table__mobile-row{align-items:center;display:flex;justify-content:space-between}.v-data-table__mobile-row__header{font-weight:600}.v-application--is-ltr .v-data-table__mobile-row__cell{text-align:right}.v-application--is-rtl .v-data-table__mobile-row__cell{text-align:left}.v-row-group__header td,.v-row-group__summary td{height:35px}.v-data-table__expand-icon{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:pointer}.v-data-table__expand-icon--active{transform:rotate(-180deg)}", ""]);
 // Exports
 module.exports = exports;
 
@@ -1484,11 +1430,65 @@ module.exports = exports;
 var content = __webpack_require__(291);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
-__webpack_require__(5).default("7c06aa28", content, true)
+__webpack_require__(5).default("79d48750", content, true)
 
 /***/ }),
 
 /***/ 291:
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(4);
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.i, ".v-data-footer{display:flex;flex-wrap:wrap;justify-content:flex-end;align-items:center;font-size:.75rem;padding:0 8px}.v-data-footer .v-btn{color:inherit}.v-application--is-ltr .v-data-footer__icons-before .v-btn:last-child{margin-right:7px}.v-application--is-rtl .v-data-footer__icons-before .v-btn:last-child{margin-left:7px}.v-application--is-ltr .v-data-footer__icons-after .v-btn:first-child{margin-left:7px}.v-application--is-rtl .v-data-footer__icons-after .v-btn:first-child{margin-right:7px}.v-data-footer__pagination{display:block;text-align:center}.v-application--is-ltr .v-data-footer__pagination{margin:0 32px 0 24px}.v-application--is-rtl .v-data-footer__pagination{margin:0 24px 0 32px}.v-data-footer__select{display:flex;align-items:center;flex:0 0 0;justify-content:flex-end;white-space:nowrap}.v-application--is-ltr .v-data-footer__select{margin-right:14px}.v-application--is-rtl .v-data-footer__select{margin-left:14px}.v-data-footer__select .v-select{flex:0 1 0;padding:0;position:static}.v-application--is-ltr .v-data-footer__select .v-select{margin:13px 0 13px 34px}.v-application--is-rtl .v-data-footer__select .v-select{margin:13px 34px 13px 0}.v-data-footer__select .v-select__selections{flex-wrap:nowrap}.v-data-footer__select .v-select__selections .v-select__selection--comma{font-size:.75rem}", ""]);
+// Exports
+module.exports = exports;
+
+
+/***/ }),
+
+/***/ 292:
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(293);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+__webpack_require__(5).default("10fb35c8", content, true)
+
+/***/ }),
+
+/***/ 293:
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(4);
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.i, ".theme--light.v-data-table .v-data-table-header th.sortable .v-data-table-header__icon{color:rgba(0,0,0,.38)}.theme--light.v-data-table .v-data-table-header th.sortable.active,.theme--light.v-data-table .v-data-table-header th.sortable:hover{color:rgba(0,0,0,.87)}.theme--light.v-data-table .v-data-table-header th.sortable.active .v-data-table-header__icon{color:rgba(0,0,0,.87)}.theme--light.v-data-table .v-data-table-header__sort-badge{background-color:rgba(0,0,0,.12);color:rgba(0,0,0,.87)}.theme--dark.v-data-table .v-data-table-header th.sortable .v-data-table-header__icon{color:hsla(0,0%,100%,.5)}.theme--dark.v-data-table .v-data-table-header th.sortable.active,.theme--dark.v-data-table .v-data-table-header th.sortable:hover{color:#fff}.theme--dark.v-data-table .v-data-table-header th.sortable.active .v-data-table-header__icon{color:#fff}.theme--dark.v-data-table .v-data-table-header__sort-badge{background-color:hsla(0,0%,100%,.12);color:#fff}.v-data-table-header th.sortable{pointer-events:auto;cursor:pointer;outline:0}.v-data-table-header th.active .v-data-table-header__icon,.v-data-table-header th:hover .v-data-table-header__icon{transform:none;opacity:1}.v-data-table-header th.desc .v-data-table-header__icon{transform:rotate(-180deg)}.v-data-table-header__icon{display:inline-block;opacity:0;transition:.3s cubic-bezier(.25,.8,.5,1)}.v-data-table-header__sort-badge{display:inline-flex;justify-content:center;align-items:center;border:0;border-radius:50%;min-width:18px;min-height:18px;height:18px;width:18px}.v-data-table-header-mobile th{height:auto}.v-data-table-header-mobile__wrapper{display:flex}.v-data-table-header-mobile__wrapper .v-select{margin-bottom:8px}.v-data-table-header-mobile__wrapper .v-select .v-chip{height:24px}.v-data-table-header-mobile__wrapper .v-select .v-chip__close.desc .v-icon{transform:rotate(-180deg)}.v-data-table-header-mobile__select{min-width:56px;display:flex;align-items:center;justify-content:center}", ""]);
+// Exports
+module.exports = exports;
+
+
+/***/ }),
+
+/***/ 294:
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(295);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+__webpack_require__(5).default("7c06aa28", content, true)
+
+/***/ }),
+
+/***/ 295:
 /***/ (function(module, exports, __webpack_require__) {
 
 // Imports
@@ -1502,7 +1502,7 @@ module.exports = exports;
 
 /***/ }),
 
-/***/ 312:
+/***/ 321:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1544,7 +1544,7 @@ var installComponents = __webpack_require__(9);
 var installComponents_default = /*#__PURE__*/__webpack_require__.n(installComponents);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VCard/VCard.js
-var VCard = __webpack_require__(76);
+var VCard = __webpack_require__(77);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VGrid/VContainer.js
 var VContainer = __webpack_require__(241);
@@ -1586,7 +1586,7 @@ installComponents_default()(component, {VCard: VCard["a" /* default */],VContain
 
 /***/ }),
 
-/***/ 326:
+/***/ 335:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1824,10 +1824,10 @@ var installComponents = __webpack_require__(9);
 var installComponents_default = /*#__PURE__*/__webpack_require__.n(installComponents);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/src/components/VAutocomplete/VAutocomplete.sass
-var VAutocomplete = __webpack_require__(282);
+var VAutocomplete = __webpack_require__(286);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VSelect/VSelect.js + 5 modules
-var VSelect = __webpack_require__(250);
+var VSelect = __webpack_require__(251);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VTextField/VTextField.js + 2 modules
 var VTextField = __webpack_require__(70);
@@ -1917,7 +1917,7 @@ const defaultMenuProps = { ...VSelect["b" /* defaultMenuProps */],
     filteredItems() {
       if (!this.isSearching || this.noFilter || this.internalSearch == null) return this.allItems;
       return this.allItems.filter(item => {
-        const value = Object(helpers["q" /* getPropertyFromItem */])(item, this.itemText);
+        const value = Object(helpers["r" /* getPropertyFromItem */])(item, this.itemText);
         const text = value != null ? String(value) : '';
         return this.filter(item, String(this.internalSearch), text);
       });
@@ -2053,19 +2053,19 @@ const defaultMenuProps = { ...VSelect["b" /* defaultMenuProps */],
       // when search is dirty
       if (this.searchIsDirty) return;
 
-      if (this.multiple && keyCode === helpers["x" /* keyCodes */].left) {
+      if (this.multiple && keyCode === helpers["y" /* keyCodes */].left) {
         if (this.selectedIndex === -1) {
           this.selectedIndex = this.selectedItems.length - 1;
         } else {
           this.selectedIndex--;
         }
-      } else if (this.multiple && keyCode === helpers["x" /* keyCodes */].right) {
+      } else if (this.multiple && keyCode === helpers["y" /* keyCodes */].right) {
         if (this.selectedIndex >= this.selectedItems.length - 1) {
           this.selectedIndex = -1;
         } else {
           this.selectedIndex++;
         }
-      } else if (keyCode === helpers["x" /* keyCodes */].backspace || keyCode === helpers["x" /* keyCodes */].delete) {
+      } else if (keyCode === helpers["y" /* keyCodes */].backspace || keyCode === helpers["y" /* keyCodes */].delete) {
         this.deleteCurrentItem();
       }
     },
@@ -2105,8 +2105,8 @@ const defaultMenuProps = { ...VSelect["b" /* defaultMenuProps */],
       const input = VTextField["a" /* default */].options.methods.genInput.call(this);
       input.data = Object(mergeData["a" /* default */])(input.data, {
         attrs: {
-          'aria-activedescendant': Object(helpers["o" /* getObjectValueByPath */])(this.$refs.menu, 'activeTile.id'),
-          autocomplete: Object(helpers["o" /* getObjectValueByPath */])(input.data, 'attrs.autocomplete', 'off')
+          'aria-activedescendant': Object(helpers["p" /* getObjectValueByPath */])(this.$refs.menu, 'activeTile.id'),
+          autocomplete: Object(helpers["p" /* getObjectValueByPath */])(input.data, 'attrs.autocomplete', 'off')
         },
         domProps: {
           value: this.internalSearch
@@ -2225,7 +2225,7 @@ var VCol = __webpack_require__(246);
 var VContainer = __webpack_require__(241);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/src/components/VDataTable/VDataTable.sass
-var VDataTable = __webpack_require__(284);
+var VDataTable = __webpack_require__(288);
 
 // EXTERNAL MODULE: external "vue"
 var external_vue_ = __webpack_require__(1);
@@ -2257,7 +2257,7 @@ var external_vue_default = /*#__PURE__*/__webpack_require__.n(external_vue_);
     },
     customSort: {
       type: Function,
-      default: helpers["D" /* sortItems */]
+      default: helpers["F" /* sortItems */]
     },
     mustSort: Boolean,
     multiSort: Boolean,
@@ -2279,7 +2279,7 @@ var external_vue_default = /*#__PURE__*/__webpack_require__.n(external_vue_);
     },
     customGroup: {
       type: Function,
-      default: helpers["u" /* groupItems */]
+      default: helpers["v" /* groupItems */]
     },
     locale: {
       type: String,
@@ -2291,7 +2291,7 @@ var external_vue_default = /*#__PURE__*/__webpack_require__.n(external_vue_);
     search: String,
     customFilter: {
       type: Function,
-      default: helpers["C" /* searchItems */]
+      default: helpers["E" /* searchItems */]
     },
     serverItemsLength: {
       type: Number,
@@ -2303,10 +2303,10 @@ var external_vue_default = /*#__PURE__*/__webpack_require__.n(external_vue_);
     let internalOptions = {
       page: this.page,
       itemsPerPage: this.itemsPerPage,
-      sortBy: Object(helpers["F" /* wrapInArray */])(this.sortBy),
-      sortDesc: Object(helpers["F" /* wrapInArray */])(this.sortDesc),
-      groupBy: Object(helpers["F" /* wrapInArray */])(this.groupBy),
-      groupDesc: Object(helpers["F" /* wrapInArray */])(this.groupDesc),
+      sortBy: Object(helpers["H" /* wrapInArray */])(this.sortBy),
+      sortDesc: Object(helpers["H" /* wrapInArray */])(this.sortDesc),
+      groupBy: Object(helpers["H" /* wrapInArray */])(this.groupBy),
+      groupDesc: Object(helpers["H" /* wrapInArray */])(this.groupDesc),
       mustSort: this.mustSort,
       multiSort: this.multiSort
     };
@@ -2325,11 +2325,11 @@ var external_vue_default = /*#__PURE__*/__webpack_require__.n(external_vue_);
     const groupDiff = groupBy.length - groupDesc.length;
 
     if (sortDiff > 0) {
-      internalOptions.sortDesc.push(...Object(helpers["l" /* fillArray */])(sortDiff, false));
+      internalOptions.sortDesc.push(...Object(helpers["m" /* fillArray */])(sortDiff, false));
     }
 
     if (groupDiff > 0) {
-      internalOptions.groupDesc.push(...Object(helpers["l" /* fillArray */])(groupDiff, false));
+      internalOptions.groupDesc.push(...Object(helpers["m" /* fillArray */])(groupDiff, false));
     }
 
     return {
@@ -2424,7 +2424,7 @@ var external_vue_default = /*#__PURE__*/__webpack_require__.n(external_vue_);
   watch: {
     computedOptions: {
       handler(options, old) {
-        if (Object(helpers["i" /* deepEqual */])(options, old)) return;
+        if (Object(helpers["j" /* deepEqual */])(options, old)) return;
         this.updateOptions(options);
       },
 
@@ -2433,7 +2433,7 @@ var external_vue_default = /*#__PURE__*/__webpack_require__.n(external_vue_);
     },
     internalOptions: {
       handler(options, old) {
-        if (Object(helpers["i" /* deepEqual */])(options, old)) return;
+        if (Object(helpers["j" /* deepEqual */])(options, old)) return;
         this.$emit('update:options', options);
       },
 
@@ -2463,42 +2463,42 @@ var external_vue_default = /*#__PURE__*/__webpack_require__.n(external_vue_);
 
     sortBy(sortBy) {
       this.updateOptions({
-        sortBy: Object(helpers["F" /* wrapInArray */])(sortBy)
+        sortBy: Object(helpers["H" /* wrapInArray */])(sortBy)
       });
     },
 
     'internalOptions.sortBy'(sortBy, old) {
-      !Object(helpers["i" /* deepEqual */])(sortBy, old) && this.$emit('update:sort-by', Array.isArray(this.sortBy) ? sortBy : sortBy[0]);
+      !Object(helpers["j" /* deepEqual */])(sortBy, old) && this.$emit('update:sort-by', Array.isArray(this.sortBy) ? sortBy : sortBy[0]);
     },
 
     sortDesc(sortDesc) {
       this.updateOptions({
-        sortDesc: Object(helpers["F" /* wrapInArray */])(sortDesc)
+        sortDesc: Object(helpers["H" /* wrapInArray */])(sortDesc)
       });
     },
 
     'internalOptions.sortDesc'(sortDesc, old) {
-      !Object(helpers["i" /* deepEqual */])(sortDesc, old) && this.$emit('update:sort-desc', Array.isArray(this.sortDesc) ? sortDesc : sortDesc[0]);
+      !Object(helpers["j" /* deepEqual */])(sortDesc, old) && this.$emit('update:sort-desc', Array.isArray(this.sortDesc) ? sortDesc : sortDesc[0]);
     },
 
     groupBy(groupBy) {
       this.updateOptions({
-        groupBy: Object(helpers["F" /* wrapInArray */])(groupBy)
+        groupBy: Object(helpers["H" /* wrapInArray */])(groupBy)
       });
     },
 
     'internalOptions.groupBy'(groupBy, old) {
-      !Object(helpers["i" /* deepEqual */])(groupBy, old) && this.$emit('update:group-by', Array.isArray(this.groupBy) ? groupBy : groupBy[0]);
+      !Object(helpers["j" /* deepEqual */])(groupBy, old) && this.$emit('update:group-by', Array.isArray(this.groupBy) ? groupBy : groupBy[0]);
     },
 
     groupDesc(groupDesc) {
       this.updateOptions({
-        groupDesc: Object(helpers["F" /* wrapInArray */])(groupDesc)
+        groupDesc: Object(helpers["H" /* wrapInArray */])(groupDesc)
       });
     },
 
     'internalOptions.groupDesc'(groupDesc, old) {
-      !Object(helpers["i" /* deepEqual */])(groupDesc, old) && this.$emit('update:group-desc', Array.isArray(this.groupDesc) ? groupDesc : groupDesc[0]);
+      !Object(helpers["j" /* deepEqual */])(groupDesc, old) && this.$emit('update:group-desc', Array.isArray(this.groupDesc) ? groupDesc : groupDesc[0]);
     },
 
     multiSort(multiSort) {
@@ -2537,7 +2537,7 @@ var external_vue_default = /*#__PURE__*/__webpack_require__.n(external_vue_);
     },
     pagination: {
       handler(pagination, old) {
-        if (Object(helpers["i" /* deepEqual */])(pagination, old)) return;
+        if (Object(helpers["j" /* deepEqual */])(pagination, old)) return;
         this.$emit('pagination', this.pagination);
       },
 
@@ -2568,7 +2568,7 @@ var external_vue_default = /*#__PURE__*/__webpack_require__.n(external_vue_);
       } // Reset page to 1 if sortBy or sortDesc have changed
 
 
-      if (!Object(helpers["i" /* deepEqual */])(by, oldBy) || !Object(helpers["i" /* deepEqual */])(desc, oldDesc)) {
+      if (!Object(helpers["j" /* deepEqual */])(by, oldBy) || !Object(helpers["j" /* deepEqual */])(desc, oldDesc)) {
         page = 1;
       }
 
@@ -2658,7 +2658,7 @@ var external_vue_default = /*#__PURE__*/__webpack_require__.n(external_vue_);
 
 }));
 // EXTERNAL MODULE: ./node_modules/vuetify/src/components/VDataIterator/VDataFooter.sass
-var VDataFooter = __webpack_require__(286);
+var VDataFooter = __webpack_require__(290);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VIcon/index.js
 var VIcon = __webpack_require__(19);
@@ -2865,7 +2865,7 @@ var components_VBtn = __webpack_require__(69);
 
 }));
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/mixins/mobile/index.js
-var mobile = __webpack_require__(73);
+var mobile = __webpack_require__(74);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/mixins/themeable/index.js
 var themeable = __webpack_require__(6);
@@ -2956,7 +2956,7 @@ var util_console = __webpack_require__(3);
     value: {
       handler(value) {
         this.selection = value.reduce((selection, item) => {
-          selection[Object(helpers["o" /* getObjectValueByPath */])(item, this.itemKey)] = item;
+          selection[Object(helpers["p" /* getObjectValueByPath */])(item, this.itemKey)] = item;
           return selection;
         }, {});
       },
@@ -2965,14 +2965,14 @@ var util_console = __webpack_require__(3);
     },
 
     selection(value, old) {
-      if (Object(helpers["i" /* deepEqual */])(Object.keys(value), Object.keys(old))) return;
+      if (Object(helpers["j" /* deepEqual */])(Object.keys(value), Object.keys(old))) return;
       this.$emit('input', Object.values(value));
     },
 
     expanded: {
       handler(value) {
         this.expansion = value.reduce((expansion, item) => {
-          expansion[Object(helpers["o" /* getObjectValueByPath */])(item, this.itemKey)] = true;
+          expansion[Object(helpers["p" /* getObjectValueByPath */])(item, this.itemKey)] = true;
           return expansion;
         }, {});
       },
@@ -2981,9 +2981,9 @@ var util_console = __webpack_require__(3);
     },
 
     expansion(value, old) {
-      if (Object(helpers["i" /* deepEqual */])(value, old)) return;
+      if (Object(helpers["j" /* deepEqual */])(value, old)) return;
       const keys = Object.keys(value).filter(k => value[k]);
-      const expanded = !keys.length ? [] : this.items.filter(i => keys.includes(String(Object(helpers["o" /* getObjectValueByPath */])(i, this.itemKey))));
+      const expanded = !keys.length ? [] : this.items.filter(i => keys.includes(String(Object(helpers["p" /* getObjectValueByPath */])(i, this.itemKey))));
       this.$emit('update:expanded', expanded);
     }
 
@@ -3011,7 +3011,7 @@ var util_console = __webpack_require__(3);
       for (let i = 0; i < this.selectableItems.length; i++) {
         const item = this.selectableItems[i];
         if (!this.isSelectable(item)) continue;
-        const key = Object(helpers["o" /* getObjectValueByPath */])(item, this.itemKey);
+        const key = Object(helpers["p" /* getObjectValueByPath */])(item, this.itemKey);
         if (value) selection[key] = item;else delete selection[key];
       }
 
@@ -3023,22 +3023,22 @@ var util_console = __webpack_require__(3);
     },
 
     isSelectable(item) {
-      return Object(helpers["o" /* getObjectValueByPath */])(item, this.selectableKey) !== false;
+      return Object(helpers["p" /* getObjectValueByPath */])(item, this.selectableKey) !== false;
     },
 
     isSelected(item) {
-      return !!this.selection[Object(helpers["o" /* getObjectValueByPath */])(item, this.itemKey)] || false;
+      return !!this.selection[Object(helpers["p" /* getObjectValueByPath */])(item, this.itemKey)] || false;
     },
 
     select(item, value = true, emit = true) {
       if (!this.isSelectable(item)) return;
       const selection = this.singleSelect ? {} : Object.assign({}, this.selection);
-      const key = Object(helpers["o" /* getObjectValueByPath */])(item, this.itemKey);
+      const key = Object(helpers["p" /* getObjectValueByPath */])(item, this.itemKey);
       if (value) selection[key] = item;else delete selection[key];
 
       if (this.singleSelect && emit) {
         const keys = Object.keys(this.selection);
-        const old = keys.length && Object(helpers["o" /* getObjectValueByPath */])(this.selection[keys[0]], this.itemKey);
+        const old = keys.length && Object(helpers["p" /* getObjectValueByPath */])(this.selection[keys[0]], this.itemKey);
         old && old !== key && this.$emit('item-selected', {
           item: this.selection[old],
           value: false
@@ -3053,12 +3053,12 @@ var util_console = __webpack_require__(3);
     },
 
     isExpanded(item) {
-      return this.expansion[Object(helpers["o" /* getObjectValueByPath */])(item, this.itemKey)] || false;
+      return this.expansion[Object(helpers["p" /* getObjectValueByPath */])(item, this.itemKey)] || false;
     },
 
     expand(item, value = true) {
       const expansion = this.singleExpand ? {} : Object.assign({}, this.expansion);
-      const key = Object(helpers["o" /* getObjectValueByPath */])(item, this.itemKey);
+      const key = Object(helpers["p" /* getObjectValueByPath */])(item, this.itemKey);
       if (value) expansion[key] = true;else delete expansion[key];
       this.expansion = expansion;
       this.$emit('item-expanded', {
@@ -3128,7 +3128,7 @@ var util_console = __webpack_require__(3);
           'update:options': value => props.updateOptions(value)
         }
       };
-      const scopedSlots = Object(helpers["p" /* getPrefixedScopedSlots */])('footer.', this.$scopedSlots);
+      const scopedSlots = Object(helpers["q" /* getPrefixedScopedSlots */])('footer.', this.$scopedSlots);
       return this.$createElement(VDataIterator_VDataFooter, {
         scopedSlots,
         ...data
@@ -3143,7 +3143,7 @@ var util_console = __webpack_require__(3);
       };
       return this.$createElement('div', {
         staticClass: 'v-data-iterator'
-      }, [Object(helpers["r" /* getSlot */])(this, 'header', outerProps, true), this.genItems(props), this.genFooter(props), Object(helpers["r" /* getSlot */])(this, 'footer', outerProps, true)]);
+      }, [Object(helpers["s" /* getSlot */])(this, 'header', outerProps, true), this.genItems(props), this.genFooter(props), Object(helpers["s" /* getSlot */])(this, 'footer', outerProps, true)]);
     }
 
   },
@@ -3152,14 +3152,14 @@ var util_console = __webpack_require__(3);
     return this.$createElement(VData, {
       props: this.$props,
       on: {
-        'update:options': (v, old) => !Object(helpers["i" /* deepEqual */])(v, old) && this.$emit('update:options', v),
+        'update:options': (v, old) => !Object(helpers["j" /* deepEqual */])(v, old) && this.$emit('update:options', v),
         'update:page': v => this.$emit('update:page', v),
         'update:items-per-page': v => this.$emit('update:items-per-page', v),
         'update:sort-by': v => this.$emit('update:sort-by', v),
         'update:sort-desc': v => this.$emit('update:sort-desc', v),
         'update:group-by': v => this.$emit('update:group-by', v),
         'update:group-desc': v => this.$emit('update:group-desc', v),
-        pagination: (v, old) => !Object(helpers["i" /* deepEqual */])(v, old) && this.$emit('pagination', v),
+        pagination: (v, old) => !Object(helpers["j" /* deepEqual */])(v, old) && this.$emit('pagination', v),
         'current-items': v => {
           this.internalCurrentItems = v;
           this.$emit('current-items', v);
@@ -3174,13 +3174,13 @@ var util_console = __webpack_require__(3);
 
 }));
 // EXTERNAL MODULE: ./node_modules/vuetify/src/components/VDataTable/VDataTableHeader.sass
-var VDataTableHeader = __webpack_require__(288);
+var VDataTableHeader = __webpack_require__(292);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VChip/index.js
-var components_VChip = __webpack_require__(112);
+var components_VChip = __webpack_require__(113);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VCheckbox/VSimpleCheckbox.js
-var VSimpleCheckbox = __webpack_require__(249);
+var VSimpleCheckbox = __webpack_require__(250);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/directives/ripple/index.js
 var ripple = __webpack_require__(23);
@@ -3325,7 +3325,7 @@ var ripple = __webpack_require__(23);
 
     if (header && !this.singleSelect) {
       children.push(this.$createElement('div', {
-        class: ['v-data-table-header-mobile__select', ...Object(helpers["F" /* wrapInArray */])(header.class)],
+        class: ['v-data-table-header-mobile__select', ...Object(helpers["H" /* wrapInArray */])(header.class)],
         attrs: {
           width: header.width
         }
@@ -3407,7 +3407,7 @@ var ripple = __webpack_require__(23);
           width: Object(helpers["g" /* convertToUnit */])(header.width),
           minWidth: Object(helpers["g" /* convertToUnit */])(header.width)
         },
-        class: [`text-${header.align || 'start'}`, ...Object(helpers["F" /* wrapInArray */])(header.class), header.divider && 'v-data-table__divider'],
+        class: [`text-${header.align || 'start'}`, ...Object(helpers["H" /* wrapInArray */])(header.class), header.divider && 'v-data-table__divider'],
         on: {}
       };
       const children = [];
@@ -3556,7 +3556,7 @@ function rebuildFunctionalSlots(slots, h) {
     const computedSlots = slots();
     const columns = props.headers.map(header => {
       const children = [];
-      const value = Object(helpers["o" /* getObjectValueByPath */])(props.item, header.value);
+      const value = Object(helpers["p" /* getObjectValueByPath */])(props.item, header.value);
       const slotName = header.value;
       const scopedSlot = data.scopedSlots && data.scopedSlots[slotName];
       const regularSlot = computedSlots[slotName];
@@ -3636,7 +3636,7 @@ function rebuildFunctionalSlots(slots, h) {
 
 }));
 // EXTERNAL MODULE: ./node_modules/vuetify/src/components/VDataTable/VSimpleTable.sass
-var VSimpleTable = __webpack_require__(290);
+var VSimpleTable = __webpack_require__(294);
 
 // CONCATENATED MODULE: ./node_modules/vuetify/lib/components/VDataTable/VSimpleTable.js
 
@@ -3705,7 +3705,7 @@ var VSimpleTable = __webpack_require__(290);
         'v-data-table__mobile-row': true
       };
       const children = [];
-      const value = Object(helpers["o" /* getObjectValueByPath */])(props.item, header.value);
+      const value = Object(helpers["p" /* getObjectValueByPath */])(props.item, header.value);
       const slotName = header.value;
       const scopedSlot = data.scopedSlots && data.scopedSlots[slotName];
       const regularSlot = computedSlots[slotName];
@@ -3771,7 +3771,7 @@ var loadable = __webpack_require__(44);
 
 function filterFn(item, search, filter) {
   return header => {
-    const value = Object(helpers["o" /* getObjectValueByPath */])(item, header.value);
+    const value = Object(helpers["p" /* getObjectValueByPath */])(item, header.value);
     return header.filter ? header.filter(value, search, item) : filter(value, search, item);
   };
 }
@@ -3781,7 +3781,7 @@ function searchTableItems(items, search, headersWithCustomFilters, headersWithou
   return items.filter(item => {
     // Headers with custom filters are evaluated whether or not a search term has been provided.
     // We need to match every filter to be included in the results.
-    const matchesColumnFilters = headersWithCustomFilters.every(filterFn(item, search, helpers["j" /* defaultFilter */])); // Headers without custom filters are only filtered by the `search` property if it is defined.
+    const matchesColumnFilters = headersWithCustomFilters.every(filterFn(item, search, helpers["k" /* defaultFilter */])); // Headers without custom filters are only filtered by the `search` property if it is defined.
     // We only need a single column to match the search term to be included in the results.
 
     const matchesSearchTerm = !search || headersWithoutCustomFilters.some(filterFn(item, search, customFilter));
@@ -3821,7 +3821,7 @@ function searchTableItems(items, search, headersWithCustomFilters, headersWithou
     },
     customFilter: {
       type: Function,
-      default: helpers["j" /* defaultFilter */]
+      default: helpers["k" /* defaultFilter */]
     },
     itemClass: {
       type: [String, Function],
@@ -3959,7 +3959,7 @@ function searchTableItems(items, search, headersWithCustomFilters, headersWithou
 
     genCaption(props) {
       if (this.caption) return [this.$createElement('caption', [this.caption])];
-      return Object(helpers["r" /* getSlot */])(this, 'caption', props, true);
+      return Object(helpers["s" /* getSlot */])(this, 'caption', props, true);
     },
 
     genColgroup(props) {
@@ -4001,10 +4001,10 @@ function searchTableItems(items, search, headersWithCustomFilters, headersWithou
           'toggle-select-all': this.toggleSelectAll
         }
       };
-      const children = [Object(helpers["r" /* getSlot */])(this, 'header', data)];
+      const children = [Object(helpers["s" /* getSlot */])(this, 'header', data)];
 
       if (!this.hideDefaultHeader) {
-        const scopedSlots = Object(helpers["p" /* getPrefixedScopedSlots */])('header.', this.$scopedSlots);
+        const scopedSlots = Object(helpers["q" /* getPrefixedScopedSlots */])('header.', this.$scopedSlots);
         children.push(this.$createElement(VDataTable_VDataTableHeader, { ...data,
           scopedSlots
         }));
@@ -4173,7 +4173,7 @@ function searchTableItems(items, search, headersWithCustomFilters, headersWithou
     },
 
     genDefaultSimpleRow(item, classes = {}) {
-      const scopedSlots = Object(helpers["p" /* getPrefixedScopedSlots */])('item.', this.$scopedSlots);
+      const scopedSlots = Object(helpers["q" /* getPrefixedScopedSlots */])('item.', this.$scopedSlots);
       const data = this.createItemProps(item);
 
       if (this.showSelect) {
@@ -4207,10 +4207,10 @@ function searchTableItems(items, search, headersWithCustomFilters, headersWithou
       }
 
       return this.$createElement(this.isMobile ? MobileRow : Row, {
-        key: Object(helpers["o" /* getObjectValueByPath */])(item, this.itemKey),
+        key: Object(helpers["p" /* getObjectValueByPath */])(item, this.itemKey),
         class: Object(mergeData["b" /* mergeClasses */])({ ...classes,
           'v-data-table__selected': data.isSelected
-        }, Object(helpers["q" /* getPropertyFromItem */])(item, this.itemClass)),
+        }, Object(helpers["r" /* getPropertyFromItem */])(item, this.itemClass)),
         props: {
           headers: this.computedHeaders,
           hideDefaultHeader: this.hideDefaultHeader,
@@ -4242,7 +4242,7 @@ function searchTableItems(items, search, headersWithCustomFilters, headersWithou
         return this.$scopedSlots.body(data);
       }
 
-      return this.$createElement('tbody', [Object(helpers["r" /* getSlot */])(this, 'body.prepend', data, true), this.genItems(props.items, props), Object(helpers["r" /* getSlot */])(this, 'body.append', data, true)]);
+      return this.$createElement('tbody', [Object(helpers["s" /* getSlot */])(this, 'body.prepend', data, true), this.genItems(props.items, props), Object(helpers["s" /* getSlot */])(this, 'body.append', data, true)]);
     },
 
     genFooters(props) {
@@ -4259,11 +4259,11 @@ function searchTableItems(items, search, headersWithCustomFilters, headersWithou
         widths: this.widths,
         headers: this.computedHeaders
       };
-      const children = [Object(helpers["r" /* getSlot */])(this, 'footer', data, true)];
+      const children = [Object(helpers["s" /* getSlot */])(this, 'footer', data, true)];
 
       if (!this.hideDefaultFooter) {
         children.push(this.$createElement(VDataIterator_VDataFooter, { ...data,
-          scopedSlots: Object(helpers["p" /* getPrefixedScopedSlots */])('footer.', this.$scopedSlots)
+          scopedSlots: Object(helpers["q" /* getPrefixedScopedSlots */])('footer.', this.$scopedSlots)
         }));
       }
 
@@ -4295,7 +4295,7 @@ function searchTableItems(items, search, headersWithCustomFilters, headersWithou
 
       return this.$createElement(VDataTable_VSimpleTable, {
         props: simpleProps
-      }, [this.proxySlot('top', Object(helpers["r" /* getSlot */])(this, 'top', props, true)), this.genCaption(props), this.genColgroup(props), this.genHeaders(props), this.genBody(props), this.proxySlot('bottom', this.genFooters(props))]);
+      }, [this.proxySlot('top', Object(helpers["s" /* getSlot */])(this, 'top', props, true)), this.genCaption(props), this.genColgroup(props), this.genHeaders(props), this.genBody(props), this.proxySlot('bottom', this.genFooters(props))]);
     },
 
     proxySlot(slot, content) {
@@ -4316,7 +4316,7 @@ function searchTableItems(items, search, headersWithCustomFilters, headersWithou
       on: {
         'update:options': (v, old) => {
           this.internalGroupBy = v.groupBy || [];
-          !Object(helpers["i" /* deepEqual */])(v, old) && this.$emit('update:options', v);
+          !Object(helpers["j" /* deepEqual */])(v, old) && this.$emit('update:options', v);
         },
         'update:page': v => this.$emit('update:page', v),
         'update:items-per-page': v => this.$emit('update:items-per-page', v),
@@ -4324,7 +4324,7 @@ function searchTableItems(items, search, headersWithCustomFilters, headersWithou
         'update:sort-desc': v => this.$emit('update:sort-desc', v),
         'update:group-by': v => this.$emit('update:group-by', v),
         'update:group-desc': v => this.$emit('update:group-desc', v),
-        pagination: (v, old) => !Object(helpers["i" /* deepEqual */])(v, old) && this.$emit('pagination', v),
+        pagination: (v, old) => !Object(helpers["j" /* deepEqual */])(v, old) && this.$emit('pagination', v),
         'current-items': v => {
           this.internalCurrentItems = v;
           this.$emit('current-items', v);
@@ -4342,10 +4342,10 @@ function searchTableItems(items, search, headersWithCustomFilters, headersWithou
 var VDivider = __webpack_require__(230);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VIcon/VIcon.js
-var VIcon_VIcon = __webpack_require__(79);
+var VIcon_VIcon = __webpack_require__(80);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VGrid/VRow.js
-var VRow = __webpack_require__(247);
+var VRow = __webpack_require__(248);
 
 // CONCATENATED MODULE: ./pages/roles/index.vue
 
@@ -4372,7 +4372,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 /* harmony default export */ var roles = __webpack_exports__["default"] = (component.exports);
 
 /* nuxt-component-imports */
-installComponents_default()(component, {ForbiddenPage: __webpack_require__(312).default})
+installComponents_default()(component, {ForbiddenPage: __webpack_require__(321).default})
 
 
 /* vuetify-loader */
