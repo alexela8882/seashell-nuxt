@@ -3,77 +3,66 @@
     "name": "about",
     "path": "/about",
     "component": "C:\\\\Users\\\\Admin\\\\Desktop\\\\devs\\\\seashell-nuxt\\\\pages\\\\about.vue",
-    "chunkName": "pages/about",
-    "_name": "_6ed58bca"
+    "chunkName": "pages/about"
   },
   {
     "name": "admin",
     "path": "/admin",
     "component": "C:\\\\Users\\\\Admin\\\\Desktop\\\\devs\\\\seashell-nuxt\\\\pages\\\\admin\\\\index.vue",
-    "chunkName": "pages/admin/index",
-    "_name": "_0ed63714"
+    "chunkName": "pages/admin/index"
   },
   {
     "name": "azure",
     "path": "/azure",
     "component": "C:\\\\Users\\\\Admin\\\\Desktop\\\\devs\\\\seashell-nuxt\\\\pages\\\\azure.vue",
-    "chunkName": "pages/azure",
-    "_name": "_636539cc"
+    "chunkName": "pages/azure"
   },
   {
     "name": "dashboard",
     "path": "/dashboard",
     "component": "C:\\\\Users\\\\Admin\\\\Desktop\\\\devs\\\\seashell-nuxt\\\\pages\\\\dashboard\\\\index.vue",
-    "chunkName": "pages/dashboard/index",
-    "_name": "_eb62cade"
+    "chunkName": "pages/dashboard/index"
   },
   {
     "name": "login",
     "path": "/login",
     "component": "C:\\\\Users\\\\Admin\\\\Desktop\\\\devs\\\\seashell-nuxt\\\\pages\\\\login.vue",
-    "chunkName": "pages/login",
-    "_name": "_583509a6"
+    "chunkName": "pages/login"
   },
   {
     "name": "roles",
     "path": "/roles",
     "component": "C:\\\\Users\\\\Admin\\\\Desktop\\\\devs\\\\seashell-nuxt\\\\pages\\\\roles\\\\index.vue",
-    "chunkName": "pages/roles/index",
-    "_name": "_5a408848"
+    "chunkName": "pages/roles/index"
   },
   {
     "name": "species",
     "path": "/species",
     "component": "C:\\\\Users\\\\Admin\\\\Desktop\\\\devs\\\\seashell-nuxt\\\\pages\\\\species\\\\index.vue",
-    "chunkName": "pages/species/index",
-    "_name": "_4f027da9"
+    "chunkName": "pages/species/index"
   },
   {
     "name": "users",
     "path": "/users",
     "component": "C:\\\\Users\\\\Admin\\\\Desktop\\\\devs\\\\seashell-nuxt\\\\pages\\\\users\\\\index.vue",
-    "chunkName": "pages/users/index",
-    "_name": "_55fa9c1d"
+    "chunkName": "pages/users/index"
   },
   {
     "name": "users-profile",
     "path": "/users/profile",
     "component": "C:\\\\Users\\\\Admin\\\\Desktop\\\\devs\\\\seashell-nuxt\\\\pages\\\\users\\\\profile\\\\index.vue",
-    "chunkName": "pages/users/profile/index",
-    "_name": "_dbc26d64"
+    "chunkName": "pages/users/profile/index"
   },
   {
     "name": "species-id",
     "path": "/species/:id",
     "component": "C:\\\\Users\\\\Admin\\\\Desktop\\\\devs\\\\seashell-nuxt\\\\pages\\\\species\\\\_id.vue",
-    "chunkName": "pages/species/_id",
-    "_name": "_d594535e"
+    "chunkName": "pages/species/_id"
   },
   {
     "name": "index",
     "path": "/",
     "component": "C:\\\\Users\\\\Admin\\\\Desktop\\\\devs\\\\seashell-nuxt\\\\pages\\\\index.vue",
-    "chunkName": "pages/index",
-    "_name": "_e2e532e2"
+    "chunkName": "pages/index"
   }
 ]
