@@ -50,9 +50,27 @@ export default {
         zoomOrigin: true
       })
 
+      let el2 = document.getElementById('speciesDisplayPhoto')
+        window.lightGallery(el2, {
+          width: '700px',
+          height: '470px',
+          mode: 'lg-fade',
+          addClass: 'speciesDisplayPhoto',
+          counter: false,
+          download: false,
+          startClass: '',
+          enableSwipe: false,
+          enableDrag: false,
+          speed: 500,
+          thumbnail: false,
+          exThumbImage: 'data-src',
+          zoom: false,
+          rotate: false,
+          zoomOrigin: false
+        })
+
       console.log(lightGallery)
     }, 1000);
-
     this.initialize()
   },
 
@@ -126,7 +144,19 @@ export default {
           <v-card
             v-if="specie.species"
             class="card-sticky">
-            <v-hover>
+            <v-layout id="speciesDisplayPhoto" v-if="specie.species.display_photo != null">
+              <v-flex
+                :data-src="$backendurl(specie.species.display_photo)"
+                :data-download-url="$backendurl(specie.species.display_photo)">
+                <v-card
+                  style="cursor: pointer;">
+                  <v-img v-if="specie.species.display_photo != null"
+                    :src="$backendurl(specie.species.display_photo)"
+                  ></v-img>
+                </v-card>
+              </v-flex>
+            </v-layout>
+            <!-- <v-hover>
               <template v-slot:default="{ hover }">
               <v-card
                 :elevation="hover ? 12 : 2"
@@ -149,7 +179,7 @@ export default {
               </v-fade-transition>
             </v-card>
             </template>
-            </v-hover>
+            </v-hover> -->
             <v-card-text class="card-body">
                 <span class="kollektif">
                   <p class="mb-1">
@@ -453,4 +483,26 @@ export default {
     }
   }
 
+</style>
+<style>
+    .lg-backdrop.in {
+      opacity: 0.85;
+    }
+    .speciesDisplayPhoto.lg-outer .lg-inner {
+    background-color: #FFF;
+    }
+    .speciesDisplayPhoto.lg-outer .lg-sub-html {
+      position: absolute;
+      text-align: left;
+    }
+    .speciesDisplayPhoto.lg-outer .lg-toolbar {
+      background-color: transparent;
+      height: 0;
+    }
+    .speciesDisplayPhoto.lg-outer .lg-toolbar .lg-icon {
+      color: #FFF;
+    }
+    .speciesDisplayPhoto.lg-outer .lg-img-wrap {
+      padding: 12px;
+    }
 </style>
