@@ -42,7 +42,13 @@ export default {
     setTimeout(() => {
       // lightgallery
       let el = document.getElementById('speciesGallery')
-      window.lightGallery(el)
+      window.lightGallery(el, {
+        thumbnail: true,
+        exThumbImage: 'data-src',
+        zoom: true,
+        rotate: true,
+        zoomOrigin: true
+      })
 
       console.log(lightGallery)
     }, 1000);
@@ -226,6 +232,7 @@ export default {
                 v-for="(item, i) in specie.species_files"
                 :key="i"
                 :data-src="$backendurl(item.file_path+'/'+item.file_name)"
+                :data-download-url="$backendurl(item.file_path+'/'+item.file_name)"
                 sm6 xs12 md4 class="px-2">
                 <v-card
                   class="rounded-xl mb-5 mx-auto"
