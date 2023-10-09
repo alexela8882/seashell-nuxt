@@ -4,11 +4,11 @@ export { default as VuetifyLogo } from '../../components/VuetifyLogo.vue'
 export { default as ErrorComponent } from '../../components/asyncComponents/ErrorComponent.vue'
 export { default as ForbiddenPage } from '../../components/asyncComponents/ForbiddenPage.vue'
 export { default as LoadingComponent } from '../../components/asyncComponents/LoadingComponent.vue'
-export { default as Footer } from '../../components/webportal/Footer.vue'
-export { default as Navbar } from '../../components/webportal/Navbar.vue'
 export { default as NavBar } from '../../components/layouts/NavBar.vue'
 export { default as SavingSnackbar } from '../../components/layouts/SavingSnackbar.vue'
 export { default as Snackbar } from '../../components/layouts/Snackbar.vue'
+export { default as Footer } from '../../components/webportal/Footer.vue'
+export { default as Navbar } from '../../components/webportal/Navbar.vue'
 export { default as Albums } from '../../components/asyncComponents/albums/Albums.vue'
 export { default as AllComments } from '../../components/asyncComponents/comments/AllComments.vue'
 export { default as EditForm } from '../../components/global/forms/EditForm.vue'
@@ -56,11 +56,11 @@ export const LazyVuetifyLogo = import('../../components/VuetifyLogo.vue' /* webp
 export const LazyErrorComponent = import('../../components/asyncComponents/ErrorComponent.vue' /* webpackChunkName: "components/asyncComponents/ErrorComponent" */).then(c => c.default || c)
 export const LazyForbiddenPage = import('../../components/asyncComponents/ForbiddenPage.vue' /* webpackChunkName: "components/asyncComponents/ForbiddenPage" */).then(c => c.default || c)
 export const LazyLoadingComponent = import('../../components/asyncComponents/LoadingComponent.vue' /* webpackChunkName: "components/asyncComponents/LoadingComponent" */).then(c => c.default || c)
-export const LazyFooter = import('../../components/webportal/Footer.vue' /* webpackChunkName: "components/webportal/Footer" */).then(c => c.default || c)
-export const LazyNavbar = import('../../components/webportal/Navbar.vue' /* webpackChunkName: "components/webportal/Navbar" */).then(c => c.default || c)
 export const LazyNavBar = import('../../components/layouts/NavBar.vue' /* webpackChunkName: "components/layouts/NavBar" */).then(c => c.default || c)
 export const LazySavingSnackbar = import('../../components/layouts/SavingSnackbar.vue' /* webpackChunkName: "components/layouts/SavingSnackbar" */).then(c => c.default || c)
 export const LazySnackbar = import('../../components/layouts/Snackbar.vue' /* webpackChunkName: "components/layouts/Snackbar" */).then(c => c.default || c)
+export const LazyFooter = import('../../components/webportal/Footer.vue' /* webpackChunkName: "components/webportal/Footer" */).then(c => c.default || c)
+export const LazyNavbar = import('../../components/webportal/Navbar.vue' /* webpackChunkName: "components/webportal/Navbar" */).then(c => c.default || c)
 export const LazyAlbums = import('../../components/asyncComponents/albums/Albums.vue' /* webpackChunkName: "components/asyncComponents/albums/Albums" */).then(c => c.default || c)
 export const LazyAllComments = import('../../components/asyncComponents/comments/AllComments.vue' /* webpackChunkName: "components/asyncComponents/comments/AllComments" */).then(c => c.default || c)
 export const LazyEditForm = import('../../components/global/forms/EditForm.vue' /* webpackChunkName: "components/global/forms/EditForm" */).then(c => c.default || c)

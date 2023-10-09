@@ -62,8 +62,21 @@ export default {
     }
   },
 
+  computed: {
+    vuetifyBreakpoint () {
+      return this.$vuetify.breakpoint.name
+    },
+  },
+
   watch: {
-    $route (to, from){
+    $route (to, from) {
+      this.getNavBarBg()
+    },
+
+    vuetifyBreakpoint (newVal, oldVal) {
+      console.log(oldVal)
+      console.log(newVal)
+      this.handleScroll()
       this.getNavBarBg()
     }
   },
@@ -73,9 +86,10 @@ export default {
       // Any code to be executed when the window is scrolled
       this.scrollHeight = window.scrollY
 
-      if (this.scrollHeight <= 15) this.appbarClass = 'py-8'
-      else this.appbarClass = 'py-0'
-      console.log(window.scrollY)
+      if (this.$route.name !== 'index' && !this.$vuetify.breakpoint.sm) {
+        if (this.scrollHeight <= 15) this.appbarClass = 'py-8'
+        else this.appbarClass = 'py-0'
+      }
     },
 
     navigateLink (navlink) {
@@ -169,8 +183,8 @@ export default {
         this.navbarClass = `${fontSize} font-weight-black white--text`
         this.navbarTheme = false
       } else {
-        this.containerClass = "bottom-rounded-md shadow-xl electric_blue pt-16 pb-16"
-        this.appbarClass = `py-8`
+        this.containerClass = `${!this.$vuetify.breakpoint.sm && 'bottom-rounded-md shadow-xl py-16'} electric_blue`
+        this.appbarClass = `${this.$vuetify.breakpoint.sm ? 'py-0' : 'py-8'}`
         this.navbarBg = "electric_blue"
         this.navbarClass = "text-h4 white--text"
         this.navbarTheme = true
