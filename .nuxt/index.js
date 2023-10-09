@@ -22,12 +22,15 @@ import nuxt_plugin_iconplugin_93a316a6 from 'nuxt_plugin_iconplugin_93a316a6' //
 import nuxt_plugin_moment_c4a6a164 from 'nuxt_plugin_moment_c4a6a164' // Source: ./moment.js (mode: 'all')
 import nuxt_plugin_axios_5659d192 from 'nuxt_plugin_axios_5659d192' // Source: ../plugins/axios.js (mode: 'all')
 import nuxt_plugin_baseurl_d8fa1fa2 from 'nuxt_plugin_baseurl_d8fa1fa2' // Source: ../plugins/baseurl.js (mode: 'all')
+import nuxt_plugin_backendurl_6c72c606 from 'nuxt_plugin_backendurl_6c72c606' // Source: ../plugins/backendurl.js (mode: 'all')
 import nuxt_plugin_snackbar_832a94c8 from 'nuxt_plugin_snackbar_832a94c8' // Source: ../plugins/snackbar.js (mode: 'all')
 import nuxt_plugin_savingsnackbar_d4c68316 from 'nuxt_plugin_savingsnackbar_d4c68316' // Source: ../plugins/saving-snackbar.js (mode: 'all')
 import nuxt_plugin_starrating_3d884675 from 'nuxt_plugin_starrating_3d884675' // Source: ../plugins/star-rating.js (mode: 'all')
 import nuxt_plugin_veevalidate_1a0c1998 from 'nuxt_plugin_veevalidate_1a0c1998' // Source: ../plugins/vee-validate.js (mode: 'all')
 import nuxt_plugin_getdatafromapis_5883911e from 'nuxt_plugin_getdatafromapis_5883911e' // Source: ../plugins/get-data-from-apis.js (mode: 'all')
 import nuxt_plugin_azureauth_2461a0cc from 'nuxt_plugin_azureauth_2461a0cc' // Source: ../plugins/azure-auth.js (mode: 'client')
+import nuxt_plugin_vuegalleryclient_76ec8f1a from 'nuxt_plugin_vuegalleryclient_76ec8f1a' // Source: ../plugins/vue-gallery.client.js (mode: 'client')
+import nuxt_plugin_lightgallery_9d2b7676 from 'nuxt_plugin_lightgallery_9d2b7676' // Source: ../plugins/lightgallery.js (mode: 'client')
 import nuxt_plugin_plugin_19021146 from 'nuxt_plugin_plugin_19021146' // Source: ./auth/plugin.js (mode: 'all')
 
 // Component: <ClientOnly>
@@ -81,7 +84,7 @@ async function createApp(ssrContext, config = {}) {
   // here we inject the router and store to all child components,
   // making them available everywhere as `this.$router` and `this.$store`.
   const app = {
-    head: {"titleTemplate":"%s - Bintan Seashells","title":"esco-engagement-system","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":"## Build Setup"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"favicon.png"},{"rel":"stylesheet","type":"text\u002Fcss","href":"https:\u002F\u002Ffonts.googleapis.com\u002Fcss?family=Roboto:100,300,400,500,700,900&display=swap"},{"rel":"stylesheet","type":"text\u002Fcss","href":"https:\u002F\u002Fcdn.jsdelivr.net\u002Fnpm\u002F@mdi\u002Ffont@latest\u002Fcss\u002Fmaterialdesignicons.min.css"}],"style":[],"script":[]},
+    head: {"titleTemplate":"%s - Bintan Seashells","title":"bintanseashells","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":"## Build Setup"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"favicon.png"},{"rel":"stylesheet","type":"text\u002Fcss","href":"https:\u002F\u002Ffonts.googleapis.com\u002Fcss?family=Roboto:100,300,400,500,700,900&display=swap"},{"rel":"stylesheet","type":"text\u002Fcss","href":"https:\u002F\u002Fcdn.jsdelivr.net\u002Fnpm\u002F@mdi\u002Ffont@latest\u002Fcss\u002Fmaterialdesignicons.min.css"}],"style":[],"script":[]},
 
     store,
     router,
@@ -246,6 +249,10 @@ async function createApp(ssrContext, config = {}) {
     await nuxt_plugin_baseurl_d8fa1fa2(app.context, inject)
   }
 
+  if (typeof nuxt_plugin_backendurl_6c72c606 === 'function') {
+    await nuxt_plugin_backendurl_6c72c606(app.context, inject)
+  }
+
   if (typeof nuxt_plugin_snackbar_832a94c8 === 'function') {
     await nuxt_plugin_snackbar_832a94c8(app.context, inject)
   }
@@ -268,6 +275,14 @@ async function createApp(ssrContext, config = {}) {
 
   if (process.client && typeof nuxt_plugin_azureauth_2461a0cc === 'function') {
     await nuxt_plugin_azureauth_2461a0cc(app.context, inject)
+  }
+
+  if (process.client && typeof nuxt_plugin_vuegalleryclient_76ec8f1a === 'function') {
+    await nuxt_plugin_vuegalleryclient_76ec8f1a(app.context, inject)
+  }
+
+  if (process.client && typeof nuxt_plugin_lightgallery_9d2b7676 === 'function') {
+    await nuxt_plugin_lightgallery_9d2b7676(app.context, inject)
   }
 
   if (typeof nuxt_plugin_plugin_19021146 === 'function') {

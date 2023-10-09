@@ -12,6 +12,8 @@ export default {
 
   data () {
     return {
+      index: null,
+      images: [],
       page: 1,
       selected_class: null,
       selected_family: null,
@@ -56,8 +58,6 @@ export default {
 
   mounted () {
     window.scrollTo(0, 0)
-
-    console.log(document.documentElement.scrollHeight)
 
     const url_string = window.location.href
     const url = new URL(url_string)
@@ -104,6 +104,13 @@ export default {
       const searchURL = new URL(window.location)
       searchURL.searchParams.set('page', this.filters.cpage)
       window.history.pushState({}, '', searchURL)
+
+      // re-populate
+      if ((this.paged_species && this.paged_species.data) && this.paged_species.data.data.length > 0) {
+        this.paged_species.data.data.map((item) => {
+          this.images.push(this.$backendurl(item.display_photo))
+        })
+      }
     },
 
     speciesView (id) {
@@ -246,6 +253,7 @@ export default {
               v-for="(item, ps) in paged_species.data.data"
               :key="ps" md4 sm6 xs12
               class="pa-6 pt-0"
+              @click="speciesView(item.id)"
             >
               <v-hover v-slot="{ hover }">
                 <div class="pb-8">
@@ -254,9 +262,13 @@ export default {
                     width="100%"
                     :elevation="hover ? 12 : 5"
                     :class="{ 'on-hover': hover }"
-                    @click="speciesView(item.id)"
                     style="cursor: pointer;">
-                    <v-img :src="item.display_photo ? item.display_photo : '/img/sample_shell.jpg'"></v-img>
+                    <v-img
+                      contain
+                      class="cover"
+                      style="max-height: 300px !important; height: 300px !important;"
+                      :src="item.display_photo ?
+                      `${$backendurl(item.display_photo)}` : '/img/sample_shell.jpg'"></v-img>
                   </v-card>
                   <v-card
                     :elevation="hover ? 12 : 5"
