@@ -1,5 +1,5 @@
 {
-  "name": "esco-engagement-system",
+  "name": "bintanseashells",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -20,6 +20,7 @@
     "msal": "^1.4.12",
     "nuxt": "^2.13.0",
     "vee-validate": "^3.3.9",
+    "vue-gallery": "^2.0.5",
     "vue-infinite-loading": "^2.4.5",
     "vue-infinite-scroll": "^2.0.2",
     "vue-star-rating": "^1.6.2",

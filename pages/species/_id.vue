@@ -137,7 +137,7 @@ export default {
             <v-card-text class="card-body">
                 <span class="kollektif">
                   <p class="mb-1">
-                    {{ specie.species.general_description }}
+                    {{ specie.species && specie.species.general_description }}
                   </p>
                 </span>
               </v-card-text>

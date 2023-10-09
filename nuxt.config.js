@@ -78,7 +78,8 @@ export default {
     '~/plugins/star-rating.js',
     '~/plugins/vee-validate.js',
     '~/plugins/get-data-from-apis.js',
-    { src: '~plugins/azure-auth.js', ssr: false }
+    { src: '~plugins/azure-auth.js', ssr: false },
+    { src: '~/plugins/vue-gallery.client.js', ssr: false }
   ],
   /*
   ** Auto import components

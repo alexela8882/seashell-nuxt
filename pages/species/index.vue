@@ -12,6 +12,8 @@ export default {
 
   data () {
     return {
+      index: null,
+      images: [],
       page: 1,
       selected_class: null,
       selected_family: null,
@@ -104,6 +106,13 @@ export default {
       const searchURL = new URL(window.location)
       searchURL.searchParams.set('page', this.filters.cpage)
       window.history.pushState({}, '', searchURL)
+
+      // re-populate
+      if ((this.paged_species && this.paged_species.data) && this.paged_species.data.data.length > 0) {
+        this.paged_species.data.data.map((item) => {
+          this.images.push(this.$backendurl(item.display_photo))
+        })
+      }
     },
 
     speciesView (id) {
@@ -158,6 +167,10 @@ export default {
 
 <template>
   <div class="px-md-16 px-6 pb-16">
+    <v-gallery
+      :images="images"
+      :index="index"
+      @close="index = null" />
     <v-row>
       <v-col cols="12" md="3">
         <div style="position: sticky; top: 90px;" class="grey lighten-4 rounded-xl pa-5 pb-0">
@@ -254,11 +267,17 @@ export default {
                     width="100%"
                     :elevation="hover ? 12 : 5"
                     :class="{ 'on-hover': hover }"
-                    @click="speciesView(item.id)"
                     style="cursor: pointer;">
-                    <v-img :src="item.display_photo ? `${$backendurl(item.display_photo)}` : '/img/sample_shell.jpg'"></v-img>
+                    <v-img
+                      contain
+                      class="cover"
+                      style="max-height: 300px !important; height: 300px !important;"
+                      @click="index = ps"
+                      :src="item.display_photo ?
+                      `${$backendurl(item.display_photo)}` : '/img/sample_shell.jpg'"></v-img>
                   </v-card>
                   <v-card
+                    @click="speciesView(item.id)"
                     :elevation="hover ? 12 : 5"
                     width="100%"
                     :class="{ 'on-hover': hover }"
