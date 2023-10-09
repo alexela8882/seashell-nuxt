@@ -190,7 +190,7 @@ export default {
       mobileAppIOS: true,
     },
     icon: {
-      source: '/MULTICOLORDOT SITE LOGO_FINAL-512px.png'
+      source: '/BINTAN SEASHELLS_favicon_512px copy.png'
     },
     workbox: {
       // importScripts: [
