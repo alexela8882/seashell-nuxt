@@ -384,13 +384,13 @@ var registrable = __webpack_require__(36);
 var VIcon = __webpack_require__(81);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VImg/VImg.js + 2 modules
-var VImg = __webpack_require__(66);
+var VImg = __webpack_require__(67);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VGrid/VRow.js
 var VRow = __webpack_require__(248);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VTextField/VTextField.js + 2 modules
-var VTextField = __webpack_require__(70);
+var VTextField = __webpack_require__(71);
 
 // CONCATENATED MODULE: ./pages/login.vue
 

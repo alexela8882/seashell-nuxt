@@ -151,7 +151,7 @@ var components_VCard = __webpack_require__(13);
 var VContainer = __webpack_require__(241);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VTextField/VTextField.js + 2 modules
-var VTextField = __webpack_require__(70);
+var VTextField = __webpack_require__(71);
 
 // CONCATENATED MODULE: ./pages/azure.vue
 

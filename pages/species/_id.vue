@@ -1,6 +1,8 @@
 <script>
 // imports
 import { mapState, mapGetters } from 'vuex'
+// import lightGallery from 'lightgallery.js'
+// import 'lightgallery.js/dist/css/lightgallery.css'
 
 export default {
   head: {
@@ -37,6 +39,20 @@ export default {
   },
 
   mounted () {
+    setTimeout(() => {
+      // lightgallery
+      let el = document.getElementById('speciesGallery')
+      window.lightGallery(el, {
+        thumbnail: true,
+        exThumbImage: 'data-src',
+        zoom: true,
+        rotate: true,
+        zoomOrigin: true
+      })
+
+      console.log(lightGallery)
+    }, 1000);
+
     this.initialize()
   },
 
@@ -82,7 +98,7 @@ export default {
   </div>
 </template> -->
 <template>
-  <div class="px-md-16 pa-5">
+  <div class="px-md-16 pa-5 pt-0">
     <div
       v-if="componentLoading"
       class="d-flex align-items-center justify-content-center"
@@ -108,8 +124,8 @@ export default {
       <div class="row">
         <div class="col-md-3">
           <v-card
-            class="card-sticky"
-            :class="responsiveBorderRadius">
+            v-if="specie.species"
+            class="card-sticky">
             <v-hover>
               <template v-slot:default="{ hover }">
               <v-card
@@ -168,10 +184,9 @@ export default {
                   <p class="mb-1"><a href="#references">References</a></p>
                 </span>
               </v-card-text>
-              
           </v-card>
         </div>
-        <div class="col-md-9">
+        <div v-if="specie.species" class="col-md-9">
           <div class="d-flex flex-row align-center">
             <div class="electric_blue--text text-capitalize mr-3" :class="`${$vuetify.breakpoint.xs ? 'text-h5' : 'text-h4'}`">
               <span class="avenir-black">{{ specie.species.common_name }}</span>
@@ -212,40 +227,82 @@ export default {
           <div v-if="specie.species_files.length != 0" id="other_photos" class="text-h6 font-bold text-uppercase my-3">
             <span class="avenir-black">Other Photos</span>
           </div>
-              <v-row
-                align="center"
-                justify="center"
-                class="images_row"
+            <v-layout id="speciesGallery" v-if="specie.species_files.length != 0" align-center justify-left row wrap>
+              <v-flex
+                v-for="(item, i) in specie.species_files"
+                :key="i"
+                :data-src="$backendurl(item.file_path+'/'+item.file_name)"
+                :data-download-url="$backendurl(item.file_path+'/'+item.file_name)"
+                sm6 xs12 md4 class="px-2">
+                <v-card
+                  class="rounded-xl mb-5 mx-auto"
+                  width="100%"
+                  elevation="5"
+                  style="cursor: pointer;">
+                    <v-img
+                      cover
+                      class="cover"
+                      style="max-height: 300px !important; height: 300px !important;"
+                      :src="$backendurl(item.file_path+'/'+item.file_name)"
+                    ></v-img>
+                </v-card>
+              </v-flex>
+            </v-layout>
+            <!-- <div class="other-photo-container">
+              <div
                 v-if="specie.species_files.length != 0"
-              >
-                <template v-for="(item, i) in specie.species_files">
-                  <v-col
-                    cols="6"
-                    md="6"
-                    lg="4"
-                  >
-                    <v-hover v-slot="{ hover }">
-                      <v-card>
-                        <v-img
-                          :src="$backendurl(item.file_path+'/'+item.file_name)"
-                          width="100%"
-                          @click="openImage(item.file_path+'/'+item.file_name)"
+                id="speciesGallery"
+                class="flex-container">
+                <a v-for="(item, i) in specie.species_files"
+                  class="flex-item"
+                  :href="$backendurl(item.file_path+'/'+item.file_name)">
+                  <img
+                    class="flex-img"
+                    :src="$backendurl(item.file_path+'/'+item.file_name)"/>
+                </a>
+              </div>
+            </div> -->
+            <!-- <div id="speciesGallery" class="border">
+              <a href="https://admin.bintanseashells.com//wysiwyg/species_display_photo/2023-09-28/1695873342Conus%20glans%20(ventral).png">
+                <img style="width: 50% !important; height: 50% !important;" src="https://admin.bintanseashells.com//wysiwyg/species_display_photo/2023-09-28/1695873342Conus%20glans%20(ventral).png" >
+              </a>
+              <a href="https://admin.bintanseashells.com//wysiwyg/species_display_photo/2023-10-02/1696229568Conus%20achatinus%20brown.png">
+                <img style="width: 50% !important; height: 50% !important;" src="https://admin.bintanseashells.com//wysiwyg/species_display_photo/2023-10-02/1696229568Conus%20achatinus%20brown.png" >
+              </a>
+            </div> -->
+            <!-- <v-row
+              align="center"
+              justify="center"
+              class="images_row"
+              v-if="specie.species_files.length != 0">
+              <template v-for="(item, i) in specie.species_files">
+                <v-col
+                  cols="6"
+                  md="6"
+                  lg="4"
+                >
+                  <v-hover v-slot="{ hover }">
+                    <v-card>
+                      <v-img
+                        :src="$backendurl(item.file_path+'/'+item.file_name)"
+                        width="100%"
+                        @click="openImage(item.file_path+'/'+item.file_name)"
+                      >
+                      </v-img>
+                      <v-fade-transition>
+                        <v-overlay
+                          v-if="hover"
+                          absolute
+                          color="#036358"
                         >
-                        </v-img>
-                        <v-fade-transition>
-                          <v-overlay
-                            v-if="hover"
-                            absolute
-                            color="#036358"
-                          >
-                            <v-btn @click="openImage(item.file_path+'/'+item.file_name)">View Image</v-btn>
-                          </v-overlay>
-                        </v-fade-transition>
-                      </v-card>
-                    </v-hover>
-                  </v-col>
-                </template>
-              </v-row>
+                          <v-btn @click="openImage(item.file_path+'/'+item.file_name)">View Image</v-btn>
+                        </v-overlay>
+                      </v-fade-transition>
+                    </v-card>
+                  </v-hover>
+                </v-col>
+              </template>
+            </v-row> -->
           <v-divider v-if="specie.species_files.length != 0" class="electric_blue"></v-divider>
           <div id="references" class="text-h6 font-bold text-uppercase my-3">
             <span class="avenir-black">References</span>
@@ -267,13 +324,11 @@ export default {
                 <v-img 
                   :src="selectedImage"
                   class="m-auto"
-                  :width="width"
                   max-width="unset"
                 ></v-img>
               </v-card-text>
               <v-card-actions>
                 <v-slider
-                  v-model="width"
                   class="align-self-stretch"
                   min="500"
                   max="5000"
@@ -361,6 +416,41 @@ export default {
     align-items: center!important;
     top: -30px;
     left: 0px;
+  }
+
+
+
+
+
+
+
+
+  .other-photo-container {
+    box-sizing: border-box;
+  }
+
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .flex-item {
+    padding: 10px;
+    flex: 50%;
+  }
+
+  .flex-img {
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  /* Responsive layout - makes a one column-layout instead of a two-column layout */
+  @media (max-width: 800px) {
+    .flex-item {
+      flex: 100%;
+    }
   }
 
 </style>

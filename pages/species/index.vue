@@ -59,8 +59,6 @@ export default {
   mounted () {
     window.scrollTo(0, 0)
 
-    console.log(document.documentElement.scrollHeight)
-
     const url_string = window.location.href
     const url = new URL(url_string)
     const searchPage = url.searchParams.get("page")
@@ -167,10 +165,6 @@ export default {
 
 <template>
   <div class="px-md-16 px-6 pb-16">
-    <v-gallery
-      :images="images"
-      :index="index"
-      @close="index = null" />
     <v-row>
       <v-col cols="12" md="3">
         <div style="position: sticky; top: 90px;" class="grey lighten-4 rounded-xl pa-5 pb-0">
@@ -259,6 +253,7 @@ export default {
               v-for="(item, ps) in paged_species.data.data"
               :key="ps" md4 sm6 xs12
               class="pa-6 pt-0"
+              @click="speciesView(item.id)"
             >
               <v-hover v-slot="{ hover }">
                 <div class="pb-8">
@@ -272,12 +267,10 @@ export default {
                       contain
                       class="cover"
                       style="max-height: 300px !important; height: 300px !important;"
-                      @click="index = ps"
                       :src="item.display_photo ?
                       `${$backendurl(item.display_photo)}` : '/img/sample_shell.jpg'"></v-img>
                   </v-card>
                   <v-card
-                    @click="speciesView(item.id)"
                     :elevation="hover ? 12 : 5"
                     width="100%"
                     :class="{ 'on-hover': hover }"

@@ -9,10 +9,10 @@ export { default as SavingSnackbar } from '../..\\components\\layouts\\SavingSna
 export { default as Snackbar } from '../..\\components\\layouts\\Snackbar.vue'
 export { default as Footer } from '../..\\components\\webportal\\Footer.vue'
 export { default as Navbar } from '../..\\components\\webportal\\Navbar.vue'
-export { default as Albums } from '../..\\components\\asyncComponents\\albums\\Albums.vue'
-export { default as AllComments } from '../..\\components\\asyncComponents\\comments\\AllComments.vue'
 export { default as EditForm } from '../..\\components\\global\\forms\\EditForm.vue'
 export { default as SubEditForm } from '../..\\components\\global\\forms\\SubEditForm.vue'
+export { default as Albums } from '../..\\components\\asyncComponents\\albums\\Albums.vue'
+export { default as AllComments } from '../..\\components\\asyncComponents\\comments\\AllComments.vue'
 export { default as ViewAttribute } from '../..\\components\\asyncComponents\\companies\\attributes\\ViewAttribute.vue'
 export { default as CompanyDeleteForm } from '../..\\components\\asyncComponents\\companies\\forms\\CompanyDeleteForm.vue'
 export { default as CompanyEditForm } from '../..\\components\\asyncComponents\\companies\\forms\\CompanyEditForm.vue'
@@ -61,10 +61,10 @@ export const LazySavingSnackbar = import('../..\\components\\layouts\\SavingSnac
 export const LazySnackbar = import('../..\\components\\layouts\\Snackbar.vue' /* webpackChunkName: "components_layouts/Snackbar" */).then(c => c.default || c)
 export const LazyFooter = import('../..\\components\\webportal\\Footer.vue' /* webpackChunkName: "components_webportal/Footer" */).then(c => c.default || c)
 export const LazyNavbar = import('../..\\components\\webportal\\Navbar.vue' /* webpackChunkName: "components_webportal/Navbar" */).then(c => c.default || c)
-export const LazyAlbums = import('../..\\components\\asyncComponents\\albums\\Albums.vue' /* webpackChunkName: "components_asyncComponents/albums/Albums" */).then(c => c.default || c)
-export const LazyAllComments = import('../..\\components\\asyncComponents\\comments\\AllComments.vue' /* webpackChunkName: "components_asyncComponents/comments/AllComments" */).then(c => c.default || c)
 export const LazyEditForm = import('../..\\components\\global\\forms\\EditForm.vue' /* webpackChunkName: "components_global/forms/EditForm" */).then(c => c.default || c)
 export const LazySubEditForm = import('../..\\components\\global\\forms\\SubEditForm.vue' /* webpackChunkName: "components_global/forms/SubEditForm" */).then(c => c.default || c)
+export const LazyAlbums = import('../..\\components\\asyncComponents\\albums\\Albums.vue' /* webpackChunkName: "components_asyncComponents/albums/Albums" */).then(c => c.default || c)
+export const LazyAllComments = import('../..\\components\\asyncComponents\\comments\\AllComments.vue' /* webpackChunkName: "components_asyncComponents/comments/AllComments" */).then(c => c.default || c)
 export const LazyViewAttribute = import('../..\\components\\asyncComponents\\companies\\attributes\\ViewAttribute.vue' /* webpackChunkName: "components_asyncComponents/companies/attributes/ViewAttribute" */).then(c => c.default || c)
 export const LazyCompanyDeleteForm = import('../..\\components\\asyncComponents\\companies\\forms\\CompanyDeleteForm.vue' /* webpackChunkName: "components_asyncComponents/companies/forms/CompanyDeleteForm" */).then(c => c.default || c)
 export const LazyCompanyEditForm = import('../..\\components\\asyncComponents\\companies\\forms\\CompanyEditForm.vue' /* webpackChunkName: "components_asyncComponents/companies/forms/CompanyEditForm" */).then(c => c.default || c)
