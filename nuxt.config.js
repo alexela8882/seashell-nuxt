@@ -72,12 +72,14 @@ export default {
   plugins: [
     '~/plugins/axios.js',
     '~/plugins/baseurl.js',
+    '~/plugins/backendurl.js',
     '~/plugins/snackbar.js',
     '~/plugins/saving-snackbar.js',
     '~/plugins/star-rating.js',
     '~/plugins/vee-validate.js',
     '~/plugins/get-data-from-apis.js',
-    { src: '~plugins/azure-auth.js', ssr: false }
+    { src: '~plugins/azure-auth.js', ssr: false },
+    { src: '~/plugins/vue-gallery.client.js', ssr: false }
   ],
   /*
   ** Auto import components
@@ -188,7 +190,7 @@ export default {
       mobileAppIOS: true,
     },
     icon: {
-      source: '/MULTICOLORDOT SITE LOGO_FINAL-512px.png'
+      source: '/BINTAN SEASHELLS_favicon_512px copy.png'
     },
     workbox: {
       // importScripts: [
