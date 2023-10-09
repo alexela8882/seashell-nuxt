@@ -80,7 +80,7 @@ export default {
     '~/plugins/get-data-from-apis.js',
     { src: '~plugins/azure-auth.js', ssr: false },
     { src: '~/plugins/vue-gallery.client.js', ssr: false },
-    { src: '~/plugins/lightgallery.client.js', ssr: false, mode: 'client' }
+    { src: '~/plugins/lightgallery.js', ssr: false }
   ],
   /*
   ** Auto import components

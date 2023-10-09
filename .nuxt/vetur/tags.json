@@ -191,24 +191,6 @@
   "LazyViewTarget": {
     "description": "Auto imported from components/asyncComponents/surveys/schedules/ViewTarget.vue"
   },
-  "AttributeDeleteForm": {
-    "description": "Auto imported from components/asyncComponents/companies/attributes/forms/AttributeDeleteForm.vue"
-  },
-  "LazyAttributeDeleteForm": {
-    "description": "Auto imported from components/asyncComponents/companies/attributes/forms/AttributeDeleteForm.vue"
-  },
-  "AttributeEditForm": {
-    "description": "Auto imported from components/asyncComponents/companies/attributes/forms/AttributeEditForm.vue"
-  },
-  "LazyAttributeEditForm": {
-    "description": "Auto imported from components/asyncComponents/companies/attributes/forms/AttributeEditForm.vue"
-  },
-  "AttributeSubEditForm": {
-    "description": "Auto imported from components/asyncComponents/companies/attributes/forms/AttributeSubEditForm.vue"
-  },
-  "LazyAttributeSubEditForm": {
-    "description": "Auto imported from components/asyncComponents/companies/attributes/forms/AttributeSubEditForm.vue"
-  },
   "EmployeeAccountForm": {
     "description": "Auto imported from components/asyncComponents/companies/employees/forms/EmployeeAccountForm.vue"
   },
@@ -238,6 +220,24 @@
   },
   "LazyEmployeeSegmentForm": {
     "description": "Auto imported from components/asyncComponents/companies/employees/forms/EmployeeSegmentForm.vue"
+  },
+  "AttributeDeleteForm": {
+    "description": "Auto imported from components/asyncComponents/companies/attributes/forms/AttributeDeleteForm.vue"
+  },
+  "LazyAttributeDeleteForm": {
+    "description": "Auto imported from components/asyncComponents/companies/attributes/forms/AttributeDeleteForm.vue"
+  },
+  "AttributeEditForm": {
+    "description": "Auto imported from components/asyncComponents/companies/attributes/forms/AttributeEditForm.vue"
+  },
+  "LazyAttributeEditForm": {
+    "description": "Auto imported from components/asyncComponents/companies/attributes/forms/AttributeEditForm.vue"
+  },
+  "AttributeSubEditForm": {
+    "description": "Auto imported from components/asyncComponents/companies/attributes/forms/AttributeSubEditForm.vue"
+  },
+  "LazyAttributeSubEditForm": {
+    "description": "Auto imported from components/asyncComponents/companies/attributes/forms/AttributeSubEditForm.vue"
   },
   "AcknowledgementSendForm": {
     "description": "Auto imported from components/asyncComponents/engagements/drivers/forms/AcknowledgementSendForm.vue"

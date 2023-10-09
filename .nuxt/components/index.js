@@ -30,14 +30,14 @@ export { default as ViewFrequency } from '../../components/asyncComponents/surve
 export { default as ViewSchedule } from '../../components/asyncComponents/surveys/schedules/ViewSchedule.vue'
 export { default as ViewSettings } from '../../components/asyncComponents/surveys/schedules/ViewSettings.vue'
 export { default as ViewTarget } from '../../components/asyncComponents/surveys/schedules/ViewTarget.vue'
-export { default as AttributeDeleteForm } from '../../components/asyncComponents/companies/attributes/forms/AttributeDeleteForm.vue'
-export { default as AttributeEditForm } from '../../components/asyncComponents/companies/attributes/forms/AttributeEditForm.vue'
-export { default as AttributeSubEditForm } from '../../components/asyncComponents/companies/attributes/forms/AttributeSubEditForm.vue'
 export { default as EmployeeAccountForm } from '../../components/asyncComponents/companies/employees/forms/EmployeeAccountForm.vue'
 export { default as EmployeeAddForm } from '../../components/asyncComponents/companies/employees/forms/EmployeeAddForm.vue'
 export { default as EmployeeDeleteForm } from '../../components/asyncComponents/companies/employees/forms/EmployeeDeleteForm.vue'
 export { default as EmployeeEditForm } from '../../components/asyncComponents/companies/employees/forms/EmployeeEditForm.vue'
 export { default as EmployeeSegmentForm } from '../../components/asyncComponents/companies/employees/forms/EmployeeSegmentForm.vue'
+export { default as AttributeDeleteForm } from '../../components/asyncComponents/companies/attributes/forms/AttributeDeleteForm.vue'
+export { default as AttributeEditForm } from '../../components/asyncComponents/companies/attributes/forms/AttributeEditForm.vue'
+export { default as AttributeSubEditForm } from '../../components/asyncComponents/companies/attributes/forms/AttributeSubEditForm.vue'
 export { default as AcknowledgementSendForm } from '../../components/asyncComponents/engagements/drivers/forms/AcknowledgementSendForm.vue'
 export { default as DriverAddForm } from '../../components/asyncComponents/engagements/drivers/forms/DriverAddForm.vue'
 export { default as DriverDeleteForm } from '../../components/asyncComponents/engagements/drivers/forms/DriverDeleteForm.vue'
@@ -82,14 +82,14 @@ export const LazyViewFrequency = import('../../components/asyncComponents/survey
 export const LazyViewSchedule = import('../../components/asyncComponents/surveys/schedules/ViewSchedule.vue' /* webpackChunkName: "components/asyncComponents/surveys/schedules/ViewSchedule" */).then(c => c.default || c)
 export const LazyViewSettings = import('../../components/asyncComponents/surveys/schedules/ViewSettings.vue' /* webpackChunkName: "components/asyncComponents/surveys/schedules/ViewSettings" */).then(c => c.default || c)
 export const LazyViewTarget = import('../../components/asyncComponents/surveys/schedules/ViewTarget.vue' /* webpackChunkName: "components/asyncComponents/surveys/schedules/ViewTarget" */).then(c => c.default || c)
-export const LazyAttributeDeleteForm = import('../../components/asyncComponents/companies/attributes/forms/AttributeDeleteForm.vue' /* webpackChunkName: "components/asyncComponents/companies/attributes/forms/AttributeDeleteForm" */).then(c => c.default || c)
-export const LazyAttributeEditForm = import('../../components/asyncComponents/companies/attributes/forms/AttributeEditForm.vue' /* webpackChunkName: "components/asyncComponents/companies/attributes/forms/AttributeEditForm" */).then(c => c.default || c)
-export const LazyAttributeSubEditForm = import('../../components/asyncComponents/companies/attributes/forms/AttributeSubEditForm.vue' /* webpackChunkName: "components/asyncComponents/companies/attributes/forms/AttributeSubEditForm" */).then(c => c.default || c)
 export const LazyEmployeeAccountForm = import('../../components/asyncComponents/companies/employees/forms/EmployeeAccountForm.vue' /* webpackChunkName: "components/asyncComponents/companies/employees/forms/EmployeeAccountForm" */).then(c => c.default || c)
 export const LazyEmployeeAddForm = import('../../components/asyncComponents/companies/employees/forms/EmployeeAddForm.vue' /* webpackChunkName: "components/asyncComponents/companies/employees/forms/EmployeeAddForm" */).then(c => c.default || c)
 export const LazyEmployeeDeleteForm = import('../../components/asyncComponents/companies/employees/forms/EmployeeDeleteForm.vue' /* webpackChunkName: "components/asyncComponents/companies/employees/forms/EmployeeDeleteForm" */).then(c => c.default || c)
 export const LazyEmployeeEditForm = import('../../components/asyncComponents/companies/employees/forms/EmployeeEditForm.vue' /* webpackChunkName: "components/asyncComponents/companies/employees/forms/EmployeeEditForm" */).then(c => c.default || c)
 export const LazyEmployeeSegmentForm = import('../../components/asyncComponents/companies/employees/forms/EmployeeSegmentForm.vue' /* webpackChunkName: "components/asyncComponents/companies/employees/forms/EmployeeSegmentForm" */).then(c => c.default || c)
+export const LazyAttributeDeleteForm = import('../../components/asyncComponents/companies/attributes/forms/AttributeDeleteForm.vue' /* webpackChunkName: "components/asyncComponents/companies/attributes/forms/AttributeDeleteForm" */).then(c => c.default || c)
+export const LazyAttributeEditForm = import('../../components/asyncComponents/companies/attributes/forms/AttributeEditForm.vue' /* webpackChunkName: "components/asyncComponents/companies/attributes/forms/AttributeEditForm" */).then(c => c.default || c)
+export const LazyAttributeSubEditForm = import('../../components/asyncComponents/companies/attributes/forms/AttributeSubEditForm.vue' /* webpackChunkName: "components/asyncComponents/companies/attributes/forms/AttributeSubEditForm" */).then(c => c.default || c)
 export const LazyAcknowledgementSendForm = import('../../components/asyncComponents/engagements/drivers/forms/AcknowledgementSendForm.vue' /* webpackChunkName: "components/asyncComponents/engagements/drivers/forms/AcknowledgementSendForm" */).then(c => c.default || c)
 export const LazyDriverAddForm = import('../../components/asyncComponents/engagements/drivers/forms/DriverAddForm.vue' /* webpackChunkName: "components/asyncComponents/engagements/drivers/forms/DriverAddForm" */).then(c => c.default || c)
 export const LazyDriverDeleteForm = import('../../components/asyncComponents/engagements/drivers/forms/DriverDeleteForm.vue' /* webpackChunkName: "components/asyncComponents/engagements/drivers/forms/DriverDeleteForm" */).then(c => c.default || c)

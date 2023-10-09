@@ -1,7 +1,7 @@
 <script>
 // imports
 import { mapState, mapGetters } from 'vuex'
-// import 'lightgallery.js'
+// import lightGallery from 'lightgallery.js'
 // import 'lightgallery.js/dist/css/lightgallery.css'
 
 export default {
@@ -39,17 +39,13 @@ export default {
   },
 
   mounted () {
-    // lightgallery
-    let el = document.getElementById('speciesGallery')
-    lightGallery(el, {
-      thumbnail: true,
-      animateThumb: true,
-      zoom: true,
-      rotate: true,
-      rotateLeft: true,
-      rotateRight: true,
-      download: true,
-    })
+    setTimeout(() => {
+      // lightgallery
+      let el = document.getElementById('speciesGallery')
+      window.lightGallery(el)
+
+      console.log(lightGallery)
+    }, 1000);
 
     this.initialize()
   },
