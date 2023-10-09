@@ -86,7 +86,7 @@ export default {
       // Any code to be executed when the window is scrolled
       this.scrollHeight = window.scrollY
 
-      if (this.$route.name !== 'index' && !this.$vuetify.breakpoint.sm) {
+      if (this.$route.name !== 'index' && (!this.$vuetify.breakpoint.sm && !this.$vuetify.breakpoint.xs)) {
         if (this.scrollHeight <= 15) this.appbarClass = 'py-8'
         else this.appbarClass = 'py-0'
       }
@@ -183,8 +183,8 @@ export default {
         this.navbarClass = `${fontSize} font-weight-black white--text`
         this.navbarTheme = false
       } else {
-        this.containerClass = `${!this.$vuetify.breakpoint.sm && 'bottom-rounded-md shadow-xl py-16'} electric_blue`
-        this.appbarClass = `${this.$vuetify.breakpoint.sm ? 'py-0' : 'py-8'}`
+        this.containerClass = `${(!this.$vuetify.breakpoint.sm && !this.$vuetify.breakpoint.xs) && 'bottom-rounded-md shadow-xl py-16'} electric_blue`
+        this.appbarClass = `${this.$vuetify.breakpoint.sm || this.$vuetify.breakpoint.xs ? 'py-0' : 'py-8'}`
         this.navbarBg = "electric_blue"
         this.navbarClass = "text-h4 white--text"
         this.navbarTheme = true

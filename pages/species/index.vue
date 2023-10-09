@@ -256,7 +256,7 @@ export default {
                     :class="{ 'on-hover': hover }"
                     @click="speciesView(item.id)"
                     style="cursor: pointer;">
-                    <v-img :src="item.display_photo ? item.display_photo : '/img/sample_shell.jpg'"></v-img>
+                    <v-img :src="item.display_photo ? `${$backendurl(item.display_photo)}` : '/img/sample_shell.jpg'"></v-img>
                   </v-card>
                   <v-card
                     :elevation="hover ? 12 : 5"

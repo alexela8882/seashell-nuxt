@@ -1,7 +1,7 @@
 export default ({}, inject) => {
-  const url = 'https://admin.bintanseashells.com/api/'
+  const url = 'https://admin.bintanseashells.com/'
   const uri = uri => {
     return `${url}${uri}`
   }
-  inject('baseurl', uri)
+  inject('backendurl', uri)
 }

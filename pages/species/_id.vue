@@ -117,7 +117,7 @@ export default {
                 :class="{ 'on-hover': hover }"
               >
               <v-img v-if="specie.species.display_photo != null"
-                :src="specie.species.display_photo"
+                :src="$backendurl(specie.species.display_photo)"
               ></v-img>
               <v-img v-else
                 src="/img/sample_shell.jpg"
@@ -227,7 +227,7 @@ export default {
                     <v-hover v-slot="{ hover }">
                       <v-card>
                         <v-img
-                          :src="item.file_path+'/'+item.file_name"
+                          :src="$backendurl(item.file_path+'/'+item.file_name)"
                           width="100%"
                           @click="openImage(item.file_path+'/'+item.file_name)"
                         >

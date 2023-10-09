@@ -72,6 +72,7 @@ export default {
   plugins: [
     '~/plugins/axios.js',
     '~/plugins/baseurl.js',
+    '~/plugins/backendurl.js',
     '~/plugins/snackbar.js',
     '~/plugins/saving-snackbar.js',
     '~/plugins/star-rating.js',
@@ -106,7 +107,7 @@ export default {
   ** See https://axios.nuxtjs.org/options
   */
   axios: {
-    baseURL: 'http://localhost:8000'
+    baseURL: 'https://admin.bintanseashells.com'
   },
   auth: {
     watchLoggedIn: true,
