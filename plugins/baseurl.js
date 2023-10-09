@@ -1,5 +1,5 @@
 export default ({}, inject) => {
-  const url = 'https://admin.bintanseashells.com/api/'
+  const url = 'http://localhost:8000/api/'
   const uri = uri => {
     return `${url}${uri}`
   }
