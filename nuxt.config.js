@@ -79,7 +79,8 @@ export default {
     '~/plugins/vee-validate.js',
     '~/plugins/get-data-from-apis.js',
     { src: '~plugins/azure-auth.js', ssr: false },
-    { src: '~/plugins/vue-gallery.client.js', ssr: false }
+    { src: '~/plugins/vue-gallery.client.js', ssr: false },
+    { src: '~/plugins/lightgallery.client.js', ssr: false, mode: 'client' }
   ],
   /*
   ** Auto import components

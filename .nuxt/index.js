@@ -30,6 +30,7 @@ import nuxt_plugin_veevalidate_1a0c1998 from 'nuxt_plugin_veevalidate_1a0c1998' 
 import nuxt_plugin_getdatafromapis_5883911e from 'nuxt_plugin_getdatafromapis_5883911e' // Source: ../plugins/get-data-from-apis.js (mode: 'all')
 import nuxt_plugin_azureauth_2461a0cc from 'nuxt_plugin_azureauth_2461a0cc' // Source: ../plugins/azure-auth.js (mode: 'client')
 import nuxt_plugin_vuegalleryclient_76ec8f1a from 'nuxt_plugin_vuegalleryclient_76ec8f1a' // Source: ../plugins/vue-gallery.client.js (mode: 'client')
+import nuxt_plugin_lightgalleryclient_038cd350 from 'nuxt_plugin_lightgalleryclient_038cd350' // Source: ../plugins/lightgallery.client.js (mode: 'client')
 import nuxt_plugin_plugin_19021146 from 'nuxt_plugin_plugin_19021146' // Source: ./auth/plugin.js (mode: 'all')
 
 // Component: <ClientOnly>
@@ -278,6 +279,10 @@ async function createApp(ssrContext, config = {}) {
 
   if (process.client && typeof nuxt_plugin_vuegalleryclient_76ec8f1a === 'function') {
     await nuxt_plugin_vuegalleryclient_76ec8f1a(app.context, inject)
+  }
+
+  if (process.client && typeof nuxt_plugin_lightgalleryclient_038cd350 === 'function') {
+    await nuxt_plugin_lightgalleryclient_038cd350(app.context, inject)
   }
 
   if (typeof nuxt_plugin_plugin_19021146 === 'function') {
