@@ -21,13 +21,13 @@ export default {
 <template>
   <div>
     <div
-      class="shadow-xl px-md-16 px-5 py-5 electric_blue w-100 mx-0 py-16 pb-0"
+      class="shadow-xl px-md-16 px-5 py-5 electric_blue w-100 mx-0 py-16"
       :class="responsiveBorderRadius"
       style="position: relative; z-index: 51 !important; margin-top: -120px;">
       <div
         class="px-md-16 white--text"
         style="width: 100% !important;"
-        :style="`padding-top: ${$vuetify.breakpoint.xs ? '50px' : '0px'}`">
+        :style="`padding-top: ${($vuetify.breakpoint.xs || $vuetify.breakpoint.sm) ? '50px' : '0px'}`">
         <div
           :style="$vuetify.breakpoint.xl ? 'font-size: 175px' : 'font-size: 125px'"
           class="soul-seashell">
@@ -36,15 +36,22 @@ export default {
         <v-row class="w-100">
           <v-col cols="12" sm="6" height="100%">
             <v-card width="100%" class="rounded-xl" elevation="5" height="100%">
-              <v-card-text>
-                Google map
-              </v-card-text>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3989.113899872819!2d104.49770287511741!3d1.0766720623927117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMcKwMDQnMzYuMCJOIDEwNMKwMzAnMDEuMCJF!5e0!3m2!1sen!2sph!4v1696913227457!5m2!1sen!2sph"
+                width="100%"
+                height="100%"
+                style="border:0;"
+                allowfullscreen="true"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
             </v-card>
           </v-col>
           <v-col cols="6" sm="3">
             <v-row no-gutters>
               <v-col cols="12" class="mb-5">
-                <v-img height="100%" cover src="/img/island-page/1section-1-1-square.jpg" class="rounded-xl"></v-img>
+                <v-card elevation="0" class="rounded-xl">
+                  <v-img height="100%" cover src="/img/island-page/1section-1-1-square.jpg"></v-img>
+                </v-card>
               </v-col>
               <v-col cols="12">
                 <v-img height="100%" cover src="/img/island-page/1section-1-3-square.jpg" class="rounded-xl"></v-img>
@@ -64,13 +71,13 @@ export default {
           <v-col cols="12" class="mt-n3">
             <v-row>
               <v-col cols="6" md="4">
-                <v-img height="70%" cover src="/img/island-page/1section-1-2-square.jpg" class="rounded-xl"></v-img>
+                <v-img height="100%" cover src="/img/island-page/2section-1-1-cropped.jpg" class="rounded-xl"></v-img>
               </v-col>
               <v-col cols="6" md="4">
-                <v-img height="70%" cover src="/img/island-page/1section-1-2-square.jpg" class="rounded-xl"></v-img>
+                <v-img height="100%" cover src="/img/island-page/2section-1-2-cropped.jpg" class="rounded-xl"></v-img>
               </v-col>
               <v-col cols="12" md="4">
-                <v-img height="70%" cover src="/img/island-page/1section-1-2-square.jpg" class="rounded-xl"></v-img>
+                <v-img height="100%" cover src="/img/island-page/2section-1-3-cropped.jpg" class="rounded-xl"></v-img>
               </v-col>
             </v-row>
           </v-col>

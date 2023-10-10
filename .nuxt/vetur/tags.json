@@ -65,18 +65,6 @@
   "LazyNavbar": {
     "description": "Auto imported from components/webportal/Navbar.vue"
   },
-  "Albums": {
-    "description": "Auto imported from components/asyncComponents/albums/Albums.vue"
-  },
-  "LazyAlbums": {
-    "description": "Auto imported from components/asyncComponents/albums/Albums.vue"
-  },
-  "AllComments": {
-    "description": "Auto imported from components/asyncComponents/comments/AllComments.vue"
-  },
-  "LazyAllComments": {
-    "description": "Auto imported from components/asyncComponents/comments/AllComments.vue"
-  },
   "EditForm": {
     "description": "Auto imported from components/global/forms/EditForm.vue"
   },
@@ -88,6 +76,18 @@
   },
   "LazySubEditForm": {
     "description": "Auto imported from components/global/forms/SubEditForm.vue"
+  },
+  "Albums": {
+    "description": "Auto imported from components/asyncComponents/albums/Albums.vue"
+  },
+  "LazyAlbums": {
+    "description": "Auto imported from components/asyncComponents/albums/Albums.vue"
+  },
+  "AllComments": {
+    "description": "Auto imported from components/asyncComponents/comments/AllComments.vue"
+  },
+  "LazyAllComments": {
+    "description": "Auto imported from components/asyncComponents/comments/AllComments.vue"
   },
   "ViewAttribute": {
     "description": "Auto imported from components/asyncComponents/companies/attributes/ViewAttribute.vue"
@@ -137,30 +137,6 @@
   "LazyCards": {
     "description": "Auto imported from components/asyncComponents/photos/PhotoCards/Cards.vue"
   },
-  "SurveyAddForm": {
-    "description": "Auto imported from components/asyncComponents/surveys/forms/SurveyAddForm.vue"
-  },
-  "LazySurveyAddForm": {
-    "description": "Auto imported from components/asyncComponents/surveys/forms/SurveyAddForm.vue"
-  },
-  "SurveyDeleteForm": {
-    "description": "Auto imported from components/asyncComponents/surveys/forms/SurveyDeleteForm.vue"
-  },
-  "LazySurveyDeleteForm": {
-    "description": "Auto imported from components/asyncComponents/surveys/forms/SurveyDeleteForm.vue"
-  },
-  "SurveySubAddForm": {
-    "description": "Auto imported from components/asyncComponents/surveys/forms/SurveySubAddForm.vue"
-  },
-  "LazySurveySubAddForm": {
-    "description": "Auto imported from components/asyncComponents/surveys/forms/SurveySubAddForm.vue"
-  },
-  "SurveyViewQuestion": {
-    "description": "Auto imported from components/asyncComponents/surveys/forms/SurveyViewQuestion.vue"
-  },
-  "LazySurveyViewQuestion": {
-    "description": "Auto imported from components/asyncComponents/surveys/forms/SurveyViewQuestion.vue"
-  },
   "Activity": {
     "description": "Auto imported from components/asyncComponents/surveys/schedules/Activity.vue"
   },
@@ -191,23 +167,29 @@
   "LazyViewTarget": {
     "description": "Auto imported from components/asyncComponents/surveys/schedules/ViewTarget.vue"
   },
-  "AttributeDeleteForm": {
-    "description": "Auto imported from components/asyncComponents/companies/attributes/forms/AttributeDeleteForm.vue"
+  "SurveyAddForm": {
+    "description": "Auto imported from components/asyncComponents/surveys/forms/SurveyAddForm.vue"
   },
-  "LazyAttributeDeleteForm": {
-    "description": "Auto imported from components/asyncComponents/companies/attributes/forms/AttributeDeleteForm.vue"
+  "LazySurveyAddForm": {
+    "description": "Auto imported from components/asyncComponents/surveys/forms/SurveyAddForm.vue"
   },
-  "AttributeEditForm": {
-    "description": "Auto imported from components/asyncComponents/companies/attributes/forms/AttributeEditForm.vue"
+  "SurveyDeleteForm": {
+    "description": "Auto imported from components/asyncComponents/surveys/forms/SurveyDeleteForm.vue"
   },
-  "LazyAttributeEditForm": {
-    "description": "Auto imported from components/asyncComponents/companies/attributes/forms/AttributeEditForm.vue"
+  "LazySurveyDeleteForm": {
+    "description": "Auto imported from components/asyncComponents/surveys/forms/SurveyDeleteForm.vue"
   },
-  "AttributeSubEditForm": {
-    "description": "Auto imported from components/asyncComponents/companies/attributes/forms/AttributeSubEditForm.vue"
+  "SurveySubAddForm": {
+    "description": "Auto imported from components/asyncComponents/surveys/forms/SurveySubAddForm.vue"
   },
-  "LazyAttributeSubEditForm": {
-    "description": "Auto imported from components/asyncComponents/companies/attributes/forms/AttributeSubEditForm.vue"
+  "LazySurveySubAddForm": {
+    "description": "Auto imported from components/asyncComponents/surveys/forms/SurveySubAddForm.vue"
+  },
+  "SurveyViewQuestion": {
+    "description": "Auto imported from components/asyncComponents/surveys/forms/SurveyViewQuestion.vue"
+  },
+  "LazySurveyViewQuestion": {
+    "description": "Auto imported from components/asyncComponents/surveys/forms/SurveyViewQuestion.vue"
   },
   "EmployeeAccountForm": {
     "description": "Auto imported from components/asyncComponents/companies/employees/forms/EmployeeAccountForm.vue"
@@ -238,6 +220,24 @@
   },
   "LazyEmployeeSegmentForm": {
     "description": "Auto imported from components/asyncComponents/companies/employees/forms/EmployeeSegmentForm.vue"
+  },
+  "AttributeDeleteForm": {
+    "description": "Auto imported from components/asyncComponents/companies/attributes/forms/AttributeDeleteForm.vue"
+  },
+  "LazyAttributeDeleteForm": {
+    "description": "Auto imported from components/asyncComponents/companies/attributes/forms/AttributeDeleteForm.vue"
+  },
+  "AttributeEditForm": {
+    "description": "Auto imported from components/asyncComponents/companies/attributes/forms/AttributeEditForm.vue"
+  },
+  "LazyAttributeEditForm": {
+    "description": "Auto imported from components/asyncComponents/companies/attributes/forms/AttributeEditForm.vue"
+  },
+  "AttributeSubEditForm": {
+    "description": "Auto imported from components/asyncComponents/companies/attributes/forms/AttributeSubEditForm.vue"
+  },
+  "LazyAttributeSubEditForm": {
+    "description": "Auto imported from components/asyncComponents/companies/attributes/forms/AttributeSubEditForm.vue"
   },
   "AcknowledgementSendForm": {
     "description": "Auto imported from components/asyncComponents/engagements/drivers/forms/AcknowledgementSendForm.vue"
