@@ -263,7 +263,7 @@ export default {
           <div id="conservation_status" class="text-h6 font-bold text-uppercase my-3">
             <span class="avenir-black">Conservation Status</span>
           </div>
-          <div class="conservation-status-conatiner">
+          <div class="conservation-status-container">
             <v-img  
               contain 
               max-width="950" 
@@ -436,7 +436,7 @@ export default {
     opacity: 0.7;
   } */
 
-  .conservation-status-conatiner{
+  .conservation-status-container{
     height: 120px;
     display: flex;
     overflow: auto;
@@ -503,7 +503,7 @@ export default {
 
 </style>
 <style>
-    .lg-backdrop.in {
+    .lg-backdrop.in:has(+ .speciesDisplayPhoto) {
       opacity: 0.85;
     }
     .speciesDisplayPhoto.lg-outer .lg-inner {
