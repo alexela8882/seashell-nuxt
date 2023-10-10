@@ -192,7 +192,7 @@ export default {
       mobileAppIOS: true,
     },
     icon: {
-      source: '/BINTAN SEASHELLS_favicon_512px copy.png'
+      source: '/bintan-favicon.png'
     },
     workbox: {
       // importScripts: [

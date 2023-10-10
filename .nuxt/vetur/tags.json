@@ -35,18 +35,6 @@
   "LazyLoadingComponent": {
     "description": "Auto imported from components/asyncComponents/LoadingComponent.vue"
   },
-  "Footer": {
-    "description": "Auto imported from components/webportal/Footer.vue"
-  },
-  "LazyFooter": {
-    "description": "Auto imported from components/webportal/Footer.vue"
-  },
-  "Navbar": {
-    "description": "Auto imported from components/webportal/Navbar.vue"
-  },
-  "LazyNavbar": {
-    "description": "Auto imported from components/webportal/Navbar.vue"
-  },
   "NavBar": {
     "description": "Auto imported from components/layouts/NavBar.vue"
   },
@@ -64,6 +52,18 @@
   },
   "LazySnackbar": {
     "description": "Auto imported from components/layouts/Snackbar.vue"
+  },
+  "Footer": {
+    "description": "Auto imported from components/webportal/Footer.vue"
+  },
+  "LazyFooter": {
+    "description": "Auto imported from components/webportal/Footer.vue"
+  },
+  "Navbar": {
+    "description": "Auto imported from components/webportal/Navbar.vue"
+  },
+  "LazyNavbar": {
+    "description": "Auto imported from components/webportal/Navbar.vue"
   },
   "EditForm": {
     "description": "Auto imported from components/global/forms/EditForm.vue"
