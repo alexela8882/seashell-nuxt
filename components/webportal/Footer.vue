@@ -26,16 +26,8 @@ export default {
         link: "/about_us",
       },
       {
-        text: "Team",
-        link: "/team",
-      },
-      {
         text: "Services",
         link: "/services",
-      },
-      {
-        text: "Contact Us",
-        link: "/contact_us",
       },
     ],
     padless: false,
@@ -63,7 +55,7 @@ export default {
         <v-btn
           v-for="(link, i) in links"
           :key="i"
-          :color="`${$route.name == 'index' ? 'electric_blue' : 'white'}`"
+          :color="`${($route.name == 'index') ? 'electric_blue' : 'white'}`"
           text
           rounded
           class="mx-1"
@@ -74,7 +66,7 @@ export default {
       <v-divider></v-divider>
 
       <v-card-text
-        :class="`${$route.name == 'index' ? 'electric_blue--text' : 'white--text'}`"
+        :class="`${($route.name == 'index') ? 'electric_blue--text' : 'white--text'}`"
         class="text-h5">
         {{ new Date().getFullYear() }} — <strong>Bintan Seashells</strong>
       </v-card-text>
