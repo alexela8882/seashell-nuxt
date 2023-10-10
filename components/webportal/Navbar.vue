@@ -255,7 +255,6 @@ export default {
           icon
           plain
           :small="!$vuetify.breakpoint.xl"
-          color="red-lighten-2"
           class="text-lowercase rounded-lg"
           :class="$route.name == 'bintan-island' ? 'electric_blue--text' : 'white--text'">
           <v-icon>mdi-magnify</v-icon>
@@ -271,6 +270,7 @@ export default {
             <v-btn
               dark
               icon
+              :class="$route.name == 'bintan-island' ? 'electric_blue--text' : 'white--text'"
               v-bind="attrs"
               v-on="on">
               <v-icon>mdi-menu</v-icon>
