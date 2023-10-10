@@ -36,7 +36,7 @@
     "pages/about.f7d0f51.js",
     "pages/admin/index.8de2e0f.js",
     "pages/azure.0c1f330.js",
-    "pages/bintan-island/index.d3e94df.js",
+    "pages/bintan-island/index.54856f2.js",
     "pages/dashboard/index.5b2b6f4.js",
     "pages/index.120c1d2.js",
     "pages/login.e8e739c.js",
@@ -45,12 +45,12 @@
     "pages/species/index.4d77bcd.js",
     "pages/users/index.e4f514e.js",
     "pages/users/profile/index.eae1838.js",
-    "runtime.12e8016.js",
+    "runtime.4a5140a.js",
     "vendors/commons.4aadaef.js",
     "vendors/roles.index~species.index.679b1eb.js"
   ],
   "initial": [
-    "runtime.12e8016.js",
+    "runtime.4a5140a.js",
     "vendors/commons.4aadaef.js",
     "app.dae1c66.js"
   ],
@@ -62,7 +62,7 @@
     "pages/about.f7d0f51.js",
     "pages/admin/index.8de2e0f.js",
     "pages/azure.0c1f330.js",
-    "pages/bintan-island/index.d3e94df.js",
+    "pages/bintan-island/index.54856f2.js",
     "pages/dashboard/index.5b2b6f4.js",
     "pages/index.120c1d2.js",
     "pages/login.e8e739c.js",
@@ -12891,13 +12891,13 @@
     "9f68714a": [
       35
     ],
-    "851fa4ea": [
+    "a3b7b2a0": [
       35
     ],
     "16d5e3a8": [
       35
     ],
-    "050e2899": [
+    "147bbc84": [
       35
     ],
     "72e1f432": [
@@ -12981,7 +12981,7 @@
       "pages/azure.0c1f330.js"
     ],
     "2a2447ec": [
-      "pages/bintan-island/index.d3e94df.js"
+      "pages/bintan-island/index.54856f2.js"
     ],
     "da4831d4": [
       "pages/dashboard/index.5b2b6f4.js"
@@ -13008,7 +13008,7 @@
       "pages/users/profile/index.eae1838.js"
     ],
     "6fca0322": [
-      "runtime.12e8016.js"
+      "runtime.4a5140a.js"
     ],
     "07a97964": [
       "vendors/commons.4aadaef.js"

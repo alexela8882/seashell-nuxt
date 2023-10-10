@@ -48,11 +48,6 @@ export default {
 
 <template>
   <div>
-    <v-gallery
-      :images="images"
-      :index="index"
-      :options="options"
-      @close="index = null" />
     <div
       class="shadow-xl px-md-16 px-5 py-5 electric_blue w-100 mx-0 py-16"
       :class="responsiveBorderRadius"
@@ -62,7 +57,7 @@ export default {
         style="width: 100% !important;"
         :style="`padding-top: ${($vuetify.breakpoint.xs || $vuetify.breakpoint.sm) ? '50px' : '0px'}`">
         <div
-          :style="$vuetify.breakpoint.xl ? 'font-size: 175px' : 'font-size: 125px'"
+          :style="`font-size: ${$vuetify.breakpoint.xl ? '175px' : ($vuetify.breakpoint.sm || $vuetify.breakpoint.xs ? '80px' : '125px')}`"
           class="soul-seashell">
           Bintan Island
         </div>
@@ -316,6 +311,12 @@ export default {
         </v-row>
       </div>
     </div>
+
+    <v-gallery
+      :images="images"
+      :index="index"
+      :options="options"
+      @close="index = null" />
   </div>
 </template>
 
