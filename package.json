@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "nuxt",
-    "build": "nuxt build",
+    "dev": "rm -rf /node_modules/.cache/pwa/icon .nuxt && nuxt",
+    "build": "rm -rf /node_modules/.cache/pwa/icon .nuxt && nuxt build",
     "start": "nuxt start",
     "export": "nuxt export",
     "serve": "nuxt serve",
