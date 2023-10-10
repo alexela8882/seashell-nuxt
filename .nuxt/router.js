@@ -6,6 +6,7 @@ import scrollBehavior from './router.scrollBehavior.js'
 const _6ed58bca = () => interopDefault(import('..\\pages\\about.vue' /* webpackChunkName: "pages/about" */))
 const _0ed63714 = () => interopDefault(import('..\\pages\\admin\\index.vue' /* webpackChunkName: "pages/admin/index" */))
 const _636539cc = () => interopDefault(import('..\\pages\\azure.vue' /* webpackChunkName: "pages/azure" */))
+const _41f0bdc6 = () => interopDefault(import('..\\pages\\bintan-island\\index.vue' /* webpackChunkName: "pages/bintan-island/index" */))
 const _eb62cade = () => interopDefault(import('..\\pages\\dashboard\\index.vue' /* webpackChunkName: "pages/dashboard/index" */))
 const _583509a6 = () => interopDefault(import('..\\pages\\login.vue' /* webpackChunkName: "pages/login" */))
 const _5a408848 = () => interopDefault(import('..\\pages\\roles\\index.vue' /* webpackChunkName: "pages/roles/index" */))
@@ -43,6 +44,10 @@ export const routerOptions = {
     path: "/azure",
     component: _636539cc,
     name: "azure"
+  }, {
+    path: "/bintan-island",
+    component: _41f0bdc6,
+    name: "bintan-island"
   }, {
     path: "/dashboard",
     component: _eb62cade,

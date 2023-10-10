@@ -1,4 +1,4 @@
-exports.ids = [12];
+exports.ids = [13];
 exports.modules = {
 
 /***/ 266:
@@ -28,7 +28,7 @@ module.exports = exports;
 
 /***/ }),
 
-/***/ 301:
+/***/ 302:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -229,7 +229,7 @@ module.exports = exports;
 
 /***/ }),
 
-/***/ 343:
+/***/ 347:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -319,7 +319,7 @@ var external_vue_infinite_loading_default = /*#__PURE__*/__webpack_require__.n(e
   },
   components: {
     InfiniteLoading: external_vue_infinite_loading_default.a,
-    UserCards: () => __webpack_require__.e(/* import() */ 14).then(__webpack_require__.bind(null, 346))
+    UserCards: () => __webpack_require__.e(/* import() */ 15).then(__webpack_require__.bind(null, 350))
   },
   data: () => ({
     lastPage: false,
@@ -425,7 +425,7 @@ var VNavigationDrawer = __webpack_require__(244);
 var VRow = __webpack_require__(248);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VSkeletonLoader/VSkeletonLoader.js
-var VSkeletonLoader = __webpack_require__(301);
+var VSkeletonLoader = __webpack_require__(302);
 
 // CONCATENATED MODULE: ./pages/users/index.vue
 
