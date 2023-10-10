@@ -73,6 +73,7 @@ export default {
     '~/plugins/axios.js',
     '~/plugins/baseurl.js',
     '~/plugins/backendurl.js',
+    '~/plugins/frontendurl.js',
     '~/plugins/snackbar.js',
     '~/plugins/saving-snackbar.js',
     '~/plugins/star-rating.js',
@@ -191,7 +192,7 @@ export default {
       mobileAppIOS: true,
     },
     icon: {
-      source: '/BINTAN SEASHELLS_favicon_512px copy.png'
+      source: '/bintan-favicon.png'
     },
     workbox: {
       // importScripts: [

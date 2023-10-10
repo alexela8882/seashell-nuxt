@@ -13,16 +13,17 @@ import { createStore } from './store.js'
 
 /* Plugins */
 
-import nuxt_plugin_plugin_1e2bcb18 from 'nuxt_plugin_plugin_1e2bcb18' // Source: ./components/plugin.js (mode: 'all')
-import nuxt_plugin_plugin_2c37440c from 'nuxt_plugin_plugin_2c37440c' // Source: ./vuetify/plugin.js (mode: 'all')
-import nuxt_plugin_axios_3629538a from 'nuxt_plugin_axios_3629538a' // Source: ./axios.js (mode: 'all')
-import nuxt_plugin_workbox_5a19e3b4 from 'nuxt_plugin_workbox_5a19e3b4' // Source: ./workbox.js (mode: 'client')
-import nuxt_plugin_metaplugin_9cf2618e from 'nuxt_plugin_metaplugin_9cf2618e' // Source: ./pwa/meta.plugin.js (mode: 'all')
-import nuxt_plugin_iconplugin_93a316a6 from 'nuxt_plugin_iconplugin_93a316a6' // Source: ./pwa/icon.plugin.js (mode: 'all')
-import nuxt_plugin_moment_c4a6a164 from 'nuxt_plugin_moment_c4a6a164' // Source: ./moment.js (mode: 'all')
+import nuxt_plugin_plugin_e370e09e from 'nuxt_plugin_plugin_e370e09e' // Source: ./components/plugin.js (mode: 'all')
+import nuxt_plugin_plugin_511c39dd from 'nuxt_plugin_plugin_511c39dd' // Source: ./vuetify/plugin.js (mode: 'all')
+import nuxt_plugin_axios_b7f20772 from 'nuxt_plugin_axios_b7f20772' // Source: ./axios.js (mode: 'all')
+import nuxt_plugin_workbox_40097ba3 from 'nuxt_plugin_workbox_40097ba3' // Source: ./workbox.js (mode: 'client')
+import nuxt_plugin_metaplugin_314a6fb6 from 'nuxt_plugin_metaplugin_314a6fb6' // Source: ./pwa/meta.plugin.js (mode: 'all')
+import nuxt_plugin_iconplugin_35f2152a from 'nuxt_plugin_iconplugin_35f2152a' // Source: ./pwa/icon.plugin.js (mode: 'all')
+import nuxt_plugin_moment_28f7c39e from 'nuxt_plugin_moment_28f7c39e' // Source: ./moment.js (mode: 'all')
 import nuxt_plugin_axios_5659d192 from 'nuxt_plugin_axios_5659d192' // Source: ../plugins/axios.js (mode: 'all')
 import nuxt_plugin_baseurl_d8fa1fa2 from 'nuxt_plugin_baseurl_d8fa1fa2' // Source: ../plugins/baseurl.js (mode: 'all')
 import nuxt_plugin_backendurl_6c72c606 from 'nuxt_plugin_backendurl_6c72c606' // Source: ../plugins/backendurl.js (mode: 'all')
+import nuxt_plugin_frontendurl_460857b0 from 'nuxt_plugin_frontendurl_460857b0' // Source: ../plugins/frontendurl.js (mode: 'all')
 import nuxt_plugin_snackbar_832a94c8 from 'nuxt_plugin_snackbar_832a94c8' // Source: ../plugins/snackbar.js (mode: 'all')
 import nuxt_plugin_savingsnackbar_d4c68316 from 'nuxt_plugin_savingsnackbar_d4c68316' // Source: ../plugins/saving-snackbar.js (mode: 'all')
 import nuxt_plugin_starrating_3d884675 from 'nuxt_plugin_starrating_3d884675' // Source: ../plugins/star-rating.js (mode: 'all')
@@ -31,7 +32,7 @@ import nuxt_plugin_getdatafromapis_5883911e from 'nuxt_plugin_getdatafromapis_58
 import nuxt_plugin_azureauth_2461a0cc from 'nuxt_plugin_azureauth_2461a0cc' // Source: ../plugins/azure-auth.js (mode: 'client')
 import nuxt_plugin_vuegalleryclient_76ec8f1a from 'nuxt_plugin_vuegalleryclient_76ec8f1a' // Source: ../plugins/vue-gallery.client.js (mode: 'client')
 import nuxt_plugin_lightgallery_9d2b7676 from 'nuxt_plugin_lightgallery_9d2b7676' // Source: ../plugins/lightgallery.js (mode: 'client')
-import nuxt_plugin_plugin_19021146 from 'nuxt_plugin_plugin_19021146' // Source: ./auth/plugin.js (mode: 'all')
+import nuxt_plugin_plugin_11fb7843 from 'nuxt_plugin_plugin_11fb7843' // Source: ./auth/plugin.js (mode: 'all')
 
 // Component: <ClientOnly>
 Vue.component(ClientOnly.name, ClientOnly)
@@ -213,32 +214,32 @@ async function createApp(ssrContext, config = {}) {
   }
   // Plugin execution
 
-  if (typeof nuxt_plugin_plugin_1e2bcb18 === 'function') {
-    await nuxt_plugin_plugin_1e2bcb18(app.context, inject)
+  if (typeof nuxt_plugin_plugin_e370e09e === 'function') {
+    await nuxt_plugin_plugin_e370e09e(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_plugin_2c37440c === 'function') {
-    await nuxt_plugin_plugin_2c37440c(app.context, inject)
+  if (typeof nuxt_plugin_plugin_511c39dd === 'function') {
+    await nuxt_plugin_plugin_511c39dd(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_axios_3629538a === 'function') {
-    await nuxt_plugin_axios_3629538a(app.context, inject)
+  if (typeof nuxt_plugin_axios_b7f20772 === 'function') {
+    await nuxt_plugin_axios_b7f20772(app.context, inject)
   }
 
-  if (process.client && typeof nuxt_plugin_workbox_5a19e3b4 === 'function') {
-    await nuxt_plugin_workbox_5a19e3b4(app.context, inject)
+  if (process.client && typeof nuxt_plugin_workbox_40097ba3 === 'function') {
+    await nuxt_plugin_workbox_40097ba3(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_metaplugin_9cf2618e === 'function') {
-    await nuxt_plugin_metaplugin_9cf2618e(app.context, inject)
+  if (typeof nuxt_plugin_metaplugin_314a6fb6 === 'function') {
+    await nuxt_plugin_metaplugin_314a6fb6(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_iconplugin_93a316a6 === 'function') {
-    await nuxt_plugin_iconplugin_93a316a6(app.context, inject)
+  if (typeof nuxt_plugin_iconplugin_35f2152a === 'function') {
+    await nuxt_plugin_iconplugin_35f2152a(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_moment_c4a6a164 === 'function') {
-    await nuxt_plugin_moment_c4a6a164(app.context, inject)
+  if (typeof nuxt_plugin_moment_28f7c39e === 'function') {
+    await nuxt_plugin_moment_28f7c39e(app.context, inject)
   }
 
   if (typeof nuxt_plugin_axios_5659d192 === 'function') {
@@ -251,6 +252,10 @@ async function createApp(ssrContext, config = {}) {
 
   if (typeof nuxt_plugin_backendurl_6c72c606 === 'function') {
     await nuxt_plugin_backendurl_6c72c606(app.context, inject)
+  }
+
+  if (typeof nuxt_plugin_frontendurl_460857b0 === 'function') {
+    await nuxt_plugin_frontendurl_460857b0(app.context, inject)
   }
 
   if (typeof nuxt_plugin_snackbar_832a94c8 === 'function') {
@@ -285,8 +290,8 @@ async function createApp(ssrContext, config = {}) {
     await nuxt_plugin_lightgallery_9d2b7676(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_plugin_19021146 === 'function') {
-    await nuxt_plugin_plugin_19021146(app.context, inject)
+  if (typeof nuxt_plugin_plugin_11fb7843 === 'function') {
+    await nuxt_plugin_plugin_11fb7843(app.context, inject)
   }
 
   // Lock enablePreview in context
