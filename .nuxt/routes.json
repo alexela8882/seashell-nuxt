@@ -21,6 +21,13 @@
     "_name": "_5df780d1"
   },
   {
+    "name": "bintan-island",
+    "path": "/bintan-island",
+    "component": "/var/www/html/seashell-nuxt/pages/bintan-island/index.vue",
+    "chunkName": "pages/bintan-island/index",
+    "_name": "_1410d4cd"
+  },
+  {
     "name": "dashboard",
     "path": "/dashboard",
     "component": "/var/www/html/seashell-nuxt/pages/dashboard/index.vue",
