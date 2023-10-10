@@ -73,6 +73,7 @@ export default {
     '~/plugins/axios.js',
     '~/plugins/baseurl.js',
     '~/plugins/backendurl.js',
+    '~/plugins/frontendurl.js',
     '~/plugins/snackbar.js',
     '~/plugins/saving-snackbar.js',
     '~/plugins/star-rating.js',

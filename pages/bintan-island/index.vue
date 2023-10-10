@@ -5,14 +5,42 @@ export default {
   layout: 'landing',
 
   data: () => ({
-
+    index: null,
+    images: [
+      '/img/island-page/1section-1-1.jpg',
+      '/img/island-page/1section-1-2.jpg',
+      '/img/island-page/1section-1-3.jpg',
+      '/img/island-page/1section-1-4.jpg',
+      '/img/island-page/2section-1-1.jpg',
+      '/img/island-page/2section-1-2.jpg',
+      '/img/island-page/2section-1-3.jpg',
+    ],
+    options: {
+      fullscreen: false
+    }
   }),
 
   computed: {
     responsiveBorderRadius () {
       let data = this.$vuetify.breakpoint.sm || this.$vuetify.breakpoint.xs ? 'bottom-rounded-sm' : 'bottom-rounded-lg'
       return data
+    },
+
+    responsiveCorners () {
+      let data = !this.$vuetify.breakpoint.xs && !this.$vuetify.breakpoint.sm && 'rounded-xl'
+      return data
     }
+  },
+
+  watch: {
+    index (newVal, oldVal) {
+      console.log(oldVal)
+      console.log(newVal)
+    }
+  },
+
+  mounted () {
+    console.log('mounted')
   }
 }
 
@@ -20,6 +48,11 @@ export default {
 
 <template>
   <div>
+    <v-gallery
+      :images="images"
+      :index="index"
+      :options="options"
+      @close="index = null" />
     <div
       class="shadow-xl px-md-16 px-5 py-5 electric_blue w-100 mx-0 py-16"
       :class="responsiveBorderRadius"
@@ -35,7 +68,11 @@ export default {
         </div>
         <v-row class="w-100">
           <v-col cols="12" sm="6" height="100%">
-            <v-card width="100%" class="rounded-xl" elevation="5" height="100%">
+            <v-card
+              width="100%"
+              :class="responsiveCorners"
+              elevation="5"
+              height="100%">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3989.113899872819!2d104.49770287511741!3d1.0766720623927117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMcKwMDQnMzYuMCJOIDEwNMKwMzAnMDEuMCJF!5e0!3m2!1sen!2sph!4v1696913227457!5m2!1sen!2sph"
                 width="100%"
@@ -49,35 +86,161 @@ export default {
           <v-col cols="6" sm="3">
             <v-row no-gutters>
               <v-col cols="12" class="mb-5">
-                <v-card elevation="0" class="rounded-xl">
-                  <v-img height="100%" cover src="/img/island-page/1section-1-1-square.jpg"></v-img>
-                </v-card>
+                <v-hover v-slot="{ hover }">
+                  <v-card
+                    :elevation="hover ? 5 : 0"
+                    :class="`${hover && 'on-hover'} ${responsiveCorners}`"
+                    style="cursor: pointer; overflow: hidden;">
+                    <v-img
+                      aspect-ratio="1"
+                      cover
+                      src="/img/island-page/1section-1-1-square.jpg"></v-img>
+                    <v-fade-transition>
+                      <v-overlay
+                        v-if="hover"
+                        absolute
+                        color="#036358">
+                        <v-btn @click="index = 0" icon color="white">
+                          <v-icon>mdi-fullscreen</v-icon>
+                        </v-btn>
+                      </v-overlay>
+                    </v-fade-transition>
+                  </v-card>
+                </v-hover>
               </v-col>
               <v-col cols="12">
-                <v-img height="100%" cover src="/img/island-page/1section-1-3-square.jpg" class="rounded-xl"></v-img>
+                <v-hover v-slot="{ hover }">
+                  <v-card
+                    :elevation="hover ? 5 : 0"
+                    :class="`${hover && 'on-hover'} ${responsiveCorners}`"
+                    style="cursor: pointer; overflow: hidden;">
+                    <v-img aspect-ratio="1" cover src="/img/island-page/1section-1-3-square.jpg"></v-img>
+                    <v-fade-transition>
+                      <v-overlay
+                        v-if="hover"
+                        absolute
+                        color="#036358">
+                        <v-btn @click="index = 2" icon color="white">
+                          <v-icon>mdi-fullscreen</v-icon>
+                        </v-btn>
+                      </v-overlay>
+                    </v-fade-transition>
+                  </v-card>
+                </v-hover>
               </v-col>
             </v-row>
           </v-col>
           <v-col cols="6" sm="3">
             <v-row no-gutters>
               <v-col cols="12" class="mb-5">
-                <v-img height="100%" cover src="/img/island-page/1section-1-2-square.jpg" class="rounded-xl"></v-img>
+                <v-hover v-slot="{ hover }">
+                  <v-card
+                    :elevation="hover ? 5 : 0"
+                    :class="`${hover && 'on-hover'} ${responsiveCorners}`"
+                    style="cursor: pointer; overflow: hidden;">
+                    <v-img aspect-ratio="1" cover src="/img/island-page/1section-1-2-square.jpg"></v-img>
+                    <v-fade-transition>
+                      <v-overlay
+                        v-if="hover"
+                        absolute
+                        color="#036358">
+                        <v-btn @click="index = 1" icon color="white">
+                          <v-icon>mdi-fullscreen</v-icon>
+                        </v-btn>
+                      </v-overlay>
+                    </v-fade-transition>
+                  </v-card>
+                </v-hover>
               </v-col>
               <v-col cols="12">
-                <v-img height="100%" cover src="/img/island-page/1section-1-4-square.jpg" class="rounded-xl"></v-img>
+                <v-hover v-slot="{ hover }">
+                  <v-card
+                    :elevation="hover ? 5 : 0"
+                    :class="`${hover && 'on-hover'} ${responsiveCorners}`"
+                    style="cursor: pointer; overflow: hidden;">
+                    <v-img aspect-ratio="1" cover src="/img/island-page/1section-1-4-square.jpg"></v-img>
+                    <v-fade-transition>
+                      <v-overlay
+                        v-if="hover"
+                        absolute
+                        color="#036358">
+                        <v-btn @click="index = 3" icon color="white">
+                          <v-icon>mdi-fullscreen</v-icon>
+                        </v-btn>
+                      </v-overlay>
+                    </v-fade-transition>
+                  </v-card>
+                </v-hover>
               </v-col>
             </v-row>
           </v-col>
           <v-col cols="12" class="mt-n3">
             <v-row>
               <v-col cols="6" md="4">
-                <v-img height="100%" cover src="/img/island-page/2section-1-1-cropped.jpg" class="rounded-xl"></v-img>
+                <v-hover v-slot="{ hover }">
+                  <v-card
+                    :elevation="hover ? 5 : 0"
+                    :class="`${hover && 'on-hover'} ${responsiveCorners}`"
+                    style="cursor: pointer; overflow: hidden;">
+                    <v-img
+                      :aspect-ratio="$vuetify.breakpoint.xs || $vuetify.breakpoint.xs ? '1' : '2'"
+                      cover
+                      src="/img/island-page/2section-1-1-cropped.jpg"></v-img>
+                    <v-fade-transition>
+                      <v-overlay
+                        v-if="hover"
+                        absolute
+                        color="#036358">
+                        <v-btn @click="index = 4" icon color="white">
+                          <v-icon>mdi-fullscreen</v-icon>
+                        </v-btn>
+                      </v-overlay>
+                    </v-fade-transition>
+                  </v-card>
+                </v-hover>
               </v-col>
               <v-col cols="6" md="4">
-                <v-img height="100%" cover src="/img/island-page/2section-1-2-cropped.jpg" class="rounded-xl"></v-img>
+                <v-hover v-slot="{ hover }">
+                  <v-card
+                    :elevation="hover ? 5 : 0"
+                    :class="`${hover && 'on-hover'} ${responsiveCorners}`"
+                    style="cursor: pointer; overflow: hidden;">
+                    <v-img
+                      :aspect-ratio="$vuetify.breakpoint.xs || $vuetify.breakpoint.xs ? '1' : '2'"
+                      cover
+                      src="/img/island-page/2section-1-2-cropped.jpg"></v-img>
+                    <v-fade-transition>
+                      <v-overlay
+                        v-if="hover"
+                        absolute
+                        color="#036358">
+                        <v-btn @click="index = 5" icon color="white">
+                          <v-icon>mdi-fullscreen</v-icon>
+                        </v-btn>
+                      </v-overlay>
+                    </v-fade-transition>
+                  </v-card>
+                </v-hover>
               </v-col>
               <v-col cols="12" md="4">
-                <v-img height="100%" cover src="/img/island-page/2section-1-3-cropped.jpg" class="rounded-xl"></v-img>
+                <v-hover v-slot="{ hover }">
+                  <v-card
+                    :elevation="hover ? 5 : 0"
+                    :class="`${hover && 'on-hover'} ${responsiveCorners}`"
+                    style="cursor: pointer; overflow: hidden;">
+                    <v-img aspect-ratio="2" cover src="/img/island-page/2section-1-3-cropped.jpg"></v-img>
+                    <v-fade-transition>
+                      <v-overlay
+                        v-if="hover"
+                        absolute
+                        color="#036358">
+                        <v-btn @click="index = 6" icon color="white">
+                          <v-icon>mdi-fullscreen</v-icon>
+                        </v-btn>
+                      </v-overlay>
+                    </v-fade-transition>
+                  </v-card>
+                </v-hover>
               </v-col>
             </v-row>
           </v-col>
