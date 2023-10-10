@@ -35,46 +35,64 @@ export default {
   computed: {
     ...mapGetters({
       specie: 'species/getSpecie'
-    })
+    }),
+
+    vuetifyBreakpoint () {
+      return this.$vuetify.breakpoint.name
+    }
+  },
+
+  watch: {
+    vuetifyBreakpoint (newVal, oldVal) {
+      console.log(oldVal)
+      console.log(newVal)
+
+      // re-initialize lightgallery
+      this.initializeLightGallery()
+    }
   },
 
   mounted () {
+    // initialize lightgallery
     setTimeout(() => {
-      // lightgallery
-      let el = document.getElementById('speciesGallery')
-      window.lightGallery(el, {
-        thumbnail: true,
-        exThumbImage: 'data-src',
-        zoom: true,
-        rotate: true,
-        zoomOrigin: true
-      })
+      this.initializeLightGallery()
+    }, 1000)
 
-      let el2 = document.getElementById('speciesDisplayPhoto')
-        window.lightGallery(el2, {
-          width: '700px',
-          height: '470px',
-          mode: 'lg-fade',
-          addClass: 'speciesDisplayPhoto',
-          counter: false,
-          download: false,
-          startClass: '',
-          enableSwipe: false,
-          enableDrag: false,
-          speed: 500,
-          thumbnail: false,
-          exThumbImage: 'data-src',
-          zoom: false,
-          rotate: false,
-          zoomOrigin: false
-        })
-
-      console.log(lightGallery)
-    }, 1000);
     this.initialize()
   },
 
   methods: {
+    initializeLightGallery () {
+      // lightgallery
+      let el = document.getElementById('speciesGallery')
+      window.lightGallery(el, {
+        mode: 'lg-fade',
+        thumbnail: true,
+        exThumbImage: 'data-src',
+        zoom: true,
+        rotate: true
+      })
+
+      let el2 = document.getElementById('speciesDisplayPhoto')
+      window.lightGallery(el2, {
+        width: `${this.$vuetify.breakpoint.sm || this.$vuetify.breakpoint.xs ? '95%' : '50%'}`,
+        height: '500px',
+        mode: 'lg-fade',
+        addClass: 'speciesDisplayPhoto',
+        counter: false,
+        download: false,
+        startClass: '',
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 500,
+        thumbnail: false,
+        exThumbImage: 'data-src',
+        zoom: false,
+        rotate: false,
+        zoomOrigin: false
+      })
+    },
+
     async initialize () {
       await this.$store.dispatch('species/fetchSpecie', { id: this.$route.params.id })
     },
@@ -143,7 +161,8 @@ export default {
         <div class="col-md-3">
           <v-card
             v-if="specie.species"
-            class="card-sticky">
+            class="card-sticky"
+            :style="`${!$vuetify.breakpoint.sm && !$vuetify.breakpoint.xs && 'max-height: 89vh !important;'}`">
             <v-layout id="speciesDisplayPhoto" v-if="specie.species.display_photo != null">
               <v-flex
                 :data-src="$backendurl(specie.species.display_photo)"
@@ -403,7 +422,6 @@ export default {
 
   .card-sticky{
     position: sticky;
-    max-height: 89vh;
     overflow: auto;
     top: 70px;
     display: flex;
@@ -489,7 +507,8 @@ export default {
       opacity: 0.85;
     }
     .speciesDisplayPhoto.lg-outer .lg-inner {
-    background-color: #FFF;
+      background-color: rgb(255, 255, 255, 1);
+      border-radius: 20px;
     }
     .speciesDisplayPhoto.lg-outer .lg-sub-html {
       position: absolute;
@@ -500,7 +519,7 @@ export default {
       height: 0;
     }
     .speciesDisplayPhoto.lg-outer .lg-toolbar .lg-icon {
-      color: #FFF;
+      color: #000;
     }
     .speciesDisplayPhoto.lg-outer .lg-img-wrap {
       padding: 12px;
