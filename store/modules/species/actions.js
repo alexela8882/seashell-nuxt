@@ -49,10 +49,10 @@ const actions = {
     }
   },
 
-  async fetchFamily ({ commit }) {
+  async fetchFamily ({ commit }, payload) {
     commit('SET_LOADING', true, { root: true })
     try {
-      let response = await this.$axios.get(this.$baseurl('web/get_family'))
+      let response = await this.$axios.get(this.$baseurl('web/get_family'),  payload )
       commit('GET_FAMILY', response.data.family)
     } catch (e) {
       commit('SET_LOADING', false, { root: true })
@@ -61,10 +61,10 @@ const actions = {
     }
   },
 
-  async fetchGenus ({ commit }) {
+  async fetchGenus ({ commit }, payload) {
     commit('SET_LOADING', true, { root: true })
     try {
-      let response = await this.$axios.get(this.$baseurl('web/get_genus'))
+      let response = await this.$axios.get(this.$baseurl('web/get_genus'), payload )
       commit('GET_GENUS', response.data.genus)
     } catch (e) {
       commit('SET_LOADING', false, { root: true })

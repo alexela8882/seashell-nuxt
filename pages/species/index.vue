@@ -12,6 +12,8 @@ export default {
 
   data () {
     return {
+      index: null,
+      images: [],
       page: 1,
       selected_class: null,
       selected_family: null,
@@ -22,7 +24,7 @@ export default {
         family: null,
         genus: null,
         keyword: null,
-        sort: "common_name",
+        sort: null,
       },
       sortNames: [
         {
@@ -57,8 +59,6 @@ export default {
   mounted () {
     window.scrollTo(0, 0)
 
-    console.log(document.documentElement.scrollHeight)
-
     const url_string = window.location.href
     const url = new URL(url_string)
     const searchPage = url.searchParams.get("page")
@@ -75,7 +75,7 @@ export default {
     this.filters.shell_class = searchClass
     this.filters.family = searchFamily
     this.filters.genus = searchGenus
-    this.filters.sort = searchSort ? searchSort : 'common_name'
+    this.filters.sort = searchSort
 
     // initialize
     this.initialize()
@@ -91,10 +91,12 @@ export default {
   methods: {
     async initialize () {
       await this.$store.dispatch('species/fetchClass')
-      await this.$store.dispatch('species/fetchFamily')
-      await this.$store.dispatch('species/fetchGenus')
+      // await this.$store.dispatch('species/fetchFamily', { params: { shell_class: this.filters.shell_class} })
+      // await this.$store.dispatch('species/fetchGenus', { params: {shell_class: this.filters.shell_class, family: this.filters.family} })
 
       this.getSpecies()
+      this.getFamily()
+      this.getGenus()
     },
 
     async getSpecies () {
@@ -104,6 +106,20 @@ export default {
       const searchURL = new URL(window.location)
       searchURL.searchParams.set('page', this.filters.cpage)
       window.history.pushState({}, '', searchURL)
+
+      // re-populate
+      if ((this.paged_species && this.paged_species.data) && this.paged_species.data.data.length > 0) {
+        this.paged_species.data.data.map((item) => {
+          this.images.push(this.$backendurl(item.display_photo))
+        })
+      }
+    },
+
+    async getFamily(){
+      await this.$store.dispatch('species/fetchFamily', { params: { shell_class: this.filters.shell_class} })
+    },
+    async getGenus(){
+      await this.$store.dispatch('species/fetchGenus', { params: {shell_class: this.filters.shell_class, family: this.filters.family} })
     },
 
     speciesView (id) {
@@ -139,6 +155,8 @@ export default {
 
       this.filters.cpage = 1
       this.getSpecies()
+      this.getFamily()
+      this.getGenus()
       // this.getClass(this.filters)
       // this.getFamily(this.filters)
       // this.getGenus(this.filters)
@@ -246,6 +264,7 @@ export default {
               v-for="(item, ps) in paged_species.data.data"
               :key="ps" md4 sm6 xs12
               class="pa-6 pt-0"
+              @click="speciesView(item.id)"
             >
               <v-hover v-slot="{ hover }">
                 <div class="pb-8">
@@ -254,9 +273,13 @@ export default {
                     width="100%"
                     :elevation="hover ? 12 : 5"
                     :class="{ 'on-hover': hover }"
-                    @click="speciesView(item.id)"
                     style="cursor: pointer;">
-                    <v-img :src="item.display_photo ? item.display_photo : '/img/sample_shell.jpg'"></v-img>
+                    <v-img
+                      contain
+                      class="cover"
+                      style="max-height: 300px !important; height: 300px !important;"
+                      :src="item.display_photo ?
+                      `${$backendurl(item.display_photo)}` : '/img/sample_shell.jpg'"></v-img>
                   </v-card>
                   <v-card
                     :elevation="hover ? 12 : 5"
@@ -266,6 +289,8 @@ export default {
                     <div class="kollektif font-weight-bold">
                       <div class="text-h6 font-weight-bold text-truncate">{{ item.common_name && item.common_name }}</div>
                       <div class="text-body-1 font-italic text-truncate">{{ item.name && item.name }}</div>
+                      <!-- <div class="text-body-1 font-italic text-truncate">{{ item.author && item.author}}</div>
+                      <div class="text-body-1 font-italic text-truncate">{{ item.created_at }}</div> -->
                     </div>
                   </v-card>
                 </div>

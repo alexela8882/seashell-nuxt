@@ -9,6 +9,7 @@ export default {
       seashellImage: { value: null, error: null },
       navbarBg: null,
       containerClass: null,
+      outlinedTitle: null,
       appbarClass: null,
       navbarClass: null,
       navbarTheme: null,
@@ -62,8 +63,21 @@ export default {
     }
   },
 
+  computed: {
+    vuetifyBreakpoint () {
+      return this.$vuetify.breakpoint.name
+    },
+  },
+
   watch: {
-    $route (to, from){
+    $route (to, from) {
+      this.getNavBarBg()
+    },
+
+    vuetifyBreakpoint (newVal, oldVal) {
+      console.log(oldVal)
+      console.log(newVal)
+      this.handleScroll()
       this.getNavBarBg()
     }
   },
@@ -73,9 +87,10 @@ export default {
       // Any code to be executed when the window is scrolled
       this.scrollHeight = window.scrollY
 
-      if (this.scrollHeight <= 15) this.appbarClass = 'py-8'
-      else this.appbarClass = 'py-0'
-      console.log(window.scrollY)
+      if (this.$route.name !== 'index' && (!this.$vuetify.breakpoint.sm && !this.$vuetify.breakpoint.xs)) {
+        if (this.scrollHeight <= 15) this.appbarClass = 'py-8'
+        else this.appbarClass = 'py-0'
+      }
     },
 
     navigateLink (navlink) {
@@ -167,12 +182,21 @@ export default {
         this.appbarClass = "py-0"
         this.navbarBg = "rgba(0, 0, 0, 0)"
         this.navbarClass = `${fontSize} font-weight-black white--text`
+        this.outlinedTitle = 'stroke-transparent-white'
         this.navbarTheme = false
+      } else if (this.$route.name === 'bintan-island') {
+        this.containerClass = `${(!this.$vuetify.breakpoint.sm && !this.$vuetify.breakpoint.xs) && 'bottom-rounded-md shadow-xl py-16'} white`
+        this.appbarClass = `${this.$vuetify.breakpoint.sm || this.$vuetify.breakpoint.xs ? 'py-0' : 'py-8'}`
+        this.navbarBg = "white"
+        this.navbarClass = "text-h4 electric_blue--text"
+        this.outlinedTitle = 'stroke-transparent-eblue'
+        this.navbarTheme = true
       } else {
-        this.containerClass = "bottom-rounded-md shadow-xl electric_blue pt-16 pb-16"
-        this.appbarClass = `py-8`
+        this.containerClass = `${(!this.$vuetify.breakpoint.sm && !this.$vuetify.breakpoint.xs) && 'bottom-rounded-md shadow-xl py-16'} electric_blue`
+        this.appbarClass = `${this.$vuetify.breakpoint.sm || this.$vuetify.breakpoint.xs ? 'py-0' : 'py-8'}`
         this.navbarBg = "electric_blue"
         this.navbarClass = "text-h4 white--text"
+        this.outlinedTitle = 'stroke-transparent-white'
         this.navbarTheme = true
       }
     },
@@ -202,7 +226,7 @@ export default {
       :class="appbarClass">
 
       <v-toolbar-title @click="$router.push('/')" style="cursor: pointer;">
-        <div :class="navbarClass" class="avenir-black text-xl-h2">Bintan<span class="stroke-1 stroke-transparent-white">Seashells</span></div>
+        <div :class="navbarClass" class="avenir-black text-xl-h2">Bintan<span class="stroke-1" :class="outlinedTitle">Seashells</span></div>
       </v-toolbar-title>
 
       <v-spacer></v-spacer>
@@ -211,23 +235,29 @@ export default {
         v-if="!$vuetify.breakpoint.xs && !$vuetify.breakpoint.sm && !$vuetify.breakpoint.md"
         class="d-flex align-center">
         <div v-for="(navLink, n) in navLinks" :key="n" class="mr-3">
-          <div v-if="navLink.separator" class="mx-3" style="width: 50px; border: 2px solid white;"></div>
+          <div
+            v-if="navLink.separator"
+            class="mx-3"
+            style="width: 50px;"
+            :style="`border: 1px solid ${$route.name == 'bintan-island' ? '#08527b' : 'white'}`"></div>
           <v-btn
             v-else
             @click="navigateLink(navLink)"
             :small="!$vuetify.breakpoint.xl"
             class="rounded-lg text-lowercase"
             :outlined="!navLink.leftNav"
-            :class="!navLink.leftNav ? 'white--text' : 'white black--text'">
+            :class="`${$route.name == 'bintan-island' ? (!navLink.leftNav ? 'electric_blue--text' : 'electric_blue white--text') : (!navLink.leftNav ? 'white--text' : 'white black--text')}`">
             {{ navLink.label }}
           </v-btn>
         </div>
         <v-btn
           @click="$router.push('/species')"
-          outlined
+          icon
+          plain
           :small="!$vuetify.breakpoint.xl"
-          class="text-lowercase white--text rounded-lg">
-          search
+          class="text-lowercase rounded-lg"
+          :class="$route.name == 'bintan-island' ? 'electric_blue--text' : 'white--text'">
+          <v-icon>mdi-magnify</v-icon>
         </v-btn>
       </div>
 
@@ -240,6 +270,7 @@ export default {
             <v-btn
               dark
               icon
+              :class="$route.name == 'bintan-island' ? 'electric_blue--text' : 'white--text'"
               v-bind="attrs"
               v-on="on">
               <v-icon>mdi-menu</v-icon>
