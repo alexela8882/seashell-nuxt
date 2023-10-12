@@ -264,10 +264,11 @@
               <div class="px-md-16 px-6 electric_blue--text d-flex flex-column align-left justify-center" style="width: 100%; height: 100%;">
                 <div class="mb-auto mt-10">
                   <div
+                    @click="speciesList(2)"
+                    style="cursor: pointer;"
                     class="font-weight-black text-xs-text-h4 text-h3 text-lg-h1"
                     >gas.<span class="stroke-1 stroke-transparent-eblue">tro.</span>pod</div>
                   <div class="text-h6 font-weight-bold font-italic">noun</div>
-
                   <div class="pr-16">
                     <ul class="custom-ul text-right electric_blue--text" v-for="(item, i) in gastropodItems.data">
                       <li><a @click="speciesView(item.id)">{{ item.common_name }}</a></li>
@@ -365,7 +366,10 @@
               style="padding-top: 220px;">
               <div class="px-md-16 px-6 electric_blue--text d-flex flex-column align-left justify-center" style="width: 100%; height: 100%;">
                 <div class="pl-lg-3 mb-auto mt-10">
-                  <div class="font-weight-black text-xs-text-h4 text-h3 text-lg-h1">bi.<span class="stroke-1 stroke-transparent-eblue">valve</span></div>
+                  <div 
+                    @click="speciesList(1)"
+                    style="cursor: pointer;"
+                    class="font-weight-black text-xs-text-h4 text-h3 text-lg-h1">bi.<span class="stroke-1 stroke-transparent-eblue">valve</span></div>
                   <div class="text-h6 font-weight-bold font-italic">noun</div>
 
                   <div class="pr-16">
@@ -603,6 +607,10 @@ export default {
       const urlParams = new URLSearchParams(queryString)
 
       this.$router.push(`/species/${id}?${urlParams}`)
+    },
+
+    speciesList (id) {
+      this.$router.push(`/species?shell_class=`+id);
     },
   },
 
