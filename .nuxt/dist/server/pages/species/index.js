@@ -1396,7 +1396,7 @@ module.exports = exports;
         family: null,
         genus: null,
         keyword: null,
-        sort: "common_name"
+        sort: null
       },
       sortNames: [{
         name: "Name",
@@ -1442,7 +1442,7 @@ module.exports = exports;
     this.filters.shell_class = searchClass;
     this.filters.family = searchFamily;
     this.filters.genus = searchGenus;
-    this.filters.sort = searchSort ? searchSort : 'common_name'; // initialize
+    this.filters.sort = searchSort; // initialize
 
     this.initialize();
   },
@@ -1456,10 +1456,12 @@ module.exports = exports;
   },
   methods: {
     async initialize() {
-      await this.$store.dispatch('species/fetchClass');
-      await this.$store.dispatch('species/fetchFamily');
-      await this.$store.dispatch('species/fetchGenus');
+      await this.$store.dispatch('species/fetchClass'); // await this.$store.dispatch('species/fetchFamily', { params: { shell_class: this.filters.shell_class} })
+      // await this.$store.dispatch('species/fetchGenus', { params: {shell_class: this.filters.shell_class, family: this.filters.family} })
+
       this.getSpecies();
+      this.getFamily();
+      this.getGenus();
     },
 
     async getSpecies() {
@@ -1474,6 +1476,23 @@ module.exports = exports;
           this.images.push(this.$backendurl(item.display_photo));
         });
       }
+    },
+
+    async getFamily() {
+      await this.$store.dispatch('species/fetchFamily', {
+        params: {
+          shell_class: this.filters.shell_class
+        }
+      });
+    },
+
+    async getGenus() {
+      await this.$store.dispatch('species/fetchGenus', {
+        params: {
+          shell_class: this.filters.shell_class,
+          family: this.filters.family
+        }
+      });
     },
 
     speciesView(id) {
@@ -1506,7 +1525,9 @@ module.exports = exports;
         window.history.pushState({}, '', searchURL);
       }
       this.filters.cpage = 1;
-      this.getSpecies(); // this.getClass(this.filters)
+      this.getSpecies();
+      this.getFamily();
+      this.getGenus(); // this.getClass(this.filters)
       // this.getFamily(this.filters)
       // this.getGenus(this.filters)
 
@@ -1531,7 +1552,7 @@ module.exports = exports;
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(299);
+var content = __webpack_require__(300);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add CSS to SSR context
@@ -1569,7 +1590,7 @@ module.exports = exports;
 
 /***/ }),
 
-/***/ 285:
+/***/ 286:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1648,7 +1669,7 @@ module.exports = exports;
 
 /***/ }),
 
-/***/ 298:
+/***/ 299:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1660,7 +1681,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 299:
+/***/ 300:
 /***/ (function(module, exports, __webpack_require__) {
 
 // Imports
@@ -1674,20 +1695,20 @@ module.exports = exports;
 
 /***/ }),
 
-/***/ 300:
+/***/ 301:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(301);
+var content = __webpack_require__(302);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 __webpack_require__(5).default("7f6d4ad6", content, true)
 
 /***/ }),
 
-/***/ 301:
+/***/ 302:
 /***/ (function(module, exports, __webpack_require__) {
 
 // Imports
@@ -1701,7 +1722,7 @@ module.exports = exports;
 
 /***/ }),
 
-/***/ 302:
+/***/ 303:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1909,7 +1930,7 @@ module.exports = exports;
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./pages/species/index.vue?vue&type=template&id=76aa2470&
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./pages/species/index.vue?vue&type=template&id=7905a69f&
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"px-md-16 px-6 pb-16"},[_c('v-row',[_c('v-col',{attrs:{"cols":"12","md":"3"}},[_c('div',{staticClass:"grey lighten-4 rounded-xl pa-5 pb-0",staticStyle:{"position":"sticky","top":"90px"}},[_c('div',{staticClass:"pb-3 pl-1 text-overline",staticStyle:{"font-size":"18px !important"}},[_c('div',{staticClass:"avenir-black electric_blue--text"},[_vm._v("Filters")])]),_vm._v(" "),_c('v-text-field',{staticClass:"rounded-xl pa-0 ma-0 text-search",attrs:{"outlined":"","label":"Search","prepend-inner-icon":"mdi-magnify","color":"electric_blue","dense":""},on:{"keyup":function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"enter",13,$event.key,"Enter")){ return null; }return _vm.sideFilters({name: 'keyword'})}},model:{value:(_vm.filters.keyword),callback:function ($$v) {_vm.$set(_vm.filters, "keyword", $$v)},expression:"filters.keyword"}}),_vm._v(" "),_c('v-select',{staticClass:"rounded-xl select-filter",attrs:{"items":_vm.sortNames,"item-text":"name","item-value":"value","label":"Sort","outlined":"","clearable":"","dense":""},on:{"change":function($event){return _vm.sideFilters({name: 'sort'})}},model:{value:(_vm.filters.sort),callback:function ($$v) {_vm.$set(_vm.filters, "sort", $$v)},expression:"filters.sort"}}),_vm._v(" "),_c('v-select',{staticClass:"rounded-xl select-filter",attrs:{"items":_vm.shell_class || [],"item-text":"name","item-value":"classid","label":"Class","outlined":"","clearable":"","dense":""},on:{"change":function($event){return _vm.sideFilters({name: 'shell_class'})}},model:{value:(_vm.filters.shell_class),callback:function ($$v) {_vm.$set(_vm.filters, "shell_class", $$v)},expression:"filters.shell_class"}}),_vm._v(" "),(_vm.filters.shell_class)?_c('v-select',{staticClass:"rounded-xl select-filter",attrs:{"items":_vm.family || [],"item-text":"name","item-value":"familyid","label":"Family","outlined":"","clearable":"","dense":""},on:{"change":function($event){return _vm.sideFilters({name: 'family'})}},model:{value:(_vm.filters.family),callback:function ($$v) {_vm.$set(_vm.filters, "family", $$v)},expression:"filters.family"}}):_vm._e(),_vm._v(" "),(_vm.filters.shell_class)?_c('v-select',{staticClass:"rounded-xl select-filter",attrs:{"items":_vm.genus || [],"item-text":"name","item-value":"genusid","label":"Genus","outlined":"","clearable":"","dense":"","bg-color":"purple"},on:{"change":function($event){return _vm.sideFilters({name: 'genus'})}},model:{value:(_vm.filters.genus),callback:function ($$v) {_vm.$set(_vm.filters, "genus", $$v)},expression:"filters.genus"}}):_vm._e()],1)]),_vm._v(" "),_c('v-spacer'),_vm._v(" "),_c('v-col',{attrs:{"cols":"12","md":"9"}},[(_vm.loading)?_c('div',[_c('v-sheet',{staticClass:"pa-3"},[_c('v-row',_vm._l((3),function(i){return _c('v-col',{key:i,attrs:{"cols":"12","md":"4"}},[_c('v-skeleton-loader',{attrs:{"type":"card"}})],1)}),1)],1)],1):((_vm.paged_species && _vm.paged_species.data) && _vm.paged_species.data.data.length > 0)?_c('div',[_c('v-layout',{attrs:{"wrap":"","align-center":"","row":"","fill-height":""}},_vm._l((_vm.paged_species.data.data),function(item,ps){return _c('v-flex',{key:ps,staticClass:"pa-6 pt-0",attrs:{"md4":"","sm6":"","xs12":""},on:{"click":function($event){return _vm.speciesView(item.id)}}},[_c('v-hover',{scopedSlots:_vm._u([{key:"default",fn:function(ref){
 var hover = ref.hover;
 return [_c('div',{staticClass:"pb-8"},[_c('v-card',{staticClass:"rounded-xl mb-5 mx-auto",class:{ 'on-hover': hover },staticStyle:{"cursor":"pointer"},attrs:{"width":"100%","elevation":hover ? 12 : 5}},[_c('v-img',{staticClass:"cover",staticStyle:{"max-height":"300px !important","height":"300px !important"},attrs:{"contain":"","src":item.display_photo ?
@@ -1917,7 +1938,7 @@ return [_c('div',{staticClass:"pb-8"},[_c('v-card',{staticClass:"rounded-xl mb-5
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./pages/species/index.vue?vue&type=template&id=76aa2470&
+// CONCATENATED MODULE: ./pages/species/index.vue?vue&type=template&id=7905a69f&
 
 // EXTERNAL MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./pages/species/index.vue?vue&type=script&lang=js&
 var speciesvue_type_script_lang_js_ = __webpack_require__(264);
@@ -1941,7 +1962,7 @@ var VCol = __webpack_require__(246);
 var VFlex = __webpack_require__(242);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VHover/VHover.js
-var VHover = __webpack_require__(285);
+var VHover = __webpack_require__(286);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VImg/VImg.js + 2 modules
 var VImg = __webpack_require__(67);
@@ -1950,7 +1971,7 @@ var VImg = __webpack_require__(67);
 var VLayout = __webpack_require__(243);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/src/components/VPagination/VPagination.sass
-var VPagination = __webpack_require__(300);
+var VPagination = __webpack_require__(301);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VIcon/index.js
 var VIcon = __webpack_require__(19);
@@ -2207,7 +2228,7 @@ var VSelect = __webpack_require__(251);
 var VSheet = __webpack_require__(16);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VSkeletonLoader/VSkeletonLoader.js
-var VSkeletonLoader = __webpack_require__(302);
+var VSkeletonLoader = __webpack_require__(303);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VGrid/VSpacer.js
 var VSpacer = __webpack_require__(245);
@@ -2221,7 +2242,7 @@ var VTextField = __webpack_require__(71);
 
 function injectStyles (context) {
   
-  var style0 = __webpack_require__(298)
+  var style0 = __webpack_require__(299)
 if (style0.__inject__) style0.__inject__(context)
 
 }
