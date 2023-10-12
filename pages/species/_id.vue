@@ -20,7 +20,7 @@ export default {
       }, {
         text: 'Species',
         to: '/species',
-        exact: true
+        exact: true,
       }, {
         text: 'View',
         to: null,
@@ -153,8 +153,17 @@ export default {
     </div>
     <div v-else>
       <v-breadcrumbs :items="bcrumbs">
-        <template v-slot:title="{ item }">
-          {{ item.title.toUpperCase() }}
+        <template v-slot:item="{ item }">
+          
+          <v-breadcrumbs-item v-if="item.text == 'Species'" href="javascript:void(0);" @click="redirectBack()" :disabled="item.active">
+            {{ item.text }}
+          </v-breadcrumbs-item>
+          <v-breadcrumbs-item v-else-if="item.text == 'Species Name'" href="javascript:void(0);" @click="redirectBack()" :disabled="item.active" class="text-uppercase">
+            {{ speciesTitle1+' '+speciesTitle2 }}
+          </v-breadcrumbs-item>
+          <v-breadcrumbs-item v-else :to="item.to" :disabled="item.active">
+            {{ item.text }}
+          </v-breadcrumbs-item>
         </template>
       </v-breadcrumbs>
       <div class="row">
