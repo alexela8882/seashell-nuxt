@@ -3,12 +3,12 @@
   "all": [
     "../server/index.spa.html",
     "../server/index.ssr.html",
-    "0.37b7e3a.js",
+    "0.33829aa.js",
     "18.097b468.js",
     "19.51bb819.js",
-    "2.3b071b2.js",
+    "2.d2cee45.js",
     "LICENSES",
-    "app.dae1c66.js",
+    "app.c1daed7.js",
     "fonts/AvenirLTStd-Black.b1abb87.otf",
     "fonts/AvenirLTStd-Book.ecb0c2a.otf",
     "fonts/AvenirLTStd-Roman.b1d7c6e.otf",
@@ -34,44 +34,44 @@
     "img/vimeo-play.699d005.png",
     "img/youtube-play.96bc9d7.png",
     "pages/about.f7d0f51.js",
-    "pages/admin/index.8de2e0f.js",
+    "pages/admin/index.5e6f7d4.js",
     "pages/azure.0c1f330.js",
-    "pages/bintan-island/index.54856f2.js",
-    "pages/dashboard/index.5b2b6f4.js",
-    "pages/index.120c1d2.js",
-    "pages/login.e8e739c.js",
-    "pages/roles/index.82bdb38.js",
-    "pages/species/_id.88f2c64.js",
-    "pages/species/index.4d77bcd.js",
-    "pages/users/index.e4f514e.js",
-    "pages/users/profile/index.eae1838.js",
-    "runtime.4a5140a.js",
+    "pages/bintan-island/index.6c35156.js",
+    "pages/dashboard/index.c226813.js",
+    "pages/index.045e511.js",
+    "pages/login.6100896.js",
+    "pages/roles/index.475edcc.js",
+    "pages/species/_id.dcb66d4.js",
+    "pages/species/index.7bc827e.js",
+    "pages/users/index.02f027c.js",
+    "pages/users/profile/index.b8379eb.js",
+    "runtime.824416f.js",
     "vendors/commons.4aadaef.js",
-    "vendors/roles.index~species.index.679b1eb.js"
+    "vendors/roles.index~species.index.1ad6cdc.js"
   ],
   "initial": [
-    "runtime.4a5140a.js",
+    "runtime.824416f.js",
     "vendors/commons.4aadaef.js",
-    "app.dae1c66.js"
+    "app.c1daed7.js"
   ],
   "async": [
-    "0.37b7e3a.js",
+    "0.33829aa.js",
     "18.097b468.js",
     "19.51bb819.js",
-    "2.3b071b2.js",
+    "2.d2cee45.js",
     "pages/about.f7d0f51.js",
-    "pages/admin/index.8de2e0f.js",
+    "pages/admin/index.5e6f7d4.js",
     "pages/azure.0c1f330.js",
-    "pages/bintan-island/index.54856f2.js",
-    "pages/dashboard/index.5b2b6f4.js",
-    "pages/index.120c1d2.js",
-    "pages/login.e8e739c.js",
-    "pages/roles/index.82bdb38.js",
-    "pages/species/_id.88f2c64.js",
-    "pages/species/index.4d77bcd.js",
-    "pages/users/index.e4f514e.js",
-    "pages/users/profile/index.eae1838.js",
-    "vendors/roles.index~species.index.679b1eb.js"
+    "pages/bintan-island/index.6c35156.js",
+    "pages/dashboard/index.c226813.js",
+    "pages/index.045e511.js",
+    "pages/login.6100896.js",
+    "pages/roles/index.475edcc.js",
+    "pages/species/_id.dcb66d4.js",
+    "pages/species/index.7bc827e.js",
+    "pages/users/index.02f027c.js",
+    "pages/users/profile/index.b8379eb.js",
+    "vendors/roles.index~species.index.1ad6cdc.js"
   ],
   "modules": {
     "15575584": [
@@ -12442,13 +12442,13 @@
       41,
       46
     ],
-    "44fa5097": [
+    "f69413a4": [
       40
     ],
     "8e05744e": [
       40
     ],
-    "3482478d": [
+    "64e4700c": [
       37
     ],
     "702c36be": [
@@ -12567,10 +12567,10 @@
     "4d26e494": [
       43
     ],
-    "1bb31cc3": [
+    "5b6ec25a": [
       40
     ],
-    "b9942012": [
+    "3a1cd4e4": [
       40
     ],
     "e5ce53f6": [
@@ -12591,10 +12591,10 @@
     "079553a4": [
       40
     ],
-    "efbab68e": [
+    "212e2526": [
       37
     ],
-    "5240eeed": [
+    "2967214c": [
       37
     ],
     "7b5005cd": [
@@ -12765,13 +12765,13 @@
     "444238ef": [
       37
     ],
-    "4f86835c": [
+    "a4253762": [
       37
     ],
     "1cccde98": [
       37
     ],
-    "354eceea": [
+    "d894a046": [
       37
     ],
     "03c3b1c4": [
@@ -12795,13 +12795,13 @@
     "67e70912": [
       40
     ],
-    "0a80ebc2": [
+    "4ef95f6a": [
       40
     ],
     "aa8e18e0": [
       40
     ],
-    "4559d4d0": [
+    "135c3959": [
       40
     ],
     "071180d4": [
@@ -12838,7 +12838,7 @@
       41,
       46
     ],
-    "24f5e4da": [
+    "86cd6e38": [
       41,
       46
     ],
@@ -12846,7 +12846,7 @@
       41,
       46
     ],
-    "5d6d5021": [
+    "2c818b72": [
       41,
       46
     ],
@@ -12963,58 +12963,58 @@
   },
   "assetsMapping": {
     "bba68bf6": [
-      "0.37b7e3a.js",
+      "0.33829aa.js",
       "18.097b468.js",
       "19.51bb819.js",
-      "2.3b071b2.js"
+      "2.d2cee45.js"
     ],
     "1a3ae26b": [
-      "app.dae1c66.js"
+      "app.c1daed7.js"
     ],
     "2aff1868": [
       "pages/about.f7d0f51.js"
     ],
     "ce4a41de": [
-      "pages/admin/index.8de2e0f.js"
+      "pages/admin/index.5e6f7d4.js"
     ],
     "2ae91a64": [
       "pages/azure.0c1f330.js"
     ],
     "2a2447ec": [
-      "pages/bintan-island/index.54856f2.js"
+      "pages/bintan-island/index.6c35156.js"
     ],
     "da4831d4": [
-      "pages/dashboard/index.5b2b6f4.js"
+      "pages/dashboard/index.c226813.js"
     ],
     "2a130dde": [
-      "pages/index.120c1d2.js"
+      "pages/index.045e511.js"
     ],
     "29bd80b0": [
-      "pages/login.e8e739c.js"
+      "pages/login.6100896.js"
     ],
     "602ec002": [
-      "pages/roles/index.82bdb38.js"
+      "pages/roles/index.475edcc.js"
     ],
     "71e61134": [
-      "pages/species/_id.88f2c64.js"
+      "pages/species/_id.dcb66d4.js"
     ],
     "383bf37e": [
-      "pages/species/index.4d77bcd.js"
+      "pages/species/index.7bc827e.js"
     ],
     "cf6689ec": [
-      "pages/users/index.e4f514e.js"
+      "pages/users/index.02f027c.js"
     ],
     "aaf0a1b8": [
-      "pages/users/profile/index.eae1838.js"
+      "pages/users/profile/index.b8379eb.js"
     ],
     "6fca0322": [
-      "runtime.4a5140a.js"
+      "runtime.824416f.js"
     ],
     "07a97964": [
       "vendors/commons.4aadaef.js"
     ],
     "0943bc69": [
-      "vendors/roles.index~species.index.679b1eb.js"
+      "vendors/roles.index~species.index.1ad6cdc.js"
     ]
   }
 }

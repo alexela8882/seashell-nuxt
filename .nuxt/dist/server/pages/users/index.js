@@ -28,7 +28,7 @@ module.exports = exports;
 
 /***/ }),
 
-/***/ 302:
+/***/ 303:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -425,7 +425,7 @@ var VNavigationDrawer = __webpack_require__(244);
 var VRow = __webpack_require__(248);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VSkeletonLoader/VSkeletonLoader.js
-var VSkeletonLoader = __webpack_require__(302);
+var VSkeletonLoader = __webpack_require__(303);
 
 // CONCATENATED MODULE: ./pages/users/index.vue
 
