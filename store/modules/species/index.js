@@ -7,6 +7,8 @@ const state = () => ({
   class: [],
   family: [],
   genus: [],
+  gastropodSpecies: [],
+  bivalveSpecies: [],
 })
 
 const getters = {
@@ -16,6 +18,8 @@ const getters = {
   getClass (state) { return state.class },
   getFamily (state) { return state.family },
   getGenus (state) { return state.genus },
+  getGastropodSpecies (state) {return state.gastropodSpecies},
+  getBivalveSpecies (state) {return state.bivalveSpecies},
 }
 
 const mutations = {
@@ -25,6 +29,8 @@ const mutations = {
   GET_CLASS (state, payload) { state.class = payload },
   GET_FAMILY (state, payload) { state.family = payload },
   GET_GENUS (state, payload) { state.genus = payload },
+  GET_GASTROPOD_SPECIES (state, payload) { state.gastropodSpecies = payload },
+  GET_BIVALVE_SPECIES (state, payload) { state.bivalveSpecies = payload },
 }
 
 export default {

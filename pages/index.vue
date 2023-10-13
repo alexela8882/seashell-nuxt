@@ -266,12 +266,15 @@
                   <div
                     @click="speciesList(2)"
                     style="cursor: pointer;"
-                    class="font-weight-black text-xs-text-h4 text-h3 text-lg-h1"
+                    class="font-weight-black text-xs-text-h4 text-h3 text-lg-h1 home-title"
                     >gas.<span class="stroke-1 stroke-transparent-eblue">tro.</span>pod</div>
                   <div class="text-h6 font-weight-bold font-italic">noun</div>
                   <div class="pr-16">
                     <ul class="custom-ul text-right electric_blue--text" v-for="(item, i) in gastropodItems.data">
                       <li><a @click="speciesView(item.id)">{{ item.common_name }}</a></li>
+                    </ul>
+                    <ul class="custom-ul text-right electric_blue--text">
+                      <li><a @click="speciesList(2)">See More...</a></li>
                     </ul>
                   </div>
                 </div>
@@ -369,12 +372,15 @@
                   <div 
                     @click="speciesList(1)"
                     style="cursor: pointer;"
-                    class="font-weight-black text-xs-text-h4 text-h3 text-lg-h1">bi.<span class="stroke-1 stroke-transparent-eblue">valve</span></div>
+                    class="font-weight-black text-xs-text-h4 text-h3 text-lg-h1 home-title">bi.<span class="stroke-1 stroke-transparent-eblue">valve</span></div>
                   <div class="text-h6 font-weight-bold font-italic">noun</div>
 
                   <div class="pr-16">
                     <ul class="custom-ul text-right electric_blue--text" v-for="(item, i) in bivalveItems.data">
                       <li><a @click="speciesView(item.id)">{{ item.common_name }}</a></li>
+                    </ul>
+                    <ul class="custom-ul text-right electric_blue--text">
+                      <li><a @click="speciesList(1)">See More...</a></li>
                     </ul>
                   </div>
                 </div>
@@ -474,6 +480,7 @@
 
 <script>
 import axios from "axios";
+import { mapState, mapGetters } from 'vuex'
 
 export default {
   head: {
@@ -532,8 +539,8 @@ export default {
           src: '/img/shells/seashell-wallpaper4-1080p.jpg',
         }
       ],
-      bivalveItems: [],
-      gastropodItems: [],
+      // bivalveItems: [],
+      // gastropodItems: [],
       // bivalveItems: [
       //   {
       //     title: 'Shell 1',
@@ -577,28 +584,18 @@ export default {
   },
 
   methods: {
-    getBivalveSpecies(){
-      axios.get('/api/web/get_random_species',{ params: { species_class_id: 2, limit:4} }).then(
-        (response) => {
-          console.log(response.data);
-          this.bivalveItems= response.data;
-        },
-        (error) => {
-          // this.isUnauthorized(error);
-        }
-      );
+    // async initialize () {
+    //   this.getBivalveSpecies()
+    //   this.getGastropodSpecies()
+    // },
+
+    async getBivalveSpecies(){
+      await this.$store.dispatch('species/fetchBivalveSpecies',{ params: { species_class_id: 1, limit:5} })
     },
 
-    getGastropodSpecies(){
-      axios.get('/api/web/get_random_species',{ params: { species_class_id: 1, limit:4} }).then(
-        (response) => {
-          console.log(response.data);
-          this.gastropodItems= response.data;
-        },
-        (error) => {
-          // this.isUnauthorized(error);
-        }
-      );
+
+    async getGastropodSpecies(){
+      await this.$store.dispatch('species/fetchGastropodSpecies',{ params: { species_class_id: 2, limit:5} })
     },
 
     speciesView(id){
@@ -632,7 +629,11 @@ export default {
     responsiveBorderRadius () {
       let data = this.$vuetify.breakpoint.sm || this.$vuetify.breakpoint.xs ? 'bottom-rounded-sm' : 'bottom-rounded-lg'
       return data
-    }
+    },
+    ...mapGetters({
+      bivalveItems: 'species/getBivalveSpecies',
+      gastropodItems: 'species/getGastropodSpecies',
+    })
   }
 }
 </script>
@@ -719,5 +720,9 @@ export default {
   .kollektif-font div {
     font-family: Kollektif !important;
     line-height: 17px;
+  }
+
+  .home-title:hover{
+    text-decoration: underline;
   }
 </style>
