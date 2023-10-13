@@ -72,6 +72,28 @@ const actions = {
       commit('SET_LOADING', false, { root: true })
     }
   },
+  async fetchGastropodSpecies({ commit }, payload) {
+    commit('SET_LOADING', true, { root: true })
+    try {
+      let response = await this.$axios.get(this.$baseurl('web/get_random_species'), payload )
+      commit('GET_GASTROPOD_SPECIES', response.data)
+    } catch (e) {
+      commit('SET_LOADING', false, { root: true })
+    } finally {
+      commit('SET_LOADING', false, { root: true })
+    }
+  },
+  async fetchBivalveSpecies({ commit }, payload) {
+    commit('SET_LOADING', true, { root: true })
+    try {
+      let response = await this.$axios.get(this.$baseurl('web/get_random_species'), payload )
+      commit('GET_BIVALVE_SPECIES', response.data)
+    } catch (e) {
+      commit('SET_LOADING', false, { root: true })
+    } finally {
+      commit('SET_LOADING', false, { root: true })
+    }
+  },
 }
 
 export default actions
