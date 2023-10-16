@@ -7,6 +7,13 @@
     "_name": "_6ed58bca"
   },
   {
+    "name": "about-us",
+    "path": "/about-us",
+    "component": "C:\\\\Users\\\\Admin\\\\Desktop\\\\devs\\\\seashell-nuxt\\\\pages\\\\about-us.vue",
+    "chunkName": "pages/about-us",
+    "_name": "_a470239e"
+  },
+  {
     "name": "admin",
     "path": "/admin",
     "component": "C:\\\\Users\\\\Admin\\\\Desktop\\\\devs\\\\seashell-nuxt\\\\pages\\\\admin\\\\index.vue",
