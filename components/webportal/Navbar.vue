@@ -184,7 +184,7 @@ export default {
         this.navbarClass = `${fontSize} font-weight-black white--text`
         this.outlinedTitle = 'stroke-transparent-white'
         this.navbarTheme = false
-      } else if (this.$route.name === 'bintan-island') {
+      } else if (this.$route.name === 'bintan-island' || this.$route.name === 'about-us') {
         this.containerClass = `${(!this.$vuetify.breakpoint.sm && !this.$vuetify.breakpoint.xs) && 'bottom-rounded-md shadow-xl py-16'} white`
         this.appbarClass = `${this.$vuetify.breakpoint.sm || this.$vuetify.breakpoint.xs ? 'py-0' : 'py-8'}`
         this.navbarBg = "white"
@@ -239,14 +239,14 @@ export default {
             v-if="navLink.separator"
             class="mx-3"
             style="width: 50px;"
-            :style="`border: 1px solid ${$route.name == 'bintan-island' ? '#08527b' : 'white'}`"></div>
+            :style="`border: 1px solid ${$route.name == 'bintan-island' || $route.name == 'about-us' ? '#08527b' : 'white'}`"></div>
           <v-btn
             v-else
             @click="navigateLink(navLink)"
             :small="!$vuetify.breakpoint.xl"
             class="rounded-lg text-lowercase"
             :outlined="!navLink.leftNav"
-            :class="`${$route.name == 'bintan-island' ? (!navLink.leftNav ? 'electric_blue--text' : 'electric_blue white--text') : (!navLink.leftNav ? 'white--text' : 'white black--text')}`">
+            :class="`${$route.name == 'bintan-island' || $route.name == 'about-us' ? (!navLink.leftNav ? 'electric_blue--text' : 'electric_blue white--text') : (!navLink.leftNav ? 'white--text' : 'white black--text')}`">
             {{ navLink.label }}
           </v-btn>
         </div>
@@ -256,7 +256,7 @@ export default {
           plain
           :small="!$vuetify.breakpoint.xl"
           class="text-lowercase rounded-lg"
-          :class="$route.name == 'bintan-island' ? 'electric_blue--text' : 'white--text'">
+          :class="$route.name == 'bintan-island' || $route.name == 'about-us' ? 'electric_blue--text' : 'white--text'">
           <v-icon>mdi-magnify</v-icon>
         </v-btn>
       </div>
@@ -270,7 +270,7 @@ export default {
             <v-btn
               dark
               icon
-              :class="$route.name == 'bintan-island' ? 'electric_blue--text' : 'white--text'"
+              :class="$route.name == 'bintan-island' || $route.name == 'about-us' ? 'electric_blue--text' : 'white--text'"
               v-bind="attrs"
               v-on="on">
               <v-icon>mdi-menu</v-icon>

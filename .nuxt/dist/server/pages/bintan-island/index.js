@@ -1,7 +1,7 @@
-exports.ids = [6];
+exports.ids = [7];
 exports.modules = {
 
-/***/ 286:
+/***/ 294:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -80,7 +80,7 @@ exports.modules = {
 
 /***/ }),
 
-/***/ 345:
+/***/ 355:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -147,7 +147,7 @@ var staticRenderFns = []
 // CONCATENATED MODULE: ./pages/bintan-island/index.vue?vue&type=script&lang=js&
  /* harmony default export */ var pages_bintan_islandvue_type_script_lang_js_ = (bintan_islandvue_type_script_lang_js_); 
 // EXTERNAL MODULE: ./node_modules/vue-loader/lib/runtime/componentNormalizer.js
-var componentNormalizer = __webpack_require__(11);
+var componentNormalizer = __webpack_require__(10);
 
 // EXTERNAL MODULE: ./node_modules/vuetify-loader/lib/runtime/installComponents.js
 var installComponents = __webpack_require__(9);
@@ -166,7 +166,7 @@ var VCol = __webpack_require__(246);
 var transitions = __webpack_require__(29);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VHover/VHover.js
-var VHover = __webpack_require__(286);
+var VHover = __webpack_require__(294);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VIcon/VIcon.js
 var VIcon = __webpack_require__(81);
