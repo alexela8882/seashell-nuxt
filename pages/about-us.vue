@@ -10,8 +10,8 @@
         style="width: 100%; padding-top: 100px;">
         <div class="px-md-16 px-0">
           <div
-            :style="$vuetify.breakpoint.xl ? 'font-size: 175px' : 'font-size: 125px'"
-            class="soul-seashell">
+            :style="`${$vuetify.breakpoint.xs || $vuetify.breakpoint.sm ? 'font-size: 85px;' : ($vuetify.breakpoint.xl ? 'font-size: 175px;' : 'font-size: 125px;')}`"
+            class="soul-seashell mt-10">
             About Us
           </div>
 
@@ -59,7 +59,7 @@
       style="position: relative; z-index: 51 !important; margin-top: -100px;">
       <div class="px-md-16 electric_blue--text" style="padding-top: 90px; width: 100% !important;">
         <div
-            :style="$vuetify.breakpoint.xl ? 'font-size: 175px' : 'font-size: 125px'"
+            :style="`${$vuetify.breakpoint.xs || $vuetify.breakpoint.sm ? 'font-size: 85px;' : ($vuetify.breakpoint.xl ? 'font-size: 175px;' : 'font-size: 125px;')}`"
             class="soul-seashell">
             Why Seashells?
           </div>
@@ -91,12 +91,13 @@
         :style="`padding-top: ${$vuetify.breakpoint.xs ? '50px' : '70px'}`">
         <v-row>
           <v-col
-            cols="6"
+            cols="12"
+            md="6" sm="12"
             class="kollektif"
             :class="($vuetify.breakpoint.xs || $vuetify.breakpoint.sm) ? 'text-caption' : 'text-h6'">
             <div
-                :style="$vuetify.breakpoint.xl ? 'font-size: 175px' : 'font-size: 125px'"
-                class="soul-seashell mb-8">
+                :style="`${$vuetify.breakpoint.xs || $vuetify.breakpoint.sm ? 'font-size: 85px;' : ($vuetify.breakpoint.xl ? 'font-size: 175px;' : 'font-size: 125px;')}`"
+                class="soul-seashell mb-8 mt-8">
                 Our Mission
             </div>
             <div class="mb-8">
@@ -105,14 +106,15 @@
             </div>
           </v-col>
           <v-col
-            cols="6"
+            cols="12"
+            md="6" sm="12"
             class="kollektif"
             :class="($vuetify.breakpoint.xs || $vuetify.breakpoint.sm) ? 'text-caption' : 'text-h6'">
             <div class="mb-3 mb-md-8">
               <v-img height="250" contain src="/img/shells/landingpage/shell_combined.png"></v-img>
             </div>
             <div
-                :style="$vuetify.breakpoint.xl ? 'font-size: 175px' : 'font-size: 125px'"
+                :style="`${$vuetify.breakpoint.xs || $vuetify.breakpoint.sm ? 'font-size: 85px;' : ($vuetify.breakpoint.xl ? 'font-size: 175px;' : 'font-size: 125px;')}`"
                 class="soul-seashell mb-8">
                 Our Values
             </div>
@@ -135,10 +137,11 @@
         <v-row>
           <v-col
             cols="12"
+            md="6" sm="12"
             class="kollektif"
             :class="($vuetify.breakpoint.xs || $vuetify.breakpoint.sm) ? 'text-caption' : 'text-h6'">
             <div
-                :style="$vuetify.breakpoint.xl ? 'font-size: 175px' : 'font-size: 125px'"
+                :style="`${$vuetify.breakpoint.xs || $vuetify.breakpoint.sm ? 'font-size: 85px;' : ($vuetify.breakpoint.xl ? 'font-size: 175px;' : 'font-size: 125px;')}`"
                 class="soul-seashell mb-8">
                 Contact Us
             </div>
@@ -170,6 +173,15 @@
                 <v-btn color="electric_blue" class="rounded-xl white--text float-right flex"> Send</v-btn>
             </div>
           </v-col>
+          <v-col
+          cols="12"
+          md="6" sm="12"
+          >
+            <v-img
+            tyle="width: 100% !important;"
+            src="/img/shells/landingpage/shell-section-bg.jpg"
+            ></v-img>
+        </v-col>
         </v-row>
       </div>
     </div>
