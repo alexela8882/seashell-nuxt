@@ -110,7 +110,7 @@ export default {
       // re-populate
       if ((this.paged_species && this.paged_species.data) && this.paged_species.data.data.length > 0) {
         this.paged_species.data.data.map((item) => {
-          this.images.push(this.$backendurl(item.display_photo))
+          this.images.push(this.$backendurl(item.thumbnail))
         })
       }
     },
@@ -278,8 +278,23 @@ export default {
                       contain
                       class="cover"
                       style="max-height: 300px !important; height: 300px !important;"
-                      :src="item.display_photo ?
-                      `${$backendurl(item.display_photo)}` : '/img/sample_shell.jpg'"></v-img>
+                      lazy-src="/img/sample_shell.jpg"
+                      :src="item.thumbnail ?
+                      `${$backendurl(item.thumbnail)}` : item.display_photo ?
+                      `${$backendurl(item.display_photo)}` : '/img/sample_shell.jpg'">
+                        <template v-slot="{ placeholder }">
+                          <v-row
+                            class="fill-height ma-0"
+                            align="center"
+                            justify="center"
+                          >
+                            <v-progress-circular
+                              indeterminate
+                              color="grey-lighten-5"
+                            ></v-progress-circular>
+                          </v-row>
+                        </template>
+                    </v-img>
                   </v-card>
                   <v-card
                     :elevation="hover ? 12 : 5"
