@@ -320,7 +320,7 @@
       v-if="$vuetify.breakpoint.xs || $vuetify.breakpoint.sm"
       class="bottom-rounded-sm shadow-xl"
       style="position: relative; background-color: white; margin-top: -200px; z-index: 48 !important; padding-bottom: 50px;">
-      <v-row class="px-md-16" style="padding-top: 200px;">
+      <v-row class="px-md-16 mx-0" style="padding-top: 200px;">
         <v-col cols="10" offset="1">
           <v-row>
             <v-col cols="6">
