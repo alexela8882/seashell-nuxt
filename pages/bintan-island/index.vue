@@ -62,7 +62,7 @@ export default {
         style="width: 100% !important;"
         :style="`padding-top: ${($vuetify.breakpoint.xs || $vuetify.breakpoint.sm) ? '50px' : '0px'}`">
         <div
-          :style="$vuetify.breakpoint.xl ? 'font-size: 175px' : 'font-size: 125px'"
+          :style="`${$vuetify.breakpoint.xs || $vuetify.breakpoint.sm ? 'font-size: 85px;' : ($vuetify.breakpoint.xl ? 'font-size: 175px;' : 'font-size: 125px;')}`"
           class="soul-seashell">
           Bintan Island
         </div>
@@ -258,7 +258,8 @@ export default {
         :style="`padding-top: ${$vuetify.breakpoint.xs ? '50px' : '70px'}`">
         <v-row>
           <v-col
-            cols="6"
+            cols="12"
+            md="6"
             class="kollektif"
             :class="($vuetify.breakpoint.xs || $vuetify.breakpoint.sm) ? 'text-caption' : 'text-h6'">
             <div class="mb-8">
@@ -289,7 +290,8 @@ export default {
             </div>
           </v-col>
           <v-col
-            cols="6"
+            cols="12"
+            md="6"
             class="kollektif"
             :class="($vuetify.breakpoint.xs || $vuetify.breakpoint.sm) ? 'text-caption' : 'text-h6'">
             <div class="mb-3 mb-md-8">
