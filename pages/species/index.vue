@@ -24,7 +24,7 @@ export default {
         family: null,
         genus: null,
         keyword: null,
-        sort: "common_name",
+        sort: null,
       },
       sortNames: [
         {
@@ -75,7 +75,7 @@ export default {
     this.filters.shell_class = searchClass
     this.filters.family = searchFamily
     this.filters.genus = searchGenus
-    this.filters.sort = searchSort ? searchSort : 'common_name'
+    this.filters.sort = searchSort
 
     // initialize
     this.initialize()
@@ -91,10 +91,12 @@ export default {
   methods: {
     async initialize () {
       await this.$store.dispatch('species/fetchClass')
-      await this.$store.dispatch('species/fetchFamily')
-      await this.$store.dispatch('species/fetchGenus')
+      // await this.$store.dispatch('species/fetchFamily', { params: { shell_class: this.filters.shell_class} })
+      // await this.$store.dispatch('species/fetchGenus', { params: {shell_class: this.filters.shell_class, family: this.filters.family} })
 
       this.getSpecies()
+      this.getFamily()
+      this.getGenus()
     },
 
     async getSpecies () {
@@ -108,9 +110,16 @@ export default {
       // re-populate
       if ((this.paged_species && this.paged_species.data) && this.paged_species.data.data.length > 0) {
         this.paged_species.data.data.map((item) => {
-          this.images.push(this.$backendurl(item.display_photo))
+          this.images.push(this.$backendurl(item.thumbnail))
         })
       }
+    },
+
+    async getFamily(){
+      await this.$store.dispatch('species/fetchFamily', { params: { shell_class: this.filters.shell_class} })
+    },
+    async getGenus(){
+      await this.$store.dispatch('species/fetchGenus', { params: {shell_class: this.filters.shell_class, family: this.filters.family} })
     },
 
     speciesView (id) {
@@ -146,6 +155,8 @@ export default {
 
       this.filters.cpage = 1
       this.getSpecies()
+      this.getFamily()
+      this.getGenus()
       // this.getClass(this.filters)
       // this.getFamily(this.filters)
       // this.getGenus(this.filters)
@@ -267,8 +278,23 @@ export default {
                       contain
                       class="cover"
                       style="max-height: 300px !important; height: 300px !important;"
-                      :src="item.display_photo ?
-                      `${$backendurl(item.display_photo)}` : '/img/sample_shell.jpg'"></v-img>
+                      lazy-src="/img/sample_shell.jpg"
+                      :src="item.thumbnail ?
+                      `${$backendurl(item.thumbnail)}` : item.display_photo ?
+                      `${$backendurl(item.display_photo)}` : '/img/sample_shell.jpg'">
+                        <template v-slot="{ placeholder }">
+                          <v-row
+                            class="fill-height ma-0"
+                            align="center"
+                            justify="center"
+                          >
+                            <v-progress-circular
+                              indeterminate
+                              color="grey-lighten-5"
+                            ></v-progress-circular>
+                          </v-row>
+                        </template>
+                    </v-img>
                   </v-card>
                   <v-card
                     :elevation="hover ? 12 : 5"
@@ -278,6 +304,8 @@ export default {
                     <div class="kollektif font-weight-bold">
                       <div class="text-h6 font-weight-bold text-truncate">{{ item.common_name && item.common_name }}</div>
                       <div class="text-body-1 font-italic text-truncate">{{ item.name && item.name }}</div>
+                      <!-- <div class="text-body-1 font-italic text-truncate">{{ item.author && item.author}}</div>
+                      <div class="text-body-1 font-italic text-truncate">{{ item.created_at }}</div> -->
                     </div>
                   </v-card>
                 </div>
