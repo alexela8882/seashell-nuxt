@@ -12,39 +12,19 @@ let store = {};
 
   // If store is an exported method = classic mode (deprecated)
 
-  if (typeof store === 'function') {
-    return console.warn('Classic mode for store/ is deprecated and will be removed in Nuxt 3.')
-  }
-
   // Enforce store modules
   store.modules = store.modules || {}
 
   resolveStoreModules(require('../store/modules/users/index.js'), 'modules/users/index.js')
   resolveStoreModules(require('../store/modules/species/index.js'), 'modules/species/index.js')
   resolveStoreModules(require('../store/modules/roles/index.js'), 'modules/roles/index.js')
+  resolveStoreModules(require('../store/modules/contacts/index.js'), 'modules/contacts/index.js')
+  resolveStoreModules(require('../store/modules/contacts/actions.js'), 'modules/contacts/actions.js')
   resolveStoreModules(require('../store/modules/roles/actions.js'), 'modules/roles/actions.js')
   resolveStoreModules(require('../store/modules/species/actions.js'), 'modules/species/actions.js')
   resolveStoreModules(require('../store/modules/users/actions.js'), 'modules/users/actions.js')
 
   // If the environment supports hot reloading...
-
-  if (process.client && module.hot) {
-    // Whenever any Vuex module is updated...
-    module.hot.accept([
-      '../store/index.js',
-      '../store/modules/users/index.js',
-      '../store/modules/species/index.js',
-      '../store/modules/roles/index.js',
-      '../store/modules/roles/actions.js',
-      '../store/modules/species/actions.js',
-      '../store/modules/users/actions.js',
-    ], () => {
-      // Update `root.modules` with the latest definitions.
-      updateModules()
-      // Trigger a hot update in the store.
-      window.$nuxt.$store.hotUpdate(store)
-    })
-  }
 })()
 
 // createStore

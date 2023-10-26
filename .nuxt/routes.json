@@ -2,73 +2,99 @@
   {
     "name": "about",
     "path": "/about",
-    "component": "/var/www/html/seashell-nuxt/pages/about.vue",
-    "chunkName": "pages/about"
+    "component": "/Applications/XAMPP/xamppfiles/htdocs/seashell-nuxt-fe/pages/about.vue",
+    "chunkName": "pages/about",
+    "_name": "_91817c9c"
+  },
+  {
+    "name": "about-us",
+    "path": "/about-us",
+    "component": "/Applications/XAMPP/xamppfiles/htdocs/seashell-nuxt-fe/pages/about-us.vue",
+    "chunkName": "pages/about-us",
+    "_name": "_736f8f49"
   },
   {
     "name": "admin",
     "path": "/admin",
-    "component": "/var/www/html/seashell-nuxt/pages/admin/index.vue",
-    "chunkName": "pages/admin/index"
+    "component": "/Applications/XAMPP/xamppfiles/htdocs/seashell-nuxt-fe/pages/admin/index.vue",
+    "chunkName": "pages/admin/index",
+    "_name": "_69f1cff7"
   },
   {
     "name": "azure",
     "path": "/azure",
-    "component": "/var/www/html/seashell-nuxt/pages/azure.vue",
-    "chunkName": "pages/azure"
+    "component": "/Applications/XAMPP/xamppfiles/htdocs/seashell-nuxt-fe/pages/azure.vue",
+    "chunkName": "pages/azure",
+    "_name": "_a8622098"
   },
   {
     "name": "bintan-island",
     "path": "/bintan-island",
-    "component": "/var/www/html/seashell-nuxt/pages/bintan-island/index.vue",
-    "chunkName": "pages/bintan-island/index"
+    "component": "/Applications/XAMPP/xamppfiles/htdocs/seashell-nuxt-fe/pages/bintan-island/index.vue",
+    "chunkName": "pages/bintan-island/index",
+    "_name": "_5a420b20"
   },
   {
     "name": "dashboard",
     "path": "/dashboard",
-    "component": "/var/www/html/seashell-nuxt/pages/dashboard/index.vue",
-    "chunkName": "pages/dashboard/index"
+    "component": "/Applications/XAMPP/xamppfiles/htdocs/seashell-nuxt-fe/pages/dashboard/index.vue",
+    "chunkName": "pages/dashboard/index",
+    "_name": "_7405367c"
   },
   {
     "name": "login",
     "path": "/login",
-    "component": "/var/www/html/seashell-nuxt/pages/login.vue",
-    "chunkName": "pages/login"
+    "component": "/Applications/XAMPP/xamppfiles/htdocs/seashell-nuxt-fe/pages/login.vue",
+    "chunkName": "pages/login",
+    "_name": "_bec280e4"
   },
   {
     "name": "roles",
     "path": "/roles",
-    "component": "/var/www/html/seashell-nuxt/pages/roles/index.vue",
-    "chunkName": "pages/roles/index"
+    "component": "/Applications/XAMPP/xamppfiles/htdocs/seashell-nuxt-fe/pages/roles/index.vue",
+    "chunkName": "pages/roles/index",
+    "_name": "_1d8d2c36"
+  },
+  {
+    "name": "services",
+    "path": "/services",
+    "component": "/Applications/XAMPP/xamppfiles/htdocs/seashell-nuxt-fe/pages/services.vue",
+    "chunkName": "pages/services",
+    "_name": "_775bda6e"
   },
   {
     "name": "species",
     "path": "/species",
-    "component": "/var/www/html/seashell-nuxt/pages/species/index.vue",
-    "chunkName": "pages/species/index"
+    "component": "/Applications/XAMPP/xamppfiles/htdocs/seashell-nuxt-fe/pages/species/index.vue",
+    "chunkName": "pages/species/index",
+    "_name": "_4b586a64"
   },
   {
     "name": "users",
     "path": "/users",
-    "component": "/var/www/html/seashell-nuxt/pages/users/index.vue",
-    "chunkName": "pages/users/index"
+    "component": "/Applications/XAMPP/xamppfiles/htdocs/seashell-nuxt-fe/pages/users/index.vue",
+    "chunkName": "pages/users/index",
+    "_name": "_64b30770"
   },
   {
     "name": "users-profile",
     "path": "/users/profile",
-    "component": "/var/www/html/seashell-nuxt/pages/users/profile/index.vue",
-    "chunkName": "pages/users/profile/index"
+    "component": "/Applications/XAMPP/xamppfiles/htdocs/seashell-nuxt-fe/pages/users/profile/index.vue",
+    "chunkName": "pages/users/profile/index",
+    "_name": "_86749eec"
   },
   {
     "name": "species-id",
     "path": "/species/:id",
-    "component": "/var/www/html/seashell-nuxt/pages/species/_id.vue",
-    "chunkName": "pages/species/_id"
+    "component": "/Applications/XAMPP/xamppfiles/htdocs/seashell-nuxt-fe/pages/species/_id.vue",
+    "chunkName": "pages/species/_id",
+    "_name": "_f3f49468"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "/var/www/html/seashell-nuxt/pages/index.vue",
-    "chunkName": "pages/index"
+    "component": "/Applications/XAMPP/xamppfiles/htdocs/seashell-nuxt-fe/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_5211c712"
   }
 ]
