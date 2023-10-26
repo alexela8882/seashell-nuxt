@@ -10,8 +10,8 @@
         style="width: 100%; padding-top: 100px;">
         <div class="px-md-16 px-0">
           <div
-            :style="$vuetify.breakpoint.xl ? 'font-size: 175px' : 'font-size: 125px'"
-            class="soul-seashell">
+            :style="`${$vuetify.breakpoint.xs || $vuetify.breakpoint.sm ? 'font-size: 85px;' : ($vuetify.breakpoint.xl ? 'font-size: 175px;' : 'font-size: 125px;')}`"
+            class="soul-seashell mt-10">
             About Us
           </div>
 
@@ -59,7 +59,7 @@
       style="position: relative; z-index: 51 !important; margin-top: -100px;">
       <div class="px-md-16 electric_blue--text" style="padding-top: 90px; width: 100% !important;">
         <div
-            :style="$vuetify.breakpoint.xl ? 'font-size: 175px' : 'font-size: 125px'"
+            :style="`${$vuetify.breakpoint.xs || $vuetify.breakpoint.sm ? 'font-size: 85px;' : ($vuetify.breakpoint.xl ? 'font-size: 175px;' : 'font-size: 125px;')}`"
             class="soul-seashell">
             Why Seashells?
           </div>
@@ -91,12 +91,13 @@
         :style="`padding-top: ${$vuetify.breakpoint.xs ? '50px' : '70px'}`">
         <v-row>
           <v-col
-            cols="6"
+            cols="12"
+            md="6" sm="12"
             class="kollektif"
             :class="($vuetify.breakpoint.xs || $vuetify.breakpoint.sm) ? 'text-caption' : 'text-h6'">
             <div
-                :style="$vuetify.breakpoint.xl ? 'font-size: 175px' : 'font-size: 125px'"
-                class="soul-seashell mb-8">
+                :style="`${$vuetify.breakpoint.xs || $vuetify.breakpoint.sm ? 'font-size: 85px;' : ($vuetify.breakpoint.xl ? 'font-size: 175px;' : 'font-size: 125px;')}`"
+                class="soul-seashell mb-8 mt-8">
                 Our Mission
             </div>
             <div class="mb-8">
@@ -105,14 +106,15 @@
             </div>
           </v-col>
           <v-col
-            cols="6"
+            cols="12"
+            md="6" sm="12"
             class="kollektif"
             :class="($vuetify.breakpoint.xs || $vuetify.breakpoint.sm) ? 'text-caption' : 'text-h6'">
             <div class="mb-3 mb-md-8">
               <v-img height="250" contain src="/img/shells/landingpage/shell_combined.png"></v-img>
             </div>
             <div
-                :style="$vuetify.breakpoint.xl ? 'font-size: 175px' : 'font-size: 125px'"
+                :style="`${$vuetify.breakpoint.xs || $vuetify.breakpoint.sm ? 'font-size: 85px;' : ($vuetify.breakpoint.xl ? 'font-size: 175px;' : 'font-size: 125px;')}`"
                 class="soul-seashell mb-8">
                 Our Values
             </div>
@@ -135,10 +137,11 @@
         <v-row>
           <v-col
             cols="12"
+            md="6" sm="12"
             class="kollektif"
             :class="($vuetify.breakpoint.xs || $vuetify.breakpoint.sm) ? 'text-caption' : 'text-h6'">
             <div
-                :style="$vuetify.breakpoint.xl ? 'font-size: 175px' : 'font-size: 125px'"
+                :style="`${$vuetify.breakpoint.xs || $vuetify.breakpoint.sm ? 'font-size: 85px;' : ($vuetify.breakpoint.xl ? 'font-size: 175px;' : 'font-size: 125px;')}`"
                 class="soul-seashell mb-8">
                 Contact Us
             </div>
@@ -146,38 +149,93 @@
                 If you have any questions or comments, please do not hesitate to contact us. We are always happy to hear from you.
             </div>
             <div class="mb-8">
+              <v-card flat ref="form">
                 <v-text-field
-                    v-model="email"
+                    v-model="contact.email"
                     outlined
                     label="Email"
                     class="rounded-xl pa-0 ma-0 text-search"
                     color="electric_blue"
                     dense
+                    :rules="[rules.required, rules.email]"
+                    :error-messages="email.error"
                 ></v-text-field>
+                
                 <v-text-field
-                    v-model="subject"
+                    v-model="contact.subject"
                     outlined
                     label="Subject"
                     class="rounded-xl pa-0 ma-0 text-search"
                     color="electric_blue"
                     dense
+                    :rules="[rules.required]"
+                    :error-messages="subject.error"
                 ></v-text-field>
+                
                 <v-textarea label="Message" 
                 class="rounded-xl pa-0 ma-0 text-search"
+                v-model="contact.message"
                 color="electric_blue"
                 dense
-                outlined></v-textarea>
-                <v-btn color="electric_blue" class="rounded-xl white--text float-right flex"> Send</v-btn>
+                outlined
+                :rules="[rules.required]"
+                :error-messages="message.error"
+                ></v-textarea>
+                <v-card-actions>
+                  <v-btn color="electric_blue" class="rounded-xl white--text float-right flex" @click="sendMessage"> Send</v-btn>
+                </v-card-actions>
+              </v-card>
             </div>
           </v-col>
+          <v-col
+          cols="12"
+          md="6" sm="12"
+          >
+            <v-img
+            tyle="width: 100% !important;"
+            src="/img/shells/landingpage/shell-section-bg.jpg"
+            ></v-img>
+        </v-col>
         </v-row>
       </div>
     </div>
+
+    <v-dialog
+      v-model="contactResultDialog"
+      width="500">
+      <v-card>
+        <v-toolbar
+          color="primary"
+          title="Success"
+          class="white--text"
+        >Success</v-toolbar>
+        <v-divider></v-divider>
+        <v-card-text class="pt-8">
+          <div>
+            Message successfully sent.
+          </div>
+        </v-card-text>
+        <v-divider></v-divider>
+        <v-card-actions>
+          <v-spacer></v-spacer>
+          <v-btn
+            color="secondary"
+            text
+            @click="contactResultDialog = false">
+            Close
+          </v-btn>
+        </v-card-actions>
+      </v-card>
+    </v-dialog>
 </div>
+
+
 
 </template>
   
   <script>
+import axios from '~/plugins/axios'
+
   export default {
     auth: false,
     layout: 'landing',
@@ -186,11 +244,29 @@
     },
 
     data () {
-        return {
-            subject: null,
-            email: null,
-            message:null
-        }
+      return {
+        backendUrl: 'http://127.0.0.1:8000',
+        subject: { value: null, error: null },
+        email: { value: null, error: null },
+        message:{ value: "", error: null },
+        error: { value: null, error: null },
+
+        contact: {
+          subject: '',
+          email: '',
+          message: ''
+        },
+
+        rules: {
+          required: value => !!value || 'Required.',
+          counter: value => value.length <= 20 || 'Max 20 characters',
+          email: value => {
+            const pattern = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+            return pattern.test(value) || 'Invalid e-mail.'
+          },
+        },
+        contactResultDialog: false,
+      }
     },
     computed: {
         responsiveBorderRadius () {
@@ -203,6 +279,91 @@
         return data
         }
     },
+   methods: {
+    async sendMessage () {
+      // if (this.seashellImage.value) {
+      //   this.aiDialogLoading = true
+      //   this.seashellImage.error = null
+
+      //   const tokenUrl = `${this.backendUrl}/oauth/token`
+      //   const { data, status } = await axios({
+      //     method: 'post',
+      //     url: tokenUrl,
+      //     data: {
+      //       grant_type: 'client_credentials',
+      //       client_id: 11,
+      //       client_secret: 'L58lkHPfFbuRncysLPTt1kK5eUA9IVlpMUpwiwHO'
+      //     },
+      //     headers: { 'Content-Type': 'application/json' }
+      //   })
+
+      //   if (status === 200 && this.seashellImage.value) {
+      //     let formData = new FormData()
+      //     formData.append('file', this.seashellImage.value)
+
+      //     // get seashell data from api
+      //     this.getShell(data, formData)
+      //   }
+      // } else {
+      //   this.seashellImage.error = "Please select an image"
+      // }
+
+      if(this.contact.email == '' || this.contact.email == null){
+        this.email.error = "Please enter your email"
+      }
+      else if(this.contact.subject == '' || this.contact.subject == null){
+        this.email.error = null;
+        this.subject.error = "Please enter your subject"
+      }
+      else if(this.contact.message == '' || this.contact.message == null){
+        this.email.error = null;
+        this.subject.error = null;
+        this.message.error = "Please enter your message"
+      } else {
+        this.email.error = null;
+        this.subject.error = null;
+        this.message.error = null;
+
+        const contactUrl = `${this.backendUrl}/api/web/create_contact_message`
+        // const { data, status } = axios({
+        //   method: 'post',
+        //   url: contactUrl,
+        //   data: {
+        //     email: this.email.value,
+        //     subject: this.subject.value,
+        //     message: this.message.value
+        //   },
+        //   headers: { 'Content-Type': 'application/json' }
+        // })
+        // console.log(contactUrl,'contact_url');
+
+        // await axios({
+        //   method: 'post',
+        //   url: contactUrl,
+        //   data: this.contact
+        // }).then(response => {
+        //   // console.log(res, 'res');
+        //   // alert(res.data.message);
+        //   this.contactResultDialog = true;
+
+        //   this.contact.email = '';
+        //   this.contact.subject = '';
+        //   this.contact.message = '';
+        // }).catch(err => {
+        //   // this.contactResultDialog = true;
+        // })
+
+        // axios.$post(contactUrl,this.contact).then(res => {
+        //   console.log(res, 'res');
+        //   alert(res.data.message);
+
+        //   this.contact.email = '';
+        //   this.contact.subject = '';
+        //   this.contact.message = '';
+        // });
+      }
+    },
+   }
   }
   </script>
   
