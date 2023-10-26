@@ -175,12 +175,27 @@ export default {
             <v-layout id="speciesDisplayPhoto" v-if="specie.species.display_photo != null">
               <v-flex
                 :data-src="$backendurl(specie.species.display_photo)"
+                :data-sub-html=specie.species.general_description
                 :data-download-url="$backendurl(specie.species.display_photo)">
                 <v-card
                   style="cursor: pointer;">
                   <v-img v-if="specie.species.display_photo != null"
                     :src="$backendurl(specie.species.display_photo)"
-                  ></v-img>
+                    lazy-src="/img/sample_shell.jpg"
+                  >
+                  <template v-slot="{ placeholder }">
+                          <v-row
+                            class="fill-height ma-0"
+                            align="center"
+                            justify="center"
+                          >
+                            <v-progress-circular
+                              indeterminate
+                              color="grey-lighten-5"
+                            ></v-progress-circular>
+                          </v-row>
+                        </template>
+                  </v-img>
                 </v-card>
               </v-flex>
             </v-layout>
@@ -301,8 +316,22 @@ export default {
                       cover
                       class="cover"
                       style="max-height: 300px !important; height: 300px !important;"
+                      lazy-src="/img/sample_shell.jpg"
                       :src="$backendurl(item.file_path+'/'+item.file_name)"
-                    ></v-img>
+                    >
+                      <template v-slot="{ placeholder }">
+                          <v-row
+                            class="fill-height ma-0"
+                            align="center"
+                            justify="center"
+                          >
+                            <v-progress-circular
+                              indeterminate
+                              color="grey-lighten-5"
+                            ></v-progress-circular>
+                          </v-row>
+                        </template>
+                    </v-img>
                 </v-card>
               </v-flex>
             </v-layout>
@@ -369,7 +398,7 @@ export default {
             <span class="avenir-book text-break" v-html="specie.species.references"></span>
           </p> 
 
-          <v-dialog
+          <!-- <v-dialog
             v-model="dialog"
             hide-overlay
             transition="dialog-bottom-transition"
@@ -402,7 +431,7 @@ export default {
                 </v-btn>
               </v-card-actions>
             </v-card>
-          </v-dialog>
+          </v-dialog> -->
           <v-row>
             <v-col cols="6">
               <a style="width: fit-content;" href="javascript:void(0);" @click="redirectBack()">Back</a>

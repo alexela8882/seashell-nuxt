@@ -4,6 +4,10 @@ export default {
   auth: false,
   layout: 'landing',
 
+  head: {
+    title: 'Bintan Island'
+  },
+
   data: () => ({
     index: null,
     images: [
@@ -57,7 +61,7 @@ export default {
         style="width: 100% !important;"
         :style="`padding-top: ${($vuetify.breakpoint.xs || $vuetify.breakpoint.sm) ? '50px' : '0px'}`">
         <div
-          :style="`font-size: ${$vuetify.breakpoint.xl ? '175px' : ($vuetify.breakpoint.sm || $vuetify.breakpoint.xs ? '80px' : '125px')}`"
+          :style="`${$vuetify.breakpoint.xs || $vuetify.breakpoint.sm ? 'font-size: 85px;' : ($vuetify.breakpoint.xl ? 'font-size: 175px;' : 'font-size: 125px;')}`"
           class="soul-seashell">
           Bintan Island
         </div>
@@ -68,14 +72,21 @@ export default {
               :class="responsiveCorners"
               elevation="5"
               height="100%">
-              <iframe
+              <iframe src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d335233.3252070301!2d104.4620116899444!3d1.0310094316343934!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMcKwMDQnMzYuMCJOIDEwNMKwMzAnMDEuMCJF!5e0!3m2!1sen!2sph!4v1698054848485!5m2!1sen!2sph"
+                width="100%"
+                height="100%"
+                style="border:0;" 
+                allowfullscreen="true" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <!-- <iframe
                 src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3989.113899872819!2d104.49770287511741!3d1.0766720623927117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMcKwMDQnMzYuMCJOIDEwNMKwMzAnMDEuMCJF!5e0!3m2!1sen!2sph!4v1696913227457!5m2!1sen!2sph"
                 width="100%"
                 height="100%"
                 style="border:0;"
                 allowfullscreen="true"
                 loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                referrerpolicy="no-referrer-when-downgrade"></iframe> -->
             </v-card>
           </v-col>
           <v-col cols="6" sm="3">
@@ -253,7 +264,8 @@ export default {
         :style="`padding-top: ${$vuetify.breakpoint.xs ? '50px' : '70px'}`">
         <v-row>
           <v-col
-            cols="6"
+            cols="12"
+            md="6"
             class="kollektif"
             :class="($vuetify.breakpoint.xs || $vuetify.breakpoint.sm) ? 'text-caption' : 'text-h6'">
             <div class="mb-8">
@@ -284,7 +296,8 @@ export default {
             </div>
           </v-col>
           <v-col
-            cols="6"
+            cols="12"
+            md="6"
             class="kollektif"
             :class="($vuetify.breakpoint.xs || $vuetify.breakpoint.sm) ? 'text-caption' : 'text-h6'">
             <div class="mb-3 mb-md-8">
