@@ -1,0 +1,41 @@
+{
+  "entry": "server.js",
+  "files": {
+    "0.js": "0.js",
+    "1.js": "1.js",
+    "16.js": "16.js",
+    "pages/about-us.js": "pages/about-us.js",
+    "pages/about.js": "pages/about.js",
+    "pages/admin/index.js": "pages/admin/index.js",
+    "pages/azure.js": "pages/azure.js",
+    "pages/bintan-island/index.js": "pages/bintan-island/index.js",
+    "pages/dashboard/index.js": "pages/dashboard/index.js",
+    "pages/index.js": "pages/index.js",
+    "pages/login.js": "pages/login.js",
+    "pages/roles/index.js": "pages/roles/index.js",
+    "pages/species/_id.js": "pages/species/_id.js",
+    "pages/species/index.js": "pages/species/index.js",
+    "pages/users/index.js": "pages/users/index.js",
+    "pages/users/profile/index.js": "pages/users/profile/index.js",
+    "server.js": "server.js"
+  },
+  "maps": {
+    "0.js": "0.js.map",
+    "1.js": "1.js.map",
+    "16.js": "16.js.map",
+    "pages/about-us.js": "pages/about-us.js.map",
+    "pages/about.js": "pages/about.js.map",
+    "pages/admin/index.js": "pages/admin/index.js.map",
+    "pages/azure.js": "pages/azure.js.map",
+    "pages/bintan-island/index.js": "pages/bintan-island/index.js.map",
+    "pages/dashboard/index.js": "pages/dashboard/index.js.map",
+    "pages/index.js": "pages/index.js.map",
+    "pages/login.js": "pages/login.js.map",
+    "pages/roles/index.js": "pages/roles/index.js.map",
+    "pages/species/_id.js": "pages/species/_id.js.map",
+    "pages/species/index.js": "pages/species/index.js.map",
+    "pages/users/index.js": "pages/users/index.js.map",
+    "pages/users/profile/index.js": "pages/users/profile/index.js.map",
+    "server.js": "server.js.map"
+  }
+}
