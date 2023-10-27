@@ -94,6 +94,20 @@ const actions = {
       commit('SET_LOADING', false, { root: true })
     }
   },
+
+  async createContactMessage ({ commit }, payload) {
+    commit('SET_LOADING', true, { root: true })
+    try {
+      let response = await this.$axios.post(this.$baseurl(`web/create_contact_message`), payload)
+    //   this.$snackbar({ icon: 'mdi-checkbox-marked-circle.green', text: 'Message successfully sent.' })
+      return response.data
+    } catch (e) {
+      commit('SET_LOADING', false, { root: true })
+      return e.response
+    } finally {
+      commit('SET_LOADING', false, { root: true })
+    }
+  },
 }
 
 export default actions
