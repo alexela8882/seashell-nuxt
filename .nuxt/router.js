@@ -3,19 +3,20 @@ import Router from 'vue-router'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
-const _6ed58bca = () => interopDefault(import('..\\pages\\about.vue' /* webpackChunkName: "pages/about" */))
-const _a470239e = () => interopDefault(import('..\\pages\\about-us.vue' /* webpackChunkName: "pages/about-us" */))
-const _0ed63714 = () => interopDefault(import('..\\pages\\admin\\index.vue' /* webpackChunkName: "pages/admin/index" */))
-const _636539cc = () => interopDefault(import('..\\pages\\azure.vue' /* webpackChunkName: "pages/azure" */))
-const _41f0bdc6 = () => interopDefault(import('..\\pages\\bintan-island\\index.vue' /* webpackChunkName: "pages/bintan-island/index" */))
-const _eb62cade = () => interopDefault(import('..\\pages\\dashboard\\index.vue' /* webpackChunkName: "pages/dashboard/index" */))
-const _583509a6 = () => interopDefault(import('..\\pages\\login.vue' /* webpackChunkName: "pages/login" */))
-const _5a408848 = () => interopDefault(import('..\\pages\\roles\\index.vue' /* webpackChunkName: "pages/roles/index" */))
-const _4f027da9 = () => interopDefault(import('..\\pages\\species\\index.vue' /* webpackChunkName: "pages/species/index" */))
-const _55fa9c1d = () => interopDefault(import('..\\pages\\users\\index.vue' /* webpackChunkName: "pages/users/index" */))
-const _dbc26d64 = () => interopDefault(import('..\\pages\\users\\profile\\index.vue' /* webpackChunkName: "pages/users/profile/index" */))
-const _d594535e = () => interopDefault(import('..\\pages\\species\\_id.vue' /* webpackChunkName: "pages/species/_id" */))
-const _e2e532e2 = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
+const _91817c9c = () => interopDefault(import('../pages/about.vue' /* webpackChunkName: "pages/about" */))
+const _736f8f49 = () => interopDefault(import('../pages/about-us.vue' /* webpackChunkName: "pages/about-us" */))
+const _69f1cff7 = () => interopDefault(import('../pages/admin/index.vue' /* webpackChunkName: "pages/admin/index" */))
+const _a8622098 = () => interopDefault(import('../pages/azure.vue' /* webpackChunkName: "pages/azure" */))
+const _5a420b20 = () => interopDefault(import('../pages/bintan-island/index.vue' /* webpackChunkName: "pages/bintan-island/index" */))
+const _7405367c = () => interopDefault(import('../pages/dashboard/index.vue' /* webpackChunkName: "pages/dashboard/index" */))
+const _bec280e4 = () => interopDefault(import('../pages/login.vue' /* webpackChunkName: "pages/login" */))
+const _1d8d2c36 = () => interopDefault(import('../pages/roles/index.vue' /* webpackChunkName: "pages/roles/index" */))
+const _775bda6e = () => interopDefault(import('../pages/services.vue' /* webpackChunkName: "pages/services" */))
+const _4b586a64 = () => interopDefault(import('../pages/species/index.vue' /* webpackChunkName: "pages/species/index" */))
+const _64b30770 = () => interopDefault(import('../pages/users/index.vue' /* webpackChunkName: "pages/users/index" */))
+const _86749eec = () => interopDefault(import('../pages/users/profile/index.vue' /* webpackChunkName: "pages/users/profile/index" */))
+const _f3f49468 = () => interopDefault(import('../pages/species/_id.vue' /* webpackChunkName: "pages/species/_id" */))
+const _5211c712 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
 // TODO: remove in Nuxt 3
 const emptyFn = () => {}
@@ -35,55 +36,59 @@ export const routerOptions = {
 
   routes: [{
     path: "/about",
-    component: _6ed58bca,
+    component: _91817c9c,
     name: "about"
   }, {
     path: "/about-us",
-    component: _a470239e,
+    component: _736f8f49,
     name: "about-us"
   }, {
     path: "/admin",
-    component: _0ed63714,
+    component: _69f1cff7,
     name: "admin"
   }, {
     path: "/azure",
-    component: _636539cc,
+    component: _a8622098,
     name: "azure"
   }, {
     path: "/bintan-island",
-    component: _41f0bdc6,
+    component: _5a420b20,
     name: "bintan-island"
   }, {
     path: "/dashboard",
-    component: _eb62cade,
+    component: _7405367c,
     name: "dashboard"
   }, {
     path: "/login",
-    component: _583509a6,
+    component: _bec280e4,
     name: "login"
   }, {
     path: "/roles",
-    component: _5a408848,
+    component: _1d8d2c36,
     name: "roles"
   }, {
+    path: "/services",
+    component: _775bda6e,
+    name: "services"
+  }, {
     path: "/species",
-    component: _4f027da9,
+    component: _4b586a64,
     name: "species"
   }, {
     path: "/users",
-    component: _55fa9c1d,
+    component: _64b30770,
     name: "users"
   }, {
     path: "/users/profile",
-    component: _dbc26d64,
+    component: _86749eec,
     name: "users-profile"
   }, {
     path: "/species/:id",
-    component: _d594535e,
+    component: _f3f49468,
     name: "species-id"
   }, {
     path: "/",
-    component: _e2e532e2,
+    component: _5211c712,
     name: "index"
   }],
 

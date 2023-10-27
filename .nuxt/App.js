@@ -1,16 +1,16 @@
 import Vue from 'vue'
 
 import { getMatchedComponentsInstances, getChildrenComponentInstancesUsingFetch, promisify, globalHandleError, urlJoin, sanitizeComponent } from './utils'
-import NuxtError from '..\\layouts\\error.vue'
+import NuxtError from '../layouts/error.vue'
 import NuxtLoading from '~/components/Loading.vue'
 
-import '..\\node_modules\\material-design-icons-iconfont\\dist\\material-design-icons.css'
+import '../node_modules/material-design-icons-iconfont/dist/material-design-icons.css'
 
-import '..\\assets\\css\\main.css'
+import '../assets/css/main.css'
 
-import _6f6c098b from '..\\layouts\\default.vue'
-import _7762aba2 from '..\\layouts\\guest.vue'
-import _103c6d61 from '..\\layouts\\landing.vue'
+import _6f6c098b from '../layouts/default.vue'
+import _7762aba2 from '../layouts/guest.vue'
+import _103c6d61 from '../layouts/landing.vue'
 
 const layouts = { "_default": sanitizeComponent(_6f6c098b),"_guest": sanitizeComponent(_7762aba2),"_landing": sanitizeComponent(_103c6d61) }
 

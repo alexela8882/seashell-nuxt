@@ -1,13 +1,13 @@
 exports.ids = [9];
 exports.modules = {
 
-/***/ 270:
+/***/ 272:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var _mixins_bootable__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(55);
 /* harmony import */ var _mixins_groupable__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(32);
-/* harmony import */ var _directives_touch__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(98);
+/* harmony import */ var _directives_touch__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(99);
 /* harmony import */ var _util_helpers__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(0);
 /* harmony import */ var _util_mixins__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(2);
 // Mixins
@@ -156,13 +156,13 @@ const baseMixins = Object(_util_mixins__WEBPACK_IMPORTED_MODULE_4__[/* default *
 
 /***/ }),
 
-/***/ 271:
+/***/ 273:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var _src_components_VWindow_VWindow_sass__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(272);
+/* harmony import */ var _src_components_VWindow_VWindow_sass__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(274);
 /* harmony import */ var _src_components_VWindow_VWindow_sass__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_src_components_VWindow_VWindow_sass__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _directives_touch__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(98);
+/* harmony import */ var _directives_touch__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(99);
 /* harmony import */ var _VBtn__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(70);
 /* harmony import */ var _VIcon__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(19);
 /* harmony import */ var _VItemGroup_VItemGroup__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(52);
@@ -424,20 +424,20 @@ const baseMixins = Object(_util_mixins__WEBPACK_IMPORTED_MODULE_4__[/* default *
 
 /***/ }),
 
-/***/ 272:
+/***/ 274:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(273);
+var content = __webpack_require__(275);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 __webpack_require__(5).default("0d135400", content, true)
 
 /***/ }),
 
-/***/ 273:
+/***/ 275:
 /***/ (function(module, exports, __webpack_require__) {
 
 // Imports
@@ -451,7 +451,7 @@ module.exports = exports;
 
 /***/ }),
 
-/***/ 277:
+/***/ 279:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -459,8 +459,6 @@ module.exports = exports;
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var vuex__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(20);
 /* harmony import */ var vuex__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(vuex__WEBPACK_IMPORTED_MODULE_1__);
-//
-//
 //
 //
 //
@@ -1096,11 +1094,11 @@ module.exports = exports;
     })
   }
 });
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(231)["URLSearchParams"]))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(232)["URLSearchParams"]))
 
 /***/ }),
 
-/***/ 278:
+/***/ 280:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
@@ -1112,12 +1110,12 @@ if(content.locals) module.exports = content.locals;
 // add CSS to SSR context
 var add = __webpack_require__(5).default
 module.exports.__inject__ = function (context) {
-  add("569316d2", content, true, context)
+  add("6c526db0", content, true, context)
 };
 
 /***/ }),
 
-/***/ 279:
+/***/ 281:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
@@ -1139,10 +1137,10 @@ module.exports.__inject__ = function (context) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_style_index_0_id_30071504_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(278);
-/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_style_index_0_id_30071504_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_style_index_0_id_30071504_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__);
-/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_style_index_0_id_30071504_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_style_index_0_id_30071504_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
- /* harmony default export */ __webpack_exports__["default"] = (_node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_style_index_0_id_30071504_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default.a); 
+/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_style_index_0_id_01ceed72_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(280);
+/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_style_index_0_id_01ceed72_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_style_index_0_id_01ceed72_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_style_index_0_id_01ceed72_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_style_index_0_id_01ceed72_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_style_index_0_id_01ceed72_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default.a); 
 
 /***/ }),
 
@@ -1153,7 +1151,7 @@ __webpack_require__.r(__webpack_exports__);
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(4);
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, ".v-card[data-v-30071504]{transition:opacity .4s ease-in-out}.v-card[data-v-30071504]:not(.on-hover){opacity:.7}.show-btns[data-v-30071504]{color:#fff!important}.fade-transition-leave-active[data-v-30071504]{position:absolute;width:100%}.shell-section-bg[data-v-30071504]{background:url(/img/shells/landingpage/shell-section-bg.jpg);background-repeat:no-repeat;background-size:cover;background-position:right 50% bottom 40%}.custom-ul[data-v-30071504]{list-style:none}.custom-ul li[data-v-30071504]{line-height:40px}.custom-ul li a[data-v-30071504]{font-family:Kollektif!important;font-size:16px;color:var(--electric_blue);text-decoration:none}.custom-ul li a[data-v-30071504]:hover{text-decoration:underline}.bintan-img-100[data-v-30071504]{width:100%}.bintan-img-50[data-v-30071504]{float:left;width:50%}", ""]);
+exports.push([module.i, ".v-card[data-v-01ceed72]{transition:opacity .4s ease-in-out}.v-card[data-v-01ceed72]:not(.on-hover){opacity:.7}.show-btns[data-v-01ceed72]{color:#fff!important}.fade-transition-leave-active[data-v-01ceed72]{position:absolute;width:100%}.shell-section-bg[data-v-01ceed72]{background:url(/img/shells/landingpage/shell-section-bg.jpg);background-repeat:no-repeat;background-size:cover;background-position:right 50% bottom 40%}.custom-ul[data-v-01ceed72]{list-style:none}.custom-ul li[data-v-01ceed72]{line-height:40px}.custom-ul li a[data-v-01ceed72]{font-family:Kollektif!important;font-size:16px;color:var(--electric_blue);text-decoration:none}.custom-ul li a[data-v-01ceed72]:hover{text-decoration:underline}.bintan-img-100[data-v-01ceed72]{width:100%}.bintan-img-50[data-v-01ceed72]{float:left;width:50%}", ""]);
 // Exports
 module.exports = exports;
 
@@ -1165,7 +1163,7 @@ module.exports = exports;
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_style_index_1_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(279);
+/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_style_index_1_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(281);
 /* harmony import */ var _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_style_index_1_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_style_index_1_lang_css___WEBPACK_IMPORTED_MODULE_0__);
 /* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_style_index_1_lang_css___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_style_index_1_lang_css___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
  /* harmony default export */ __webpack_exports__["default"] = (_node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_style_index_1_lang_css___WEBPACK_IMPORTED_MODULE_0___default.a); 
@@ -1240,22 +1238,22 @@ module.exports = exports;
 
 /***/ }),
 
-/***/ 349:
+/***/ 348:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./pages/index.vue?vue&type=template&id=30071504&scoped=true&
-var lib_vue_loader_options_pagesvue_type_template_id_30071504_scoped_true_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_vm._ssrNode("<div"+(_vm._ssrClass("mt-n16 shadow-xl",_vm.responsiveBorderRadius))+" style=\"background-color: grey; position: relative; z-index: 53 !important; height: 100vh;\" data-v-30071504>","</div>",[_c('v-carousel',{class:_vm.responsiveBorderRadius,staticStyle:{"z-index":"55 !important"},attrs:{"cycle":"","hide-delimiters":"","show-arrows":false,"height":"100vh"}},_vm._l((_vm.items),function(item,i){return _c('v-carousel-item',{key:i,attrs:{"src":item.src,"reverse-transition":"fade-transition","transition":"fade-transition","eager":""}},[_c('div',{staticClass:"transparent-bg-black d-flex flex-column align-center justify-center",staticStyle:{"width":"100%","height":"100vh"}},[_c('div',{staticClass:"mt-auto text-center"},[_c('div',{staticClass:"soul-seashell white--text",staticStyle:{"line-height":"80% !important"},style:(("" + (_vm.$vuetify.breakpoint.xs || _vm.$vuetify.breakpoint.sm ? 'font-size: 85px;' : (_vm.$vuetify.breakpoint.xl ? 'font-size: 240px;' : 'font-size: 180px;'))))},[_vm._v("\n                Shoreline Gems\n              ")]),_vm._v(" "),_c('v-btn',{staticClass:"text-lowercase white--text mt-5 rounded-lg",attrs:{"outlined":"","large":_vm.$vuetify.breakpoint.xl}},[_vm._v("\n                explore\n              ")])],1),_vm._v(" "),_c('div',{staticClass:"mb-0 mt-auto px-md-16 white--text text-body-1 text-xl-h6",class:(_vm.$vuetify.breakpoint.sm || _vm.$vuetify.breakpoint.xs) && 'text-caption mb-10',staticStyle:{"width":"100%","white-space":"pre-line"}})]),_vm._v(" "),_c('v-img',{attrs:{"src":item.src,"height":"100%","eager":""}})],1)}),1)],1),_vm._ssrNode(" "),_vm._ssrNode("<div"+(_vm._ssrClass("shell-section-bg",_vm.responsiveBorderRadius))+" style=\"position: relative; margin-top: -100px; z-index: 52 !important;\" data-v-30071504>","</div>",[_vm._ssrNode("<div"+(_vm._ssrClass("shadow-xl px-md-16 px-5 w-100 mx-0 pb-16 white--text transparent-bg-black-dark",_vm.responsiveBorderRadius))+" style=\"width: 100%; padding-top: 100px;\" data-v-30071504>","</div>",[_vm._ssrNode("<div class=\"px-md-16 px-0\" data-v-30071504>","</div>",[_vm._ssrNode("<div class=\"soul-seashell\""+(_vm._ssrStyle(null,_vm.$vuetify.breakpoint.xl ? 'font-size: 175px' : 'font-size: 125px', null))+" data-v-30071504>\n            shells\n          </div> "),_c('v-row',{staticClass:"kollektif-font text-sm-body-2 text-md-body-1 text-xl-h6"},[_c('v-col',{attrs:{"cols":"12","md":"12","sm":"12"}},[_c('div',[_vm._v("\n              Seashells are the protective outer layer of marine mollusks, \n              such as snails, clams, and oysters. They are made of calcium \n              carbonate and come in various shapes, sizes, and colors.\n              ")]),_vm._v(" "),_c('div',{staticClass:"mt-5"},[_vm._v("\n              For millennia, humans have been fascinated by seashells. \n              They have been collected and used as currency, jewelry, tools, \n              and religious artifacts. Seashells also play an important \n              ecological role, providing habitat and protection for \n              marine organisms and contributing to the overall health \n              and balance of marine ecosystems.\n              ")]),_vm._v(" "),_c('div',{staticClass:"mt-5"},[_vm._v("\n              Today, seashells are still appreciated for their beauty, \n              but it is important to collect them responsibly.\n              Many beaches and marine environments are protected, \n              and it is crucial to respect these habitats and not \n              disturb the delicate balance of marine life.\n              ")])])],1)],2)]),_vm._ssrNode(" "),_vm._ssrNode("<div style=\"position:absolute;\\n        width: 100%;\\n        height: 100%;\\n        bottom: 0;\\n        right: 0;\" data-v-30071504>","</div>",[(!_vm.$vuetify.breakpoint.sm && !_vm.$vuetify.breakpoint.xs)?_c('v-img',{staticStyle:{"position":"absolute","right":"5rem","z-index":"55 !important"},style:(_vm.$vuetify.breakpoint.lg || _vm.$vuetify.breakpoint.xl ? 'bottom: -14rem;' : 'bottom: -10rem;'),attrs:{"src":"/img/shells/landingpage/shell_combined.png","width":_vm.$vuetify.breakpoint.lg || _vm.$vuetify.breakpoint.xl ? '300' : '200'}}):_vm._e()],1)],2),_vm._ssrNode(" "),_c('v-row',{staticClass:"shadow-xl px-md-16 px-5 py-5 electric_blue w-100 mx-0 py-16",class:_vm.responsiveBorderRadius,staticStyle:{"position":"relative","z-index":"51 !important","margin-top":"-100px"}},[_c('div',{staticClass:"px-md-16 white--text",staticStyle:{"padding-top":"90px","width":"100% !important"}},[_c('p',{staticClass:"avenir-book text-xs-caption text-lg-body-1 text-xl-h6 text-md-body-2",style:(("" + ((!_vm.$vuetify.breakpoint.xs && !_vm.$vuetify.breakpoint.sm) && 'white-space: pre-line')))},[_c('span',[_vm._v("\n            The anatomy of a shell refers to the detailed structure and feathers of the protective outer\n            covering found in various marine mollusks, including snails, clams, oysters, and others.\n          ")]),_vm._v(" "),_c('span',[_vm._v("\n            Although the specific anatomy may vary among different species, the fundamental\n            components of a shell are standard across most mollusks.\n          ")])]),_vm._v(" "),_c('div',{staticClass:"d-flex align-center float-right w-100"},[_c('div',{staticClass:"avenir-black text-h1"},[_vm._v("—     ")]),_vm._v(" "),_c('div',{staticClass:"float-right avenir-book text-md-h5 text-lg-h6 text-xl-h5",style:(("" + (_vm.$vuetify.breakpoint.sm && 'white-space: pre-line')))},[_vm._v("Let’s explore the critical parts of a\n            typical bivalve and gastropod shell!\n          ")])])])]),_vm._ssrNode(" "),( false)?undefined:_vm._e(),_vm._ssrNode(" "),_vm._ssrNode("<div"+(_vm._ssrClass(null,(_vm.$vuetify.breakpoint.xs || _vm.$vuetify.breakpoint.sm) ? 'bottom-rounded-sm shadow-xl' : 'bottom-rounded-lg shadow-xl'))+" style=\"position: relative; z-index: 49 !important;\" data-v-30071504>","</div>",[_c('v-row',{staticStyle:{"margin-top":"-200px"},attrs:{"no-gutters":""}},[_c('v-col',{attrs:{"cols":"12","md":"7"}},[_c('div',{staticStyle:{"position":"relative"}},[_c('div',{class:_vm.$vuetify.breakpoint.xs || _vm.$vuetify.breakpoint.sm ? 'faded-bg-fix' : 'faded-bg-white-left',staticStyle:{"padding-top":"200px"}},[_c('div',{staticClass:"px-md-16 px-6 electric_blue--text d-flex flex-column align-left justify-center",staticStyle:{"width":"100%","height":"100%"}},[_c('div',{staticClass:"mb-auto mt-10"},[_c('div',{staticClass:"font-weight-black text-xs-text-h4 text-h3 text-lg-h1 home-title",staticStyle:{"cursor":"pointer"},on:{"click":function($event){return _vm.speciesList(2)}}},[_vm._v("gas."),_c('span',{staticClass:"stroke-1 stroke-transparent-eblue"},[_vm._v("tro.")]),_vm._v("pod")]),_vm._v(" "),_c('div',{staticClass:"text-h6 font-weight-bold font-italic"},[_vm._v("noun")]),_vm._v(" "),_c('div',{staticClass:"pr-16"},[_vm._l((_vm.gastropodItems.data),function(item,i){return _c('ul',{staticClass:"custom-ul text-right electric_blue--text"},[_c('li',[_c('a',{on:{"click":function($event){return _vm.speciesView(item.id)}}},[_vm._v(_vm._s(item.common_name))])])])}),_vm._v(" "),_c('ul',{staticClass:"custom-ul text-right electric_blue--text"},[_c('li',[_c('a',{on:{"click":function($event){return _vm.speciesList(2)}}},[_vm._v("See More...")])])])],2)]),_vm._v(" "),_c('div',{staticClass:"mt-auto mb-10"},[_c('v-row',[_c('v-col',{attrs:{"cols":"12","md":"8"}},[_c('div',{staticClass:"text-body-1 text-xl-h6 font-italic kollektif",class:("" + (_vm.$vuetify.breakpoint.xs ? 'white--text' : 'electric_blue--text'))},[_vm._v("\n                        any of a large class (Gastropoda) of mollusks\n                        (such as snails and slugs) usually with a univalve shell or\n                        none and a distinct head bearning sensory organs\n                      ")])])],1)],1)])]),_vm._v(" "),_c('v-parallax',{class:(((_vm.$vuetify.breakpoint.xl) ? 'xl-parallax' : (_vm.$vuetify.breakpoint.lg ? 'lg-parallax' : (_vm.$vuetify.breakpoint.xs && 'xs-parallax'))) + " " + ((_vm.$vuetify.breakpoint.xs || _vm.$vuetify.breakpoint.sm) ? 'bottom-rounded-sm' : 'bottom-left-rounded-lg')),staticStyle:{"padding-top":"220px"},attrs:{"dark":"","height":_vm.parallaxHeight,"src":"/img/shells/landingpage/gastropod.png"}})],1)]),_vm._v(" "),(!_vm.$vuetify.breakpoint.xs && !_vm.$vuetify.breakpoint.sm)?_c('v-col',{staticClass:"white bottom-right-rounded-lg",staticStyle:{"padding-top":"220px"},attrs:{"cols":"12","md":"5"}},[_c('div',{staticClass:"d-flex align-center justify-center",staticStyle:{"width":"100%","height":"100%"}},[_c('div',[_c('v-img',{staticClass:"mt-16",attrs:{"width":("" + (!_vm.$vuetify.breakpoint.xl ? '400' : '500')),"cover":"","src":"/img/shells/gastropod.png"}})],1)])]):_vm._e()],1)],1),_vm._ssrNode(" "),(_vm.$vuetify.breakpoint.xs || _vm.$vuetify.breakpoint.sm)?_vm._ssrNode("<div class=\"bottom-rounded-sm shadow-xl\" style=\"position: relative; background-color: white; margin-top: -200px; z-index: 48 !important; padding-bottom: 50px;\" data-v-30071504>","</div>",[_c('v-row',{staticClass:"px-md-16",staticStyle:{"padding-top":"200px"}},[_c('v-col',{attrs:{"cols":"10","offset":"1"}},[_c('v-row',[_c('v-col',{attrs:{"cols":"6"}},[_c('v-img',{attrs:{"width":"650","cover":"","src":"/img/shells/gastropod.png"}})],1),_vm._v(" "),_c('v-col',{staticClass:"d-flex align-center",attrs:{"cols":"6"}},[_c('v-img',{attrs:{"width":"750","cover":"","src":"/img/shells/bivalve.png"}})],1)],1),_vm._v(" "),_c('v-row',[_c('v-col',{attrs:{"cols":"12"}},[_c('span',{staticClass:"avenir-book font-weight-bold electric_blue--text text-body-1"},[_vm._v("\n                Let’s explore the critical parts of a typical bivalve and gastropod shell\n              ")])])],1)],1)],1)],1):_vm._e(),_vm._ssrNode(" "),_vm._ssrNode("<div"+(_vm._ssrClass("shadow-xl mb-6",(_vm.$vuetify.breakpoint.xs || _vm.$vuetify.breakpoint.sm) ? 'bottom-rounded-sm' : 'bottom-rounded-lg'))+" style=\"position: relative; z-index: 46 !important;\" data-v-30071504>","</div>",[_c('v-row',{staticStyle:{"margin-top":"-200px"},attrs:{"no-gutters":""}},[(!_vm.$vuetify.breakpoint.xs && !_vm.$vuetify.breakpoint.sm)?_c('v-col',{staticStyle:{"padding-top":"220px"},attrs:{"cols":"12","md":"5"}},[_c('div',{staticClass:"px-md-16 px-6 d-flex align-center justify-center",staticStyle:{"width":"100%","height":"100%"}},[_c('div',{staticClass:"d-flex flex-column align-center justify-center",staticStyle:{"width":"100%","height":"100%"}},[_c('div',{staticClass:"mb-auto mt-auto"},[_c('v-img',{staticClass:"mt-16",attrs:{"width":("" + (_vm.$vuetify.breakpoint.xl ? '650' : (_vm.$vuetify.breakpoint.md ? '350' : '550'))),"cover":"","src":"/img/shells/bivalve.png"}})],1)])])]):_vm._e(),_vm._v(" "),_c('v-col',{attrs:{"cols":"12","md":"7"}},[_c('div',{staticStyle:{"position":"relative","z-index":"40 !important"}},[_c('div',{staticClass:"pl-lg-16",class:_vm.$vuetify.breakpoint.xs || _vm.$vuetify.breakpoint.sm ? 'faded-bg-fix' : 'faded-bg-white-right',staticStyle:{"padding-top":"220px"}},[_c('div',{staticClass:"px-md-16 px-6 electric_blue--text d-flex flex-column align-left justify-center",staticStyle:{"width":"100%","height":"100%"}},[_c('div',{staticClass:"pl-lg-3 mb-auto mt-10"},[_c('div',{staticClass:"font-weight-black text-xs-text-h4 text-h3 text-lg-h1 home-title",staticStyle:{"cursor":"pointer"},on:{"click":function($event){return _vm.speciesList(1)}}},[_vm._v("bi."),_c('span',{staticClass:"stroke-1 stroke-transparent-eblue"},[_vm._v("valve")])]),_vm._v(" "),_c('div',{staticClass:"text-h6 font-weight-bold font-italic"},[_vm._v("noun")]),_vm._v(" "),_c('div',{staticClass:"pr-16"},[_vm._l((_vm.bivalveItems.data),function(item,i){return _c('ul',{staticClass:"custom-ul text-right electric_blue--text"},[_c('li',[_c('a',{on:{"click":function($event){return _vm.speciesView(item.id)}}},[_vm._v(_vm._s(item.common_name))])])])}),_vm._v(" "),_c('ul',{staticClass:"custom-ul text-right electric_blue--text"},[_c('li',[_c('a',{on:{"click":function($event){return _vm.speciesList(1)}}},[_vm._v("See More...")])])])],2)]),_vm._v(" "),_c('div',{staticClass:"pl-lg-3 mt-auto mb-10"},[_c('v-row',[_c('v-col',{attrs:{"cols":"12","md":"8"}},[_c('div',{staticClass:"text-body-1 text-xl-h6 font-italic kollektif",class:("" + (_vm.$vuetify.breakpoint.xs ? 'white--text' : 'electric_blue--text'))},[_vm._v("\n                        an aquatic mollusk that has a compressed body enclosed within a\n                        hinged shell, such as oysters, clams, mussels, and scallops.\n                      ")])])],1)],1)])]),_vm._v(" "),_c('v-parallax',{class:(((_vm.$vuetify.breakpoint.xl) ? 'xl-parallax' : (_vm.$vuetify.breakpoint.lg ? 'lg-parallax' : (_vm.$vuetify.breakpoint.xs && 'xs-parallax'))) + " " + ((_vm.$vuetify.breakpoint.xs || _vm.$vuetify.breakpoint.sm) ? 'bottom-rounded-sm' : 'bottom-right-rounded-lg')),staticStyle:{"padding-top":"220px"},attrs:{"height":_vm.parallaxHeight,"src":"/img/shells/landingpage/bivalve.png"}})],1)])],1)],1)],2)}
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./pages/index.vue?vue&type=template&id=01ceed72&scoped=true&
+var lib_vue_loader_options_pagesvue_type_template_id_01ceed72_scoped_true_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_vm._ssrNode("<div"+(_vm._ssrClass("mt-n16 shadow-xl",_vm.responsiveBorderRadius))+" style=\"background-color: grey; position: relative; z-index: 53 !important; height: 100vh;\" data-v-01ceed72>","</div>",[_c('v-carousel',{class:_vm.responsiveBorderRadius,staticStyle:{"z-index":"55 !important"},attrs:{"cycle":"","hide-delimiters":"","show-arrows":false,"height":"100vh"}},_vm._l((_vm.items),function(item,i){return _c('v-carousel-item',{key:i,attrs:{"src":item.src,"reverse-transition":"fade-transition","transition":"fade-transition","eager":""}},[_c('div',{staticClass:"transparent-bg-black d-flex flex-column align-center justify-center",staticStyle:{"width":"100%","height":"100vh"}},[_c('div',{staticClass:"mt-auto text-center"},[_c('div',{staticClass:"soul-seashell white--text",staticStyle:{"line-height":"80% !important"},style:(("" + (_vm.$vuetify.breakpoint.xs || _vm.$vuetify.breakpoint.sm ? 'font-size: 85px;' : (_vm.$vuetify.breakpoint.xl ? 'font-size: 240px;' : 'font-size: 180px;'))))},[_vm._v("\n                Shoreline Gems\n              ")]),_vm._v(" "),_c('v-btn',{staticClass:"text-lowercase white--text mt-5 rounded-lg",attrs:{"outlined":"","large":_vm.$vuetify.breakpoint.xl}},[_vm._v("\n                explore\n              ")])],1),_vm._v(" "),_c('div',{staticClass:"mb-0 mt-auto px-md-16 white--text text-body-1 text-xl-h6",class:(_vm.$vuetify.breakpoint.sm || _vm.$vuetify.breakpoint.xs) && 'text-caption mb-10',staticStyle:{"width":"100%","white-space":"pre-line"}})]),_vm._v(" "),_c('v-img',{attrs:{"src":item.src,"height":"100%","eager":""}})],1)}),1)],1),_vm._ssrNode(" "),_vm._ssrNode("<div"+(_vm._ssrClass("shell-section-bg",_vm.responsiveBorderRadius))+" style=\"position: relative; margin-top: -100px; z-index: 52 !important;\" data-v-01ceed72>","</div>",[_vm._ssrNode("<div"+(_vm._ssrClass("shadow-xl px-md-16 px-5 w-100 mx-0 pb-16 white--text transparent-bg-black-dark",_vm.responsiveBorderRadius))+" style=\"width: 100%; padding-top: 100px;\" data-v-01ceed72>","</div>",[_vm._ssrNode("<div class=\"px-md-16 px-0\" data-v-01ceed72>","</div>",[_vm._ssrNode("<div class=\"soul-seashell\""+(_vm._ssrStyle(null,_vm.$vuetify.breakpoint.xl ? 'font-size: 175px' : 'font-size: 125px', null))+" data-v-01ceed72>\n            shells\n          </div> "),_c('v-row',{staticClass:"kollektif-font text-sm-body-2 text-md-body-1 text-xl-h6"},[_c('v-col',{attrs:{"cols":"12","md":"12","sm":"12"}},[_c('div',[_vm._v("\n              Seashells are the protective outer layer of marine mollusks, such as snails, clams, and oysters. \n              They are made of calcium carbonate and come in various shapes, sizes, and colors.\n              ")]),_vm._v(" "),_c('div',{staticClass:"mt-5"},[_vm._v("\n              For millennia, humans have been fascinated by seashells. \n              They have been collected and used as currency, jewelry, tools, and religious artifacts. \n              However, seashells also play an important ecological role, \n              providing habitat and protection for marine organisms and \n              contributing to the overall health and balance of marine ecosystems.\n              ")]),_vm._v(" "),_c('div',{staticClass:"mt-5"},[_vm._v("\n              Today, seashells are still appreciated for their beauty, \n              but it is important to collect them responsibly. \n              Many beaches and marine environments are protected, \n              and it is crucial to respect these habitats and not \n              disturb the delicate balance of marine life.\n              ")])])],1)],2)]),_vm._ssrNode(" "),_vm._ssrNode("<div style=\"position:absolute;\\n        width: 100%;\\n        height: 100%;\\n        bottom: 0;\\n        right: 0;\" data-v-01ceed72>","</div>",[(!_vm.$vuetify.breakpoint.sm && !_vm.$vuetify.breakpoint.xs)?_c('v-img',{staticStyle:{"position":"absolute","right":"5rem","z-index":"55 !important"},style:(_vm.$vuetify.breakpoint.lg || _vm.$vuetify.breakpoint.xl ? 'bottom: -14rem;' : 'bottom: -10rem;'),attrs:{"src":"/img/shells/landingpage/shell_combined.png","width":_vm.$vuetify.breakpoint.lg || _vm.$vuetify.breakpoint.xl ? '300' : '200'}}):_vm._e()],1)],2),_vm._ssrNode(" "),_c('v-row',{staticClass:"shadow-xl px-md-16 px-5 py-5 electric_blue w-100 mx-0 py-16",class:_vm.responsiveBorderRadius,staticStyle:{"position":"relative","z-index":"51 !important","margin-top":"-100px"}},[_c('div',{staticClass:"px-md-16 white--text",staticStyle:{"padding-top":"90px","width":"100% !important"}},[_c('p',{staticClass:"avenir-book text-xs-caption text-lg-body-1 text-xl-h6 text-md-body-2",style:(("" + ((!_vm.$vuetify.breakpoint.xs && !_vm.$vuetify.breakpoint.sm) && 'white-space: pre-line')))},[_c('span',[_vm._v("\n            The anatomy of a shell refers to the detailed structure and feathers of the protective outer\n            covering found in various marine mollusks, including snails, clams, oysters, and others.\n          ")]),_vm._v(" "),_c('span',[_vm._v("\n            Although the specific anatomy may vary among different species, the fundamental\n            components of a shell are standard across most mollusks.\n          ")])]),_vm._v(" "),_c('div',{staticClass:"d-flex align-center float-right w-100"},[_c('div',{staticClass:"avenir-black text-h1"},[_vm._v("—     ")]),_vm._v(" "),_c('div',{staticClass:"float-right avenir-book text-md-h5 text-lg-h6 text-xl-h5",style:(("" + (_vm.$vuetify.breakpoint.sm && 'white-space: pre-line')))},[_vm._v("Let’s explore the critical parts of a\n            typical bivalve and gastropod shell!\n          ")])])])]),_vm._ssrNode(" "),( false)?undefined:_vm._e(),_vm._ssrNode(" "),_vm._ssrNode("<div"+(_vm._ssrClass(null,(_vm.$vuetify.breakpoint.xs || _vm.$vuetify.breakpoint.sm) ? 'bottom-rounded-sm shadow-xl' : 'bottom-rounded-lg shadow-xl'))+" style=\"position: relative; z-index: 49 !important;\" data-v-01ceed72>","</div>",[_c('v-row',{staticStyle:{"margin-top":"-200px"},attrs:{"no-gutters":""}},[_c('v-col',{attrs:{"cols":"12","md":"7"}},[_c('div',{staticStyle:{"position":"relative"}},[_c('div',{class:_vm.$vuetify.breakpoint.xs || _vm.$vuetify.breakpoint.sm ? 'faded-bg-fix' : 'faded-bg-white-left',staticStyle:{"padding-top":"200px"}},[_c('div',{staticClass:"px-md-16 px-6 electric_blue--text d-flex flex-column align-left justify-center",staticStyle:{"width":"100%","height":"100%"}},[_c('div',{staticClass:"mb-auto mt-10"},[_c('div',{staticClass:"font-weight-black text-xs-text-h4 text-h3 text-lg-h1 home-title",staticStyle:{"cursor":"pointer"},on:{"click":function($event){return _vm.speciesList(2)}}},[_vm._v("gas."),_c('span',{staticClass:"stroke-1 stroke-transparent-eblue"},[_vm._v("tro.")]),_vm._v("pod")]),_vm._v(" "),_c('div',{staticClass:"text-h6 font-weight-bold font-italic"},[_vm._v("noun")]),_vm._v(" "),_c('div',{staticClass:"pr-16"},[_vm._l((_vm.gastropodItems.data),function(item,i){return _c('ul',{staticClass:"custom-ul text-right electric_blue--text"},[_c('li',[_c('a',{on:{"click":function($event){return _vm.speciesView(item.id)}}},[_vm._v(_vm._s(item.common_name))])])])}),_vm._v(" "),_c('ul',{staticClass:"custom-ul text-right electric_blue--text"},[_c('li',[_c('a',{on:{"click":function($event){return _vm.speciesList(2)}}},[_vm._v("See More...")])])])],2)]),_vm._v(" "),_c('div',{staticClass:"mt-auto mb-10"},[_c('v-row',[_c('v-col',{attrs:{"cols":"12","md":"8"}},[_c('div',{staticClass:"text-body-1 text-xl-h6 font-italic kollektif",class:("" + (_vm.$vuetify.breakpoint.xs ? 'white--text' : 'electric_blue--text'))},[_vm._v("\n                        any of a large class (Gastropoda) of mollusks\n                        (such as snails and slugs) usually with a univalve shell or\n                        none and a distinct head bearning sensory organs\n                      ")])])],1)],1)])]),_vm._v(" "),_c('v-parallax',{class:(((_vm.$vuetify.breakpoint.xl) ? 'xl-parallax' : (_vm.$vuetify.breakpoint.lg ? 'lg-parallax' : (_vm.$vuetify.breakpoint.xs && 'xs-parallax'))) + " " + ((_vm.$vuetify.breakpoint.xs || _vm.$vuetify.breakpoint.sm) ? 'bottom-rounded-sm' : 'bottom-left-rounded-lg')),staticStyle:{"padding-top":"220px"},attrs:{"dark":"","height":_vm.parallaxHeight,"src":"/img/shells/landingpage/gastropod.png"}})],1)]),_vm._v(" "),(!_vm.$vuetify.breakpoint.xs && !_vm.$vuetify.breakpoint.sm)?_c('v-col',{staticClass:"white bottom-right-rounded-lg",staticStyle:{"padding-top":"220px"},attrs:{"cols":"12","md":"5"}},[_c('div',{staticClass:"d-flex align-center justify-center",staticStyle:{"width":"100%","height":"100%"}},[_c('div',[_c('v-img',{staticClass:"mt-16",attrs:{"width":("" + (!_vm.$vuetify.breakpoint.xl ? '400' : '500')),"cover":"","src":"/img/shells/gastropod.png"}})],1)])]):_vm._e()],1)],1),_vm._ssrNode(" "),(_vm.$vuetify.breakpoint.xs || _vm.$vuetify.breakpoint.sm)?_vm._ssrNode("<div class=\"bottom-rounded-sm shadow-xl\" style=\"position: relative; background-color: white; margin-top: -200px; z-index: 48 !important; padding-bottom: 50px;\" data-v-01ceed72>","</div>",[_c('v-row',{staticClass:"px-md-16 mx-0",staticStyle:{"padding-top":"200px"}},[_c('v-col',{attrs:{"cols":"10","offset":"1"}},[_c('v-row',[_c('v-col',{attrs:{"cols":"6"}},[_c('v-img',{attrs:{"width":"650","cover":"","src":"/img/shells/gastropod.png"}})],1),_vm._v(" "),_c('v-col',{staticClass:"d-flex align-center",attrs:{"cols":"6"}},[_c('v-img',{attrs:{"width":"750","cover":"","src":"/img/shells/bivalve.png"}})],1)],1),_vm._v(" "),_c('v-row',[_c('v-col',{attrs:{"cols":"12"}},[_c('span',{staticClass:"avenir-book font-weight-bold electric_blue--text text-body-1"},[_vm._v("\n                Let’s explore the critical parts of a typical bivalve and gastropod shell\n              ")])])],1)],1)],1)],1):_vm._e(),_vm._ssrNode(" "),_vm._ssrNode("<div"+(_vm._ssrClass("shadow-xl mb-6",(_vm.$vuetify.breakpoint.xs || _vm.$vuetify.breakpoint.sm) ? 'bottom-rounded-sm' : 'bottom-rounded-lg'))+" style=\"position: relative; z-index: 46 !important;\" data-v-01ceed72>","</div>",[_c('v-row',{staticStyle:{"margin-top":"-200px"},attrs:{"no-gutters":""}},[(!_vm.$vuetify.breakpoint.xs && !_vm.$vuetify.breakpoint.sm)?_c('v-col',{staticStyle:{"padding-top":"220px"},attrs:{"cols":"12","md":"5"}},[_c('div',{staticClass:"px-md-16 px-6 d-flex align-center justify-center",staticStyle:{"width":"100%","height":"100%"}},[_c('div',{staticClass:"d-flex flex-column align-center justify-center",staticStyle:{"width":"100%","height":"100%"}},[_c('div',{staticClass:"mb-auto mt-auto"},[_c('v-img',{staticClass:"mt-16",attrs:{"width":("" + (_vm.$vuetify.breakpoint.xl ? '650' : (_vm.$vuetify.breakpoint.md ? '350' : '550'))),"cover":"","src":"/img/shells/bivalve.png"}})],1)])])]):_vm._e(),_vm._v(" "),_c('v-col',{attrs:{"cols":"12","md":"7"}},[_c('div',{staticStyle:{"position":"relative","z-index":"40 !important"}},[_c('div',{staticClass:"pl-lg-16",class:_vm.$vuetify.breakpoint.xs || _vm.$vuetify.breakpoint.sm ? 'faded-bg-fix' : 'faded-bg-white-right',staticStyle:{"padding-top":"220px"}},[_c('div',{staticClass:"px-md-16 px-6 electric_blue--text d-flex flex-column align-left justify-center",staticStyle:{"width":"100%","height":"100%"}},[_c('div',{staticClass:"pl-lg-3 mb-auto mt-10"},[_c('div',{staticClass:"font-weight-black text-xs-text-h4 text-h3 text-lg-h1 home-title",staticStyle:{"cursor":"pointer"},on:{"click":function($event){return _vm.speciesList(1)}}},[_vm._v("bi."),_c('span',{staticClass:"stroke-1 stroke-transparent-eblue"},[_vm._v("valve")])]),_vm._v(" "),_c('div',{staticClass:"text-h6 font-weight-bold font-italic"},[_vm._v("noun")]),_vm._v(" "),_c('div',{staticClass:"pr-16"},[_vm._l((_vm.bivalveItems.data),function(item,i){return _c('ul',{staticClass:"custom-ul text-right electric_blue--text"},[_c('li',[_c('a',{on:{"click":function($event){return _vm.speciesView(item.id)}}},[_vm._v(_vm._s(item.common_name))])])])}),_vm._v(" "),_c('ul',{staticClass:"custom-ul text-right electric_blue--text"},[_c('li',[_c('a',{on:{"click":function($event){return _vm.speciesList(1)}}},[_vm._v("See More...")])])])],2)]),_vm._v(" "),_c('div',{staticClass:"pl-lg-3 mt-auto mb-10"},[_c('v-row',[_c('v-col',{attrs:{"cols":"12","md":"8"}},[_c('div',{staticClass:"text-body-1 text-xl-h6 font-italic kollektif",class:("" + (_vm.$vuetify.breakpoint.xs ? 'white--text' : 'electric_blue--text'))},[_vm._v("\n                        an aquatic mollusk that has a compressed body enclosed within a\n                        hinged shell, such as oysters, clams, mussels, and scallops.\n                      ")])])],1)],1)])]),_vm._v(" "),_c('v-parallax',{class:(((_vm.$vuetify.breakpoint.xl) ? 'xl-parallax' : (_vm.$vuetify.breakpoint.lg ? 'lg-parallax' : (_vm.$vuetify.breakpoint.xs && 'xs-parallax'))) + " " + ((_vm.$vuetify.breakpoint.xs || _vm.$vuetify.breakpoint.sm) ? 'bottom-rounded-sm' : 'bottom-right-rounded-lg')),staticStyle:{"padding-top":"220px"},attrs:{"height":_vm.parallaxHeight,"src":"/img/shells/landingpage/bivalve.png"}})],1)])],1)],1)],2)}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./pages/index.vue?vue&type=template&id=30071504&scoped=true&
+// CONCATENATED MODULE: ./pages/index.vue?vue&type=template&id=01ceed72&scoped=true&
 
 // EXTERNAL MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./pages/index.vue?vue&type=script&lang=js&
-var lib_vue_loader_options_pagesvue_type_script_lang_js_ = __webpack_require__(277);
+var lib_vue_loader_options_pagesvue_type_script_lang_js_ = __webpack_require__(279);
 
 // CONCATENATED MODULE: ./pages/index.vue?vue&type=script&lang=js&
  /* harmony default export */ var pagesvue_type_script_lang_js_ = (lib_vue_loader_options_pagesvue_type_script_lang_js_["a" /* default */]); 
@@ -1267,13 +1265,13 @@ var installComponents = __webpack_require__(9);
 var installComponents_default = /*#__PURE__*/__webpack_require__.n(installComponents);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VBtn/VBtn.js
-var VBtn = __webpack_require__(227);
+var VBtn = __webpack_require__(228);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/src/components/VCarousel/VCarousel.sass
 var VCarousel = __webpack_require__(328);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VWindow/VWindow.js
-var VWindow = __webpack_require__(271);
+var VWindow = __webpack_require__(273);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VBtn/index.js
 var components_VBtn = __webpack_require__(70);
@@ -1282,7 +1280,7 @@ var components_VBtn = __webpack_require__(70);
 var VIcon = __webpack_require__(19);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VProgressLinear/index.js + 1 modules
-var VProgressLinear = __webpack_require__(104);
+var VProgressLinear = __webpack_require__(105);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VItemGroup/VItemGroup.js
 var VItemGroup = __webpack_require__(52);
@@ -1523,7 +1521,7 @@ var console = __webpack_require__(3);
 
 }));
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VWindow/VWindowItem.js
-var VWindowItem = __webpack_require__(270);
+var VWindowItem = __webpack_require__(272);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VImg/VImg.js + 2 modules
 var VImg = __webpack_require__(67);
@@ -1561,7 +1559,7 @@ const baseMixins = Object(mixins["a" /* default */])(VWindowItem["a" /* default 
         scopedSlots: {
           placeholder: this.$scopedSlots.placeholder
         }
-      }, Object(helpers["s" /* getSlot */])(this))];
+      }, Object(helpers["r" /* getSlot */])(this))];
     },
 
     genWindowItem() {
@@ -1580,7 +1578,7 @@ const baseMixins = Object(mixins["a" /* default */])(VWindowItem["a" /* default 
   }
 }));
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VGrid/VCol.js
-var VCol = __webpack_require__(246);
+var VCol = __webpack_require__(248);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/src/components/VParallax/VParallax.sass
 var VParallax = __webpack_require__(330);
@@ -1738,7 +1736,7 @@ const VParallax_baseMixins = Object(mixins["a" /* default */])(translatable);
 
 }));
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VGrid/VRow.js
-var VRow = __webpack_require__(248);
+var VRow = __webpack_require__(250);
 
 // CONCATENATED MODULE: ./pages/index.vue
 
@@ -1757,12 +1755,12 @@ if (style1.__inject__) style1.__inject__(context)
 
 var component = Object(componentNormalizer["a" /* default */])(
   pagesvue_type_script_lang_js_,
-  lib_vue_loader_options_pagesvue_type_template_id_30071504_scoped_true_render,
+  lib_vue_loader_options_pagesvue_type_template_id_01ceed72_scoped_true_render,
   staticRenderFns,
   false,
   injectStyles,
-  "30071504",
-  "444238ef"
+  "01ceed72",
+  "54ed8066"
   
 )
 
@@ -1786,7 +1784,7 @@ installComponents_default()(component, {VBtn: VBtn["a" /* default */],VCarousel:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var _VBtn__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(227);
+/* harmony import */ var _VBtn__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(228);
 
 
 /* harmony default export */ __webpack_exports__["a"] = (_VBtn__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"]);

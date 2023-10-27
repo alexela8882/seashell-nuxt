@@ -8,19 +8,19 @@ const VUEX_PROPERTIES = ['state', 'getters', 'actions', 'mutations']
 let store = {};
 
 (function updateModules () {
-  store = normalizeRoot(require('..\\store\\index.js'), 'store/index.js')
+  store = normalizeRoot(require('../store/index.js'), 'store/index.js')
 
   // If store is an exported method = classic mode (deprecated)
 
   // Enforce store modules
   store.modules = store.modules || {}
 
-  resolveStoreModules(require('..\\store\\modules\\users\\index.js'), 'modules/users/index.js')
-  resolveStoreModules(require('..\\store\\modules\\species\\index.js'), 'modules/species/index.js')
-  resolveStoreModules(require('..\\store\\modules\\roles\\index.js'), 'modules/roles/index.js')
-  resolveStoreModules(require('..\\store\\modules\\roles\\actions.js'), 'modules/roles/actions.js')
-  resolveStoreModules(require('..\\store\\modules\\species\\actions.js'), 'modules/species/actions.js')
-  resolveStoreModules(require('..\\store\\modules\\users\\actions.js'), 'modules/users/actions.js')
+  resolveStoreModules(require('../store/modules/users/index.js'), 'modules/users/index.js')
+  resolveStoreModules(require('../store/modules/species/index.js'), 'modules/species/index.js')
+  resolveStoreModules(require('../store/modules/roles/index.js'), 'modules/roles/index.js')
+  resolveStoreModules(require('../store/modules/roles/actions.js'), 'modules/roles/actions.js')
+  resolveStoreModules(require('../store/modules/species/actions.js'), 'modules/species/actions.js')
+  resolveStoreModules(require('../store/modules/users/actions.js'), 'modules/users/actions.js')
 
   // If the environment supports hot reloading...
 })()

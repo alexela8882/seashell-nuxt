@@ -1,20 +1,20 @@
 exports.ids = [0];
 exports.modules = {
 
-/***/ 280:
+/***/ 282:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(281);
+var content = __webpack_require__(283);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 __webpack_require__(5).default("63c9496b", content, true)
 
 /***/ }),
 
-/***/ 281:
+/***/ 283:
 /***/ (function(module, exports, __webpack_require__) {
 
 // Imports
@@ -32,7 +32,7 @@ module.exports = exports;
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var _src_components_VSnackbar_VSnackbar_sass__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(280);
+/* harmony import */ var _src_components_VSnackbar_VSnackbar_sass__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(282);
 /* harmony import */ var _src_components_VSnackbar_VSnackbar_sass__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_src_components_VSnackbar_VSnackbar_sass__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _VSheet_VSheet__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(16);
 /* harmony import */ var _mixins_colorable__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(7);
@@ -162,7 +162,7 @@ module.exports = exports;
     genActions() {
       return this.$createElement('div', {
         staticClass: 'v-snack__action '
-      }, [Object(_util_helpers__WEBPACK_IMPORTED_MODULE_7__[/* getSlot */ "s"])(this, 'action', {
+      }, [Object(_util_helpers__WEBPACK_IMPORTED_MODULE_7__[/* getSlot */ "r"])(this, 'action', {
         attrs: {
           class: 'v-snack__btn'
         }
@@ -179,7 +179,7 @@ module.exports = exports;
           role: 'status',
           'aria-live': 'polite'
         }
-      }, [Object(_util_helpers__WEBPACK_IMPORTED_MODULE_7__[/* getSlot */ "s"])(this)]);
+      }, [Object(_util_helpers__WEBPACK_IMPORTED_MODULE_7__[/* getSlot */ "r"])(this)]);
     },
 
     genWrapper() {
@@ -238,14 +238,14 @@ module.exports = exports;
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/layouts/Snackbar.vue?vue&type=template&id=8ab4c90c&
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/layouts/Snackbar.vue?vue&type=template&id=e5932ec8&
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('v-snackbar',{attrs:{"bottom":"","value":_vm.snackbar,"timeout":_vm.snackbarTimeout},scopedSlots:_vm._u([{key:"action",fn:function(ref){
 var attrs = ref.attrs;
 return [_c('v-btn',_vm._b({attrs:{"text":""},on:{"click":_vm.closeSnackbar}},'v-btn',attrs,false),[_vm._v("\n      Close\n    ")])]}}])},[_c('v-icon',{attrs:{"color":_vm.snackbarIconColor}},[_vm._v(_vm._s(_vm.snackbarIcon))]),_vm._v("\n   "+_vm._s(_vm.snackbarText)+"\n  ")],1)}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./components/layouts/Snackbar.vue?vue&type=template&id=8ab4c90c&
+// CONCATENATED MODULE: ./components/layouts/Snackbar.vue?vue&type=template&id=e5932ec8&
 
 // EXTERNAL MODULE: external "vuex"
 var external_vuex_ = __webpack_require__(20);
@@ -298,7 +298,7 @@ var installComponents = __webpack_require__(9);
 var installComponents_default = /*#__PURE__*/__webpack_require__.n(installComponents);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VBtn/VBtn.js
-var VBtn = __webpack_require__(227);
+var VBtn = __webpack_require__(228);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VIcon/VIcon.js
 var VIcon = __webpack_require__(81);
@@ -321,7 +321,7 @@ var component = Object(componentNormalizer["a" /* default */])(
   false,
   null,
   null,
-  "31102353"
+  "568bece3"
   
 )
 
