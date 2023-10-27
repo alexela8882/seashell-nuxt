@@ -23,7 +23,7 @@ export default {
       },
       {
         text: "About Us",
-        link: "/about_us",
+        link: "/about-us",
       },
       {
         text: "Services",

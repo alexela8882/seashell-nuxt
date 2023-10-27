@@ -245,7 +245,6 @@ import axios from '~/plugins/axios'
 
     data () {
       return {
-        backendUrl: 'http://127.0.0.1:8000',
         subject: { value: null, error: null },
         email: { value: null, error: null },
         message:{ value: "", error: null },
@@ -281,33 +280,6 @@ import axios from '~/plugins/axios'
     },
    methods: {
     async sendMessage () {
-      // if (this.seashellImage.value) {
-      //   this.aiDialogLoading = true
-      //   this.seashellImage.error = null
-
-      //   const tokenUrl = `${this.backendUrl}/oauth/token`
-      //   const { data, status } = await axios({
-      //     method: 'post',
-      //     url: tokenUrl,
-      //     data: {
-      //       grant_type: 'client_credentials',
-      //       client_id: 11,
-      //       client_secret: 'L58lkHPfFbuRncysLPTt1kK5eUA9IVlpMUpwiwHO'
-      //     },
-      //     headers: { 'Content-Type': 'application/json' }
-      //   })
-
-      //   if (status === 200 && this.seashellImage.value) {
-      //     let formData = new FormData()
-      //     formData.append('file', this.seashellImage.value)
-
-      //     // get seashell data from api
-      //     this.getShell(data, formData)
-      //   }
-      // } else {
-      //   this.seashellImage.error = "Please select an image"
-      // }
-
       if(this.contact.email == '' || this.contact.email == null){
         this.email.error = "Please enter your email"
       }
@@ -325,42 +297,17 @@ import axios from '~/plugins/axios'
         this.message.error = null;
 
         const contactUrl = `${this.backendUrl}/api/web/create_contact_message`
-        // const { data, status } = axios({
-        //   method: 'post',
-        //   url: contactUrl,
-        //   data: {
-        //     email: this.email.value,
-        //     subject: this.subject.value,
-        //     message: this.message.value
-        //   },
-        //   headers: { 'Content-Type': 'application/json' }
-        // })
-        // console.log(contactUrl,'contact_url');
 
-        // await axios({
-        //   method: 'post',
-        //   url: contactUrl,
-        //   data: this.contact
-        // }).then(response => {
-        //   // console.log(res, 'res');
-        //   // alert(res.data.message);
-        //   this.contactResultDialog = true;
+        this.$store.dispatch('species/createContactMessage', this.contact)
+        .then((res) => {
+          console.log(res, 'res');
+          // alert(res.message);
+          this.contactResultDialog = true;
 
-        //   this.contact.email = '';
-        //   this.contact.subject = '';
-        //   this.contact.message = '';
-        // }).catch(err => {
-        //   // this.contactResultDialog = true;
-        // })
-
-        // axios.$post(contactUrl,this.contact).then(res => {
-        //   console.log(res, 'res');
-        //   alert(res.data.message);
-
-        //   this.contact.email = '';
-        //   this.contact.subject = '';
-        //   this.contact.message = '';
-        // });
+          this.contact.email = '';
+          this.contact.subject = '';
+          this.contact.message = '';
+        })
       }
     },
    }

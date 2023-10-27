@@ -353,6 +353,10 @@ export default {
   opacity: 1; /* Firefox */
 }
 
+.text-search.v-text-field .v-label{
+  color: #08527b;
+}
+
 .text-search.v-text-field input::-ms-input-placeholder { /* Edge 12 -18 */
   color: #08527b;
 }
