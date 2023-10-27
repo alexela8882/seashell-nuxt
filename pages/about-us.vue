@@ -19,7 +19,8 @@
             class="kollektif-font text-sm-body-2 text-md-body-1 text-xl-h6">
             <v-col cols="12" md="12" sm="12">
               <div>
-                Bintan Seashells is a website dedicated to the public relating to seashells. 
+                Bintan Seashells is a website managed by the Bintan Seashell Museum 
+                which is dedicated to the public relating to the rich marine mollusks in the island. 
                 We are passionate about these beautiful natural creations, 
                 and we love sharing our knowledge and enthusiasm with others.
               </div>
@@ -27,11 +28,10 @@
                 Our website is a valuable resource for anyone interested in seashells, 
                 whether you are a beginner or an experienced collector. 
                 We offer a wide range of information on seashells identification, 
-                and its specific information. 
+                and its specific description. 
               </div>
               <div class="mt-5">
-                In addition to our website, we also have an upcoming seashell museum in 
-                Bintan, Indonesia, where we showcase a wide variety of seashells from all over the world. 
+                In addition to our website, we also have an upcoming seashell museum in the island where we showcase a wide variety of seashells from all over the world.
               </div>
             </v-col>
           </v-row>
