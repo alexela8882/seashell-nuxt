@@ -50,8 +50,8 @@ export default {
         //   modal: false
         // }, 
         {
-          label: 'services',
-          to: '/services',
+          label: 'museum',
+          to: '/museum',
           modal: false
         }, 
         // {

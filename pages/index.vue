@@ -64,21 +64,19 @@
             class="kollektif-font text-sm-body-2 text-md-body-1 text-xl-h6">
             <v-col cols="12" md="12" sm="12">
               <div>
-              Seashells are the protective outer layer of marine mollusks, 
-              such as snails, clams, and oysters. They are made of calcium 
-              carbonate and come in various shapes, sizes, and colors.
+              Seashells are the protective outer layer of marine mollusks, such as snails, clams, and oysters. 
+              They are made of calcium carbonate and come in various shapes, sizes, and colors.
               </div>
               <div class="mt-5">
               For millennia, humans have been fascinated by seashells. 
-              They have been collected and used as currency, jewelry, tools, 
-              and religious artifacts. Seashells also play an important 
-              ecological role, providing habitat and protection for 
-              marine organisms and contributing to the overall health 
-              and balance of marine ecosystems.
+              They have been collected and used as currency, jewelry, tools, and religious artifacts. 
+              However, seashells also play an important ecological role, 
+              providing habitat and protection for marine organisms and 
+              contributing to the overall health and balance of marine ecosystems.
               </div>
               <div class="mt-5">
               Today, seashells are still appreciated for their beauty, 
-              but it is important to collect them responsibly.
+              but it is important to collect them responsibly. 
               Many beaches and marine environments are protected, 
               and it is crucial to respect these habitats and not 
               disturb the delicate balance of marine life.

@@ -3,7 +3,7 @@ import Auth from './auth'
 import './middleware'
 
 // Active schemes
-import scheme_003d9a64 from './schemes/local.js'
+import scheme_3e2123be from './schemes/local.js'
 
 export default function (ctx, inject) {
   // Options
@@ -14,7 +14,7 @@ export default function (ctx, inject) {
 
   // Register strategies
   // password_grant
-  $auth.registerStrategy('password_grant', new scheme_003d9a64($auth, {"endpoints":{"login":{"url":"/api/nuxt2/login","method":"post","propertyName":"access_token"},"logout":{"url":"/api/nuxt2/logout","method":"post"},"user":{"url":"api/user","method":"get","propertyName":"user"}},"_name":"password_grant"}))
+  $auth.registerStrategy('password_grant', new scheme_3e2123be($auth, {"endpoints":{"login":{"url":"/api/nuxt2/login","method":"post","propertyName":"access_token"},"logout":{"url":"/api/nuxt2/logout","method":"post"},"user":{"url":"api/user","method":"get","propertyName":"user"}},"_name":"password_grant"}))
 
   // Inject it to nuxt context as $auth
   inject('auth', $auth)

@@ -52,11 +52,6 @@ export default {
 
 <template>
   <div>
-    <v-gallery
-      :images="images"
-      :index="index"
-      :options="options"
-      @close="index = null" />
     <div
       class="shadow-xl px-md-16 px-5 py-5 electric_blue w-100 mx-0 py-16"
       :class="responsiveBorderRadius"
@@ -329,6 +324,12 @@ export default {
         </v-row>
       </div>
     </div>
+
+    <v-gallery
+      :images="images"
+      :index="index"
+      :options="options"
+      @close="index = null" />
   </div>
 </template>
 
