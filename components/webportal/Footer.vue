@@ -26,8 +26,8 @@ export default {
         link: "/about-us",
       },
       {
-        text: "Museum",
-        link: "/museum",
+        text: "Services",
+        link: "/services",
       },
     ],
     padless: false,

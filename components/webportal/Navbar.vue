@@ -49,14 +49,9 @@ export default {
         //   to: '/team',
         //   modal: false
         // }, 
-        // {
-        //   label: 'services',
-        //   to: '/services',
-        //   modal: false
-        // }, 
         {
-          label: 'museum',
-          to: '/museum',
+          label: 'services',
+          to: '/services',
           modal: false
         }, 
         // {
