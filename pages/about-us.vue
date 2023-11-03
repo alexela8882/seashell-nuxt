@@ -142,7 +142,7 @@
             :class="($vuetify.breakpoint.xs || $vuetify.breakpoint.sm) ? 'text-caption' : 'text-h6'">
             <div
                 :style="`${$vuetify.breakpoint.xs || $vuetify.breakpoint.sm ? 'font-size: 85px;' : ($vuetify.breakpoint.xl ? 'font-size: 175px;' : 'font-size: 125px;')}`"
-                class="soul-seashell mb-8">
+                class="soul-seashell mb-9 mt-9">
                 Contact Us
             </div>
             <div class="mb-8">
@@ -192,7 +192,9 @@
           md="6" sm="12"
           >
             <v-img
-            tyle="width: 100% !important;"
+            style="width: 100% !important; height:100%; max-height: 550px"
+            class="rounded-lg top-rounded-sm"
+            :aspect-ratio="1"
             src="/img/shells/landingpage/shell-section-bg.jpg"
             ></v-img>
         </v-col>
