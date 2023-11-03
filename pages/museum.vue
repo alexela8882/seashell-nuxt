@@ -25,7 +25,7 @@
     auth: false,
     layout: 'landing',
     head: {
-      title: 'Services'
+      title: 'Museum'
     }
   }
   </script>
